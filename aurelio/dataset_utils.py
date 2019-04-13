@@ -39,7 +39,10 @@ def melt(dataframe, key, key_alias, payload_key):
         elif isinstance(key, list):
             for index, k in enumerate(key):
                 group.pop(k)
-                obj[key_alias[index]] = name[index]
+                if k == "answer_start":
+                    obj[key_alias[index]] = int(name[index])
+                else:
+                    obj[key_alias[index]] = name[index]
             if payload_key is not None:
                 obj[payload_key] = group
 
