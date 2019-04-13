@@ -45,3 +45,19 @@ def melt(dataframe, key, key_alias, payload_key):
 
         result.append(obj)
     return result
+
+
+def reduce_answer(dataset):
+    dataset["data"] = reduce(dataset["data"], ["paragraphs", "qas", "answers"])
+    return dataset
+
+
+def reduce(array, key_sequence):
+    if len(key_sequence) == 0:
+        return [array.pop(0)]
+
+    for obj in array:
+        key = key_sequence[0]
+        obj[key] = reduce(obj[key], key_sequence[1:])
+
+    return array
