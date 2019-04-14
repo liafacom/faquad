@@ -16,61 +16,63 @@ import tempfile
 import json
 import os
 
-# Loads files
-with open(os.path.realpath("data/qa_facom_dataset_837.json"), encoding="utf-8") as file:
-    train_dataset = json.loads(file.read())
 
-with open(os.path.realpath("data/qa_facom_dev.json"), encoding="utf-8") as file:
-    dev_dataset = json.loads(file.read())
+def run(train_dataset_path, dev_dataset_path, portion):
+    # Loads files
+    with open(os.path.realpath(train_dataset_path), encoding="utf-8") as file:
+        train_dataset = json.loads(file.read())
 
-# Flattens nested datasets into dataframes
-train_data = flatten_json(train_dataset)
-dev_data = flatten_json(reduce_answer(dev_dataset))
+    with open(os.path.realpath(dev_dataset_path), encoding="utf-8") as file:
+        dev_dataset = json.loads(file.read())
 
-# Concatenates train and dev dataframes
-data = pd.concat([train_data, dev_data])
+    # Flattens nested datasets into dataframes
+    train_data = flatten_json(train_dataset)
+    dev_data = flatten_json(reduce_answer(dev_dataset))
 
-# Configures GroupKFold and select indexes
-kfold = GroupKFold(n_splits=10)
-kfold_indexes = kfold.split(data, None, data[["context"]])
+    # Concatenates train and dev dataframes
+    data = pd.concat([train_data, dev_data])
 
-i = 1
+    # Configures GroupKFold and select indexes
+    kfold = GroupKFold(n_splits=10)
+    kfold_indexes = kfold.split(data, None, data[["context"]])
 
-# Trains a model for each fold with a temporary generated file
-# Training in AllenNLP requires a file
-for train_indexes, dev_indexes in kfold_indexes:
+    i = 1
 
-    with open(os.path.realpath("experiment.json"), "r") as file:
-        config = json.load(file)
+    # Trains a model for each fold with a temporary generated file
+    # Training in AllenNLP requires a file
+    for train_indexes, dev_indexes in kfold_indexes:
+        # config file must be loaded for each iteration
+        with open(os.path.realpath("experiment.json"), "r") as file:
+            config = json.load(file)
 
-    # GloVe location
-    config["model"]["text_field_embedder"]["token_embedders"]["tokens"]["pretrained_file"] \
-        = os.path.realpath("glove/glove_s600.zip")
+        # GloVe location
+        config["model"]["text_field_embedder"]["token_embedders"]["tokens"]["pretrained_file"] \
+            = os.path.realpath("glove/glove_s600.zip")
 
-    # Melts the dataframes into nested datasets
-    train_dataset = melt_dataframe(data.iloc[train_indexes, :])
-    dev_dataset = melt_dataframe(data.iloc[dev_indexes, :])
+        # Melts the dataframes into nested datasets
+        train_dataset = melt_dataframe(data.iloc[train_indexes, :])
+        dev_dataset = melt_dataframe(data.iloc[dev_indexes, :])
 
-    # Writes a temporary training file
-    temp_train_file = tempfile.NamedTemporaryFile(mode="w", suffix=".json", encoding="UTF-8")
-    temp_train_file.write(json.dumps(train_dataset))
-    print("Temp file wrote at {}".format(temp_train_file.name))
+        # Writes a temporary training file
+        temp_train_file = tempfile.NamedTemporaryFile(mode="w", suffix=".json", encoding="UTF-8")
+        temp_train_file.write(json.dumps(train_dataset))
+        print("Temp file wrote at {}".format(temp_train_file.name))
 
-    # Writes a temporary dev file
-    temp_dev_file = tempfile.NamedTemporaryFile(mode="w", suffix=".json", encoding="UTF-8")
-    temp_dev_file.write(json.dumps(dev_dataset))
-    print("Temp file wrote at {}".format(temp_dev_file.name))
+        # Writes a temporary dev file
+        temp_dev_file = tempfile.NamedTemporaryFile(mode="w", suffix=".json", encoding="UTF-8")
+        temp_dev_file.write(json.dumps(dev_dataset))
+        print("Temp file wrote at {}".format(temp_dev_file.name))
 
-    # Temporary dataset files location
-    config["train_data_path"] = temp_train_file.name
-    config["validation_data_path"] = temp_dev_file.name
+        # Temporary dataset files location
+        config["train_data_path"] = temp_train_file.name
+        config["validation_data_path"] = temp_dev_file.name
 
-    # Creates a Param class and writes the train result
-    params = Params(config)
-    train_model(params=params, serialization_dir="{}/fold_{}".format(os.path.realpath("serialization"), i))
+        # Creates a Param class and writes the train result
+        params = Params(config)
+        train_model(params=params, serialization_dir="{}/{}_fold_{}".format(os.path.realpath("serialization"), portion, i))
 
-    # Closes and deletes temp files
-    temp_train_file.close()
-    temp_dev_file.close()
+        # Closes and deletes temp files
+        temp_train_file.close()
+        temp_dev_file.close()
 
-    i += 1
+        i += 1
