@@ -1,0 +1,935 @@
+{
+  "data": [
+    {
+      "paragraphs": [
+        {
+          "context": "Computador é uma máquina capaz de variados tipos de tratamento automático de informações ou processamento de dados. Um computador pode possuir inúmeros atributos, dentre eles armazenamento de dados, processamento de dados, cálculo em grande escala, desenho industrial, tratamento de imagens gráficas, realidade virtual, entretenimento e cultura. No passado, o termo já foi aplicado a pessoas responsáveis por algum cálculo. Em geral, entende-se por computador um sistema físico que realiza algum tipo de computação. Existe ainda o conceito matemático rigoroso, utilizado na teoria da computação. Assumiu-se que os computadores pessoais e laptops são ícones da Era da Informação; e isto é o que muitas pessoas consideram como \"computador\". Entretanto, atualmente as formas mais comuns de computador em uso são os sistemas embarcados, pequenos dispositivos usados para controlar outros dispositivos, como robôs, câmeras digitais ou brinquedos.",
+          "qas": [
+            {
+              "id": "5b5f263d3c1546ddaee84a1a848d2704",
+              "answers": [
+                {
+                  "text": "uma máquina capaz de variados tipos de tratamento automático de informações ou processamento de dados",
+                  "answer_start": 13
+                }
+              ],
+              "question": "O que é computador?"
+            },
+            {
+              "id": "09646c629655424090feb82da04be1e7",
+              "answers": [
+                {
+                  "text": "pessoas responsáveis",
+                  "answer_start": 384
+                }
+              ],
+              "question": "A quem foi aplicado o termo computador?"
+            },
+            {
+              "id": "44033fafb0af47a8b1ff1da0be3e5194",
+              "answers": [
+                {
+                  "text": "computadores pessoais e laptops",
+                  "answer_start": 614
+                }
+              ],
+              "question": "Quem são os ícones da era da informação?"
+            },
+            {
+              "id": "b74772acc3f149498a35481c365dbf97",
+              "answers": [
+                {
+                  "text": "sistemas embarcados",
+                  "answer_start": 812
+                }
+              ],
+              "question": "Quais as formas mais comuns de computador em uso?"
+            },
+            {
+              "id": "d73b3ee997dd4f0b8bd8b2968ef67715",
+              "answers": [
+                {
+                  "text": "para controlar outros dispositivos",
+                  "answer_start": 862
+                }
+              ],
+              "question": "Para que servem os sistemas embarcados?"
+            },
+            {
+              "id": "932c99ca90d4498ca4c849144a466809",
+              "answers": [
+                {
+                  "text": "robôs, câmeras digitais ou brinquedos",
+                  "answer_start": 903
+                }
+              ],
+              "question": "Quais tipos de dispositivos os sistemas embarcados controlam?"
+            }
+          ]
+        },
+        {
+          "context": "John Napier (1550-1617), escocês inventor dos logaritmos, também inventou os ossos de Napier, que eram tabelas de multiplicação gravadas em bastão, o que evitava a memorização da tabuada. A primeira máquina de verdade foi construída por Wilhelm Schickard sendo capaz de somar, subtrair, multiplicar e dividir. Essa máquina foi perdida durante a guerra dos trinta anos, sendo que recentemente foi encontrada alguma documentação sobre ela. Durante muitos anos nada se soube sobre essa máquina, por isso, atribuía-se a Blaise Pascal (1623-1662) a construção da primeira máquina calculadora, que fazia apenas somas e subtrações. A máquina Pascal foi criada com objetivo de ajudar seu pai a computar os impostos em Rouen, França. O projeto de Pascal foi bastante aprimorado pelo matemático alemão Gottfried Wilhelm Leibniz (1646-1726), que também inventou o cálculo, o qual sonhou que, um dia no futuro, todo o raciocínio pudesse ser substituído pelo girar de uma simples alavanca. Todas essas máquinas, porém, estavam longe de ser um computador de uso geral, pois não eram programáveis. Isto quer dizer que a entrada era feita apenas de números, mas não de instruções a respeito do que fazer com os números.",
+          "qas": [
+            {
+              "id": "095cce836d6f4b5286038a974bbd2bcd",
+              "answers": [
+                {
+                  "text": "John Napier",
+                  "answer_start": 0
+                }
+              ],
+              "question": "Quem inventou os logarítmos?"
+            },
+            {
+              "id": "4ca3471fa4314310a457304a2505fd1d",
+              "answers": [
+                {
+                  "text": "bastão",
+                  "answer_start": 140
+                }
+              ],
+              "question": "Como eram gravadas as tabelas de multiplicação de John Napier?"
+            },
+            {
+              "id": "5c91b3d0d6f54872b84b68e61cca84ca",
+              "answers": [
+                {
+                  "text": "Wilhelm Schickard",
+                  "answer_start": 237
+                }
+              ],
+              "question": "Quem construiu a primeira máquina de verdade?"
+            },
+            {
+              "id": "5f8cb2e08f0d4865b60c00c3ee75be91",
+              "answers": [
+                {
+                  "text": "somar, subtrair, multiplicar e dividir",
+                  "answer_start": 270
+                }
+              ],
+              "question": "Quais eram as operações que a máquina construída por Wilhelm Schickard era capaz de fazer?"
+            },
+            {
+              "id": "39b709f2ed5847edaa67bc838a9ec78b",
+              "answers": [
+                {
+                  "text": "durante a guerra dos trinta anos",
+                  "answer_start": 335
+                }
+              ],
+              "question": "Quando a máquina de Schickard foi perdida?"
+            },
+            {
+              "id": "bc4fc1089e864943a2943853483ffbef",
+              "answers": [
+                {
+                  "text": "ajudar seu pai a computar os impostos em Rouen",
+                  "answer_start": 669
+                }
+              ],
+              "question": "Qual era o objetivo da máquina de pascal?"
+            },
+            {
+              "id": "42f1e4ed6b614b149ab18de686215571",
+              "answers": [
+                {
+                  "text": "Gottfried Wilhelm Leibniz",
+                  "answer_start": 792
+                }
+              ],
+              "question": "Quem inventou o cálculo?"
+            },
+            {
+              "id": "582872d1a6084badad5bb572535c742c",
+              "answers": [
+                {
+                  "text": "todo o raciocínio pudesse ser substituído pelo girar de uma simples alavanca",
+                  "answer_start": 899
+                }
+              ],
+              "question": "Qual era o sonho de Gottfried?"
+            }
+          ]
+        },
+        {
+          "context": "A origem da ideia de programar uma máquina vem da necessidade de que as máquinas de tecer produzissem padrões de cores diferentes. Assim, no século XVIII foi criada uma forma de representar os padrões em cartões de papel perfurado, que eram tratados manualmente. Em 1801, Joseph Marie Jacquard (1752-1834) inventa um tear mecânico, com uma leitora automática de cartões. A ideia de Jacquard atravessou o Canal da Mancha, onde inspirou Charles Babbage (1792-1871), um professor de matemática de Cambridge, a desenvolver uma máquina de “tecer números”, uma máquina de calcular onde a forma de calcular pudesse ser controlada por cartões. Tudo começou com a tentativa de desenvolver uma máquina capaz de calcular polinômios por meio de diferenças, o calculador diferencial. Enquanto projetava seu calculador diferencial, a ideia de Jacquard fez com que Babbage imaginasse uma nova e mais complexa máquina, o calculador analítico, máquina com alguns elementos que remetem aos computadores atuais.",
+          "qas": [
+            {
+              "id": "9ae58ffb344042d68c2f8cd740dd5c55",
+              "answers": [
+                {
+                  "text": "Joseph Marie Jacquard",
+                  "answer_start": 272
+                }
+              ],
+              "question": "Quem inventou o tear mecânico?"
+            },
+            {
+              "id": "7d461349c9a54560af24d18a40e7ef30",
+              "answers": [
+                {
+                  "text": "A ideia de Jacquard",
+                  "answer_start": 371
+                }
+              ],
+              "question": "O que inspirou Babbage a desenvolver a máquina de tecer números?"
+            },
+            {
+              "id": "2db891709f7d44ddaae6a1016cc4c51b",
+              "answers": [
+                {
+                  "text": "por cartões",
+                  "answer_start": 623
+                }
+              ],
+              "question": "Como era controlada a máquina de tecer números de Babbage?"
+            },
+            {
+              "id": "32ff57978a214146b797eeea9214df41",
+              "answers": [
+                {
+                  "text": "calculador diferencial",
+                  "answer_start": 747
+                }
+              ],
+              "question": "Qual é o nome dado à máquina que calcula polinômios por meio de diferenças?"
+            },
+            {
+              "id": "3b7293145a384882b3fd99feb0310c8f",
+              "answers": [
+                {
+                  "text": "máquina com alguns elementos que remetem aos computadores atuais",
+                  "answer_start": 927
+                }
+              ],
+              "question": "O que era o calculador analítico?"
+            }
+          ]
+        },
+        {
+          "context": "O próximo avanço dos computadores foi feito pelo americano Herman Hollerith (1860-1929), que inventou uma máquina capaz de processar dados baseada na separação de cartões perfurados (pelos seus furos). A máquina de Hollerith foi utilizada para auxiliar no censo de 1890, reduzindo o tempo de processamento de dados de sete anos, do censo anterior, para apenas dois anos e meio. Ela foi também pioneira ao utilizar a eletricidade na separação, contagem e tabulação dos cartões. A empresa fundada por Hollerith é hoje conhecida como International Business Machines, ou IBM.",
+          "qas": [
+            {
+              "id": "5c0a4fafc77746038a1f26e6e3eb8c9d",
+              "answers": [
+                {
+                  "text": "uma máquina capaz de processar dados baseada na separação de cartões perfurados",
+                  "answer_start": 102
+                }
+              ],
+              "question": "O que Hollerith inventou?"
+            },
+            {
+              "id": "9a8c027ff4c4496e821dac93fedcd812",
+              "answers": [
+                {
+                  "text": "para auxiliar no censo de 1890",
+                  "answer_start": 239
+                }
+              ],
+              "question": "Em que a máquina de Hollerith foi utilizada?"
+            },
+            {
+              "id": "28c3c251291c4b788ff9bd8573e3956f",
+              "answers": [
+                {
+                  "text": "dois anos e meio",
+                  "answer_start": 360
+                }
+              ],
+              "question": "Para quantos anos a máquina de Hollerith reduziu o tempo de processamento de dados?"
+            },
+            {
+              "id": "cd9533b23e1d45aaaf643966d1e87e0d",
+              "answers": [
+                {
+                  "text": "utilizar a eletricidade na separação",
+                  "answer_start": 405
+                }
+              ],
+              "question": "Em que a máquina de Hollerith foi pioneira?"
+            },
+            {
+              "id": "0de62d7bff0c429d9bbc09b5eab6b757",
+              "answers": [
+                {
+                  "text": " utilizar a eletricidade na separação, contagem e tabulação dos cartões",
+                  "answer_start": 404
+                }
+              ],
+              "question": "Em que a máquina de Hollerith foi pioneira?"
+            },
+            {
+              "id": "fdc574cee9a740ff9215fdaadb708d18",
+              "answers": [
+                {
+                  "text": "International Business Machines",
+                  "answer_start": 531
+                }
+              ],
+              "question": "Como é conhecida a empresa fundada por Hollerith atualmente?"
+            },
+            {
+              "id": "939e08851c6c469da76d0c58d47e225c",
+              "answers": [
+                {
+                  "text": "International Business Machines",
+                  "answer_start": 531
+                }
+              ],
+              "question": "O que é IBM?"
+            }
+          ]
+        },
+        {
+          "context": "O primeiro computador eletromecânico foi construído por Konrad Zuse (1910–1995). Em 1936, esse engenheiro alemão construiu, a partir de relês que executavam os cálculos e dados lidos em fitas perfuradas, o Z1. Zuse tentou vender o computador ao governo alemão, que desprezou a oferta, já que não auxiliaria no esforço de guerra. Os projetos de Zuse ficariam parados durante a guerra, dando a chance aos americanos de desenvolver seus computadores. Foi na Segunda Guerra Mundial que realmente nasceram os computadores atuais. A Marinha dos Estados Unidos, em conjunto com a Universidade de Harvard, desenvolveu o computador Harvard Mark I, projetado pelo professor Howard Aiken, com base no calculador analítico de Babbage. O Mark I ocupava 120m³ aproximadamente, conseguindo multiplicar dois números de dez dígitos em três segundos. Simultaneamente, e em segredo, o Exército dos Estados Unidos desenvolvia um projeto semelhante, chefiado pelos engenheiros J. Presper Eckert e John Mauchly, cujo resultado foi o primeiro computador a válvulas, o Eletronic Numeric Integrator And Calculator (ENIAC), capaz de fazer quinhentas multiplicações por segundo. Tendo sido projetado para calcular trajetórias balísticas, o ENIAC foi mantido em segredo pelo governo americano até o final da guerra, quando foi anunciado ao mundo.",
+          "qas": [
+            {
+              "id": "7c6762138ebb4e20b4c16479233b4031",
+              "answers": [
+                {
+                  "text": "a partir de relês que executavam os cálculos e dados lidos em fitas perfuradas",
+                  "answer_start": 124
+                }
+              ],
+              "question": "Como Zuse construiu o Z1?"
+            },
+            {
+              "id": "dd3f5ea3ed4f404ab1359896e2a98513",
+              "answers": [
+                {
+                  "text": "governo alemão",
+                  "answer_start": 245
+                }
+              ],
+              "question": "A quem Zuse tentou vender o Z1?"
+            },
+            {
+              "id": "368ad0b5e7804b4eaaf4087417ca05e8",
+              "answers": [
+                {
+                  "text": "já que não auxiliaria no esforço de guerra",
+                  "answer_start": 285
+                }
+              ],
+              "question": "Por que o Z1 foi desprezado pelo governo alemão?"
+            },
+            {
+              "id": "536fd8c1b1a943ecb74a79aa72ff8a48",
+              "answers": [
+                {
+                  "text": "já que não auxiliaria no esforço de guerra",
+                  "answer_start": 285
+                }
+              ],
+              "question": "Por que o Z1 foi desprezado pelo governo alemão?"
+            },
+            {
+              "id": "da534dfa075d4429912e374814eeeee1",
+              "answers": [
+                {
+                  "text": "Segunda Guerra Mundial",
+                  "answer_start": 455
+                }
+              ],
+              "question": "Quando nasceram os computadores atuais?"
+            },
+            {
+              "id": "727df9c010244019ab3a8b07a85d94fc",
+              "answers": [
+                {
+                  "text": "A Marinha dos Estados Unidos",
+                  "answer_start": 525
+                }
+              ],
+              "question": "Quem criou o Mark I?"
+            },
+            {
+              "id": "0eb400da4b774b6d9eb90c7469535a5a",
+              "answers": [
+                {
+                  "text": "calculador analítico de Babbage",
+                  "answer_start": 690
+                }
+              ],
+              "question": "Em que foi baseado o Mark I?"
+            },
+            {
+              "id": "bbca4bfb0a98484e87709baa4b0105be",
+              "answers": [
+                {
+                  "text": "três",
+                  "answer_start": 818
+                }
+              ],
+              "question": "Em quantos segundos o Mark I conseguia multiplicar dois números de dez dígitos? "
+            },
+            {
+              "id": "bcebb3e0214941ef80ac9c6dc394229d",
+              "answers": [
+                {
+                  "text": "Eletronic Numeric Integrator And Calculator",
+                  "answer_start": 1045
+                }
+              ],
+              "question": "Qual foi o primeiro computador a válvulas?"
+            },
+            {
+              "id": "bad977e5c7cc4d6da4a7e55cba8a598a",
+              "answers": [
+                {
+                  "text": "calcular trajetórias balísticas",
+                  "answer_start": 1178
+                }
+              ],
+              "question": "Para que servia o ENIAC?"
+            },
+            {
+              "id": "bb9ce6fcdda2466ca777711c04188028",
+              "answers": [
+                {
+                  "text": "final da guerra",
+                  "answer_start": 1271
+                }
+              ],
+              "question": "Até quando o ENIAC foi mantido em segredo?"
+            }
+          ]
+        },
+        {
+          "context": "Mesmo que a tecnologia utilizada nos computadores digitais tenha mudado dramaticamente desde os primeiros computadores da década de 1940, quase todos os computadores atuais ainda utilizam a arquitetura de von Neumann proposta por John von Neumann. Seguindo a arquitetura, os computadores possuem quatro seções principais, a unidade lógica e aritmética, a unidade de controle, a memória e os dispositivos de entrada e saída. Essas partes são interconectadas por barramentos. A unidade lógica e aritmética, a unidade de controle, os registradores e a parte básica de entrada e saída são conhecidos como a CPU. Alguns computadores maiores diferem do modelo acima em um aspecto principal - eles têm múltiplas CPUs trabalhando simultaneamente. Adicionalmente, poucos computadores, utilizados principalmente para pesquisa e computação científica, têm diferenças significativas do modelo acima, mas eles não tem grande aplicação comercial.",
+          "qas": [
+            {
+              "id": "665136ecffb849c5b0491add66c920ca",
+              "answers": [
+                {
+                  "text": "1940",
+                  "answer_start": 132
+                }
+              ],
+              "question": "De quando eram os primeiros computadores?"
+            },
+            {
+              "id": "210b3fcad3934c3490559ce555e26dcf",
+              "answers": [
+                {
+                  "text": "John von Neumann",
+                  "answer_start": 230
+                }
+              ],
+              "question": "Por quem foi proposta a arquitetura de von Neumann?"
+            },
+            {
+              "id": "c7f7e4802aa542b191565b82fe0fbd94",
+              "answers": [
+                {
+                  "text": "quatro",
+                  "answer_start": 296
+                }
+              ],
+              "question": "Quantas sessões principais o computador possui?"
+            },
+            {
+              "id": "f3af9f8da73a4080bfc09b994b5f6518",
+              "answers": [
+                {
+                  "text": "a unidade lógica e aritmética, a unidade de controle, a memória e os dispositivos de entrada e saída",
+                  "answer_start": 322
+                }
+              ],
+              "question": "Quais são os principais setores do computador?"
+            },
+            {
+              "id": "c726073eee924addae48bde0d5deb0e1",
+              "answers": [
+                {
+                  "text": "barramentos",
+                  "answer_start": 461
+                }
+              ],
+              "question": "O que interconecta os setores do computador?"
+            },
+            {
+              "id": "db2a4c7266bf44d6ab07d90227c1312b",
+              "answers": [
+                {
+                  "text": "A unidade lógica e aritmética, a unidade de controle, os registradores e a parte básica de entrada e saída",
+                  "answer_start": 474
+                }
+              ],
+              "question": "Quais são os componentes da CPU?"
+            }
+          ]
+        },
+        {
+          "context": "O processador (ou CPU) é uma das partes principais do hardware do computador e é responsável pelos cálculos, execução de tarefas e processamento de dados. A velocidade com que o computador executa as tarefas ou processa dados está diretamente ligada à velocidade do processador. As primeiras CPUs eram constituídas de vários componentes separados, mas desde meados da década de 1970 as CPUs vêm sendo manufaturadas em um único circuito integrado, sendo então chamadas microprocessadores. A unidade lógica e aritmética (ULA) é a unidade central do processador, que realmente executa as operações aritméticas e lógicas entre dois números. Seus parâmetros incluem, além dos números operandos, um resultado, um comando da unidade de controle, e o estado do comando após a operação. O conjunto de operações aritméticas de uma ULA pode ser limitado a adição e subtração, mas também pode incluir multiplicação, divisão, funções trigonométricas e raízes quadradas. Algumas podem operar somente com números inteiros, enquanto outras suportam o uso de ponto flutuante para representar números reais (apesar de possuírem precisão limitada).",
+          "qas": [
+            {
+              "id": "1d746320923348268c07ffb59dff6a5f",
+              "answers": [
+                {
+                  "text": "cálculos, execução de tarefas e processamento de dados",
+                  "answer_start": 99
+                }
+              ],
+              "question": "Qual as tarefas do processador?"
+            },
+            {
+              "id": "d0b4d7d5901643719e812aab15d70068",
+              "answers": [
+                {
+                  "text": "de vários componentes separados",
+                  "answer_start": 315
+                }
+              ],
+              "question": "Como os primeiros processadores eram construídos?"
+            },
+            {
+              "id": "2dc3a794aae64b028153bd5652739949",
+              "answers": [
+                {
+                  "text": "meados da década de 1970",
+                  "answer_start": 358
+                }
+              ],
+              "question": "Desde quando os processadores vêm sendo construídos em um único circuito integrado?"
+            },
+            {
+              "id": "06cb438e08cf4a03bfd907115c827f47",
+              "answers": [
+                {
+                  "text": "unidade central do processador",
+                  "answer_start": 528
+                }
+              ],
+              "question": "O que é a unidade lógica e aritmética?"
+            },
+            {
+              "id": "098b659ca633459ca850d9666e7eeb68",
+              "answers": [
+                {
+                  "text": "executa as operações aritméticas e lógicas entre dois números",
+                  "answer_start": 574
+                }
+              ],
+              "question": "O que a unidade lógica e aritmética faz?"
+            },
+            {
+              "id": "e8504b304dfc47a096167d0f13f52774",
+              "answers": [
+                {
+                  "text": "um resultado, um comando da unidade de controle, e o estado do comando após a operação",
+                  "answer_start": 690
+                }
+              ],
+              "question": "Quais são os parâmetros da ULA?"
+            },
+            {
+              "id": "4d51ad2856a14f6c871884700a11b797",
+              "answers": [
+                {
+                  "text": "representar números reais",
+                  "answer_start": 1063
+                }
+              ],
+              "question": "Para que servem os pontos flutuantes?"
+            }
+          ]
+        },
+        {
+          "context": "A unidade de controle é a unidade do processador que armazena a posição de memória que contém a instrução corrente que o computador está executando, informando à ULA qual operação a executar, buscando a informação (da memória) que a ULA precisa para executá-la e transferindo o resultado de volta para o local apropriado da memória. Feito isto, a unidade de controle vai para a próxima instrução (tipicamente localizada na próxima posição da memória, a menos que a instrução seja uma instrução de desvio informando que a próxima instrução está em outra posição). A CPU também contém um conjunto restrito de células de memória chamadas registradores, que podem ser lidas e escritas muito mais rapidamente que em outros dispositivos de memória. São usadas frequentemente para evitar o acesso contínuo à memória principal cada vez que um dado é requisitado.",
+          "qas": [
+            {
+              "id": "7b22ca291aad4501b13716107b49e6f9",
+              "answers": [
+                {
+                  "text": "a posição de memória que contém a instrução corrente que o computador está executando",
+                  "answer_start": 62
+                }
+              ],
+              "question": "O que é armazenado na unidade de controle?"
+            },
+            {
+              "id": "3ef2535984e5427eb6b4ddae160fd4db",
+              "answers": [
+                {
+                  "text": "qual operação a executar",
+                  "answer_start": 166
+                }
+              ],
+              "question": "O que a unidade de controle informa à ULA?"
+            },
+            {
+              "id": "cb15aef2f647472c9b4f87e21b169e63",
+              "answers": [
+                {
+                  "text": "da memória",
+                  "answer_start": 215
+                }
+              ],
+              "question": "Onde a unidade de controle busca a informação que a ULA precisa?"
+            },
+            {
+              "id": "6d29de5b8a674d7685457daba539eb0b",
+              "answers": [
+                {
+                  "text": "próxima posição da memória",
+                  "answer_start": 423
+                }
+              ],
+              "question": "Onde geralmente fica a próxima instrução?"
+            },
+            {
+              "id": "725779fc9a0c49528abc303dc83752ff",
+              "answers": [
+                {
+                  "text": "registradores",
+                  "answer_start": 635
+                }
+              ],
+              "question": "Como é chamada a memória da CPU?"
+            },
+            {
+              "id": "c60406d80338483ea77d8beacbb854c8",
+              "answers": [
+                {
+                  "text": "evitar o acesso contínuo à memória principal",
+                  "answer_start": 774
+                }
+              ],
+              "question": "Para que servem os registradores?"
+            }
+          ]
+        },
+        {
+          "context": "A memória é um dispositivo que permite ao computador armazenar dados por certo tempo. Atualmente o termo é geralmente usado para definir as memórias voláteis, como a RAM, mas seu conceito primordial também aborda memórias não voláteis, como o disco rígido. Parte da memória do computador é feita no próprio processador; o resto é diluído em componentes como a memória RAM, memória cache, disco rígido e leitores de mídias removíveis, como disquete, CD e DVD. Nos computadores modernos, cada posição da memória é configurado para armazenar grupos de oito bits (chamado de um byte). Cada byte consegue representar 256 números diferentes; de 0 a 255 ou de -128 a +127. Para armazenar números maiores pode-se usar diversos bytes consecutivos (geralmente dois, quatro ou oito). Quando números negativos são armazenados, é utilizada a notação de complemento para dois. A memória do computador é normalmente dividida entre primária e secundária, havendo também pesquisadores que afirmam haver a memória \"terciária\"",
+          "qas": [
+            {
+              "id": "5f2b766f6db04fb6bf26e3eafd947a12",
+              "answers": [
+                {
+                  "text": "armazenar dados",
+                  "answer_start": 53
+                }
+              ],
+              "question": "Qual a utilidade da memória?"
+            },
+            {
+              "id": "be20d3d7f27e4d7c948345299183b132",
+              "answers": [
+                {
+                  "text": "no próprio processado",
+                  "answer_start": 296
+                }
+              ],
+              "question": "Onde é feita parte da memória do computador?"
+            },
+            {
+              "id": "1dae3fc8d01144af82a247679e1698e3",
+              "answers": [
+                {
+                  "text": "oito",
+                  "answer_start": 549
+                }
+              ],
+              "question": "Quantos bits as posições de memória nos computadores modernos armazena?"
+            },
+            {
+              "id": "992c12a7782a470ea48a1438c5ae7a0e",
+              "answers": [
+                {
+                  "text": "256",
+                  "answer_start": 612
+                }
+              ],
+              "question": "Quantos números um byte representa?"
+            },
+            {
+              "id": "01abaa15500d49c5bc0b370986aea86f",
+              "answers": [
+                {
+                  "text": "de 0 a 255 ou de -128 a +127",
+                  "answer_start": 636
+                }
+              ],
+              "question": "Quais números um byte representa?"
+            },
+            {
+              "id": "33c59ddc361a4288b6594f2152db7b9d",
+              "answers": [
+                {
+                  "text": " pode-se usar diversos bytes consecutivos",
+                  "answer_start": 696
+                }
+              ],
+              "question": "Como podemos armazenar números maiores na memória?"
+            },
+            {
+              "id": "ef1bc02f6bef4ae992b8a2fa9dbe1257",
+              "answers": [
+                {
+                  "text": "dois, quatro ou oito",
+                  "answer_start": 750
+                }
+              ],
+              "question": "Quantos bytes em sequência geralmente são utilizados para armazenar números maiores?"
+            },
+            {
+              "id": "34567128b8be4639ad4b6c43d8a26330",
+              "answers": [
+                {
+                  "text": "entre primária e secundária",
+                  "answer_start": 910
+                }
+              ],
+              "question": "Como é dividida a memória do computador?"
+            }
+          ]
+        },
+        {
+          "context": "Os dispositivos de entrada e saída (E/S) são periféricos usados para a interação homem-computador. Nos computadores pessoais modernos, dispositivos comuns de entrada incluem o mouse, o teclado, o digitalizador e a webcam. Dispositivos comuns de saída incluem a caixa de som, o monitor e a impressora. O que todos os dispositivos de entrada têm em comum é que eles precisam codificar (converter) a informação de algum tipo em dados que podem ser processados pelo sistema digital do computador. Dispositivos de saída por outro lado, descodificam os dados em informação que é entendida pelo usuário do computador. Neste sentido, um sistema de computadores digital é um exemplo de um sistema de processamento de dados. Processo este, que consiste basicamente em três fases: Entrada, Processamento e Saída. Entendemos por entrada todo o procedimento de alimentação de informações, que por sua vez serão processadas (fase de processamento) e após isso, são repassadas as respostas ao usuário (saída).",
+          "qas": [
+            {
+              "id": "d6bbaaa07cfe47d5b9eefba2d1efd40a",
+              "answers": [
+                {
+                  "text": "periféricos usados para a interação homem-computador",
+                  "answer_start": 45
+                }
+              ],
+              "question": "O que são dispositivos de entrada e saída?"
+            },
+            {
+              "id": "7506d37b1b824ad1a6d54208e9f24e1f",
+              "answers": [
+                {
+                  "text": "mouse, o teclado, o digitalizador e a webcam",
+                  "answer_start": 176
+                }
+              ],
+              "question": "Quais são os dispositivos de entrada mais comuns em computadores pessoais modernos?"
+            },
+            {
+              "id": "2feb66989611496eba5d6f50f4677af0",
+              "answers": [
+                {
+                  "text": "três",
+                  "answer_start": 758
+                }
+              ],
+              "question": "Quantas fases o processamento de dados de um sistema de computadores digital possui?"
+            }
+          ]
+        },
+        {
+          "context": "Para interligar todos esses dispositivos existe uma placa de suporte especial, a placa-mãe, que através de barramentos, fios e soquetes conecta todos os dispositivos. Sua função inclui também a conexão de placas auxiliares que subcontrolam os periféricos de entrada e saída, como a placa de som (conecta-se com a caixa de som), a placa de vídeo (conecta-se com o monitor), placa de rede (conecta-se com a LAN) e o fax-modem (conecta-se com a linha telefônica). Nota-se que o barramento entre os componentes não constitui uma conexão ponto a ponto; ele pode conectar logicamente diversos componentes utilizando o mesmo conjunto de fios. O barramento pode utilizar uma interface serial ou uma interface paralela. Outros equipamentos adicionais usados em conjunto com a placa-mãe são o dissipador, um pequeno ventilador para resfriar o processador, e a fonte de energia, responsável pela alimentação de energia de todos os componentes do computador.",
+          "qas": [
+            {
+              "id": "39b55469ac19414db4eaf98c9df2fdce",
+              "answers": [
+                {
+                  "text": "através de barramentos, fios e soquetes",
+                  "answer_start": 96
+                }
+              ],
+              "question": "Como os dispositivos da placa-mãe são conectados?"
+            },
+            {
+              "id": "fe67001b8d1445f8a32aa650807f395d",
+              "answers": [
+                {
+                  "text": "interface serial ou uma interface paralela",
+                  "answer_start": 667
+                }
+              ],
+              "question": "Quais tipos de interface o barramento pode utilizar?"
+            },
+            {
+              "id": "68a8bbf5e19f4178b35c730185c3011d",
+              "answers": [
+                {
+                  "text": "alimentação de energia de todos os componentes do computador",
+                  "answer_start": 885
+                }
+              ],
+              "question": "Para que serve a fonte de energia?"
+            }
+          ]
+        },
+        {
+          "context": "A principal característica dos computadores modernos, o que o distingue de outras máquinas, é que pode ser programado. Isto significa que uma lista de instruções pode ser armazenada na memória e executa posteriormente. As instruções executadas na ULA discutidas acima não são um rico conjunto de instruções como a linguagem humana. O computador tem apenas um limitado número de instruções bem definidas. Um exemplo típico de uma instrução existente na maioria dos computadores é \"copie o conteúdo da posição de memória 123 para a posição de memória 456\", \"adicione o conteúdo da posição de memória 510 ao conteúdo da posição 511 e coloque o resultado na posição 507\" e \"se o conteúdo da posição 012 é igual a 0, a próxima instrução está na posição 678\".",
+          "qas": [
+            {
+              "id": "7b4254642ce74207b4955122cbfeca30",
+              "answers": [
+                {
+                  "text": "pode ser programado",
+                  "answer_start": 98
+                }
+              ],
+              "question": "Qual a principal característica dos computadores de hoje em dia?"
+            },
+            {
+              "id": "754dfbcc661f4d718523580f52017950",
+              "answers": [
+                {
+                  "text": "pode ser programado",
+                  "answer_start": 98
+                }
+              ],
+              "question": "O que distingue o computador de outras máquinas?"
+            }
+          ]
+        },
+        {
+          "context": "Instruções são representadas no computador como números - o código para \"copiar\" poderia ser 007, por exemplo. O conjunto particular de instruções que um computador possui é conhecido como a linguagem de máquina do computador. Na prática, as pessoas não escrevem instruções diretamente na linguagem de máquina mas em uma linguagem de programação, que é posteriormente traduzida na linguagem de máquina através de programas especiais, como interpretadores e compiladores. Algumas linguagens de programação se aproximam bastante da linguagem de máquina, como o assembly (linguagem de baixo nível); por outro lado linguagens como o Prolog são baseadas em princípios abstratos e se distanciam bastante dos detalhes da operação da máquina (linguagens de alto nível). A execução das instruções é tal como ler um livro. Apesar da pessoa normalmente ler cada palavra e linha em sequência, é possível que algumas vezes ela volte para pontos anteriores do texto de interesse ou passe sessões não interessantes. Da mesma forma, um computador que segue a arquitetura de von Neumann executa cada instrução de forma sequencial, da maneira como foram armazenadas na memória. Mas, através de instruções especiais, o computador pode repetir instruções ou avançá-las até que alguma condição seja satisfeita. Isso é chamado controle do fluxo e é o que permite que o computador realize tarefas repetitivamente sem intervenção humana.",
+          "qas": [
+            {
+              "id": "01f4290b50cb406eb8ebc51106637734",
+              "answers": [
+                {
+                  "text": "como números",
+                  "answer_start": 43
+                }
+              ],
+              "question": "Como são representadas as instruções no computador?"
+            },
+            {
+              "id": "0862560f53a044ac92a41ebba517ac95",
+              "answers": [
+                {
+                  "text": "O conjunto particular de instruções que um computador possui",
+                  "answer_start": 111
+                }
+              ],
+              "question": "O que é linguagem de máquina?"
+            },
+            {
+              "id": "3726147cc69b4a3b98fe7a31fa4f961a",
+              "answers": [
+                {
+                  "text": "através de programas especiais",
+                  "answer_start": 402
+                }
+              ],
+              "question": "Como a linguagem de programação é traduzida para a linguagem de máquina?"
+            },
+            {
+              "id": "d36826bb9cbb40b7a47074cff2c2c014",
+              "answers": [
+                {
+                  "text": "assembly",
+                  "answer_start": 559
+                }
+              ],
+              "question": "Qual linguagem de programação é parecida com a linguagem de máquina?"
+            },
+            {
+              "id": "59ca719898f047158aead30e19e65d36",
+              "answers": [
+                {
+                  "text": "princípios abstratos",
+                  "answer_start": 652
+                }
+              ],
+              "question": "Em que o prolog é baseado?"
+            }
+          ]
+        },
+        {
+          "context": "Programas são simplesmente grandes listas de instruções para o computador executar, tais com tabelas de dados. Muitos programas de computador contêm milhões de instruções, e muitas destas instruções são executadas repetidamente. Um computador pessoal típico (no ano de 2003) podia executar cerca de dois a três bilhões de instruções por segundo. Os computadores não têm a sua extraordinária capacidade devido a um conjunto de instruções complexo. Apesar de existirem diferenças de projeto com CPU com um maior número de instruções e mais complexas, os computadores executam milhões de instruções simples combinadas, escritas por bons \"programadores\". Estas instruções combinadas são escritas para realizar tarefas comuns como, por exemplo, desenhar um ponto na tela. Tais instruções podem então ser utilizadas por outros programadores.",
+          "qas": [
+            {
+              "id": "e751f65638fc4f70acbea26a49ad5992",
+              "answers": [
+                {
+                  "text": "grandes listas de instruções",
+                  "answer_start": 27
+                }
+              ],
+              "question": "O que são programas?"
+            },
+            {
+              "id": "3fb67e37ecd849c0b5ac1f3537cf15d8",
+              "answers": [
+                {
+                  "text": "computador",
+                  "answer_start": 63
+                }
+              ],
+              "question": "Quem executa os programas?"
+            },
+            {
+              "id": "63a1241f10134c59a6f7d6f70f6e043a",
+              "answers": [
+                {
+                  "text": "milhões",
+                  "answer_start": 149
+                }
+              ],
+              "question": "Quantas instruções dos programas de computador possuem?"
+            },
+            {
+              "id": "6a647ffc816d4127915484a88b9274c1",
+              "answers": [
+                {
+                  "text": "repetidamente",
+                  "answer_start": 214
+                }
+              ],
+              "question": "Como as instruções geralmente são executadas?"
+            },
+            {
+              "id": "edfed360fe344f8b889c9f37226b5f4d",
+              "answers": [
+                {
+                  "text": "programadores",
+                  "answer_start": 635
+                }
+              ],
+              "question": "Quem escreve as instruções para o computador?"
+            },
+            {
+              "id": "21bf6139ef2f4ac7a03c57584a663f15",
+              "answers": [
+                {
+                  "text": "por outros programadores",
+                  "answer_start": 810
+                }
+              ],
+              "question": "Por quem as instruções escritas podem ser utilizadas?"
+            }
+          ]
+        },
+        {
+          "context": "Hoje em dia, muitos computadores aparentam executar vários programas ao mesmo tempo, o que é normalmente conhecido como multitarefa. Na realidade, a CPU executa as instruções de um programa por um curto período de tempo e, em seguida, troca para um outro programa e executa algumas de suas instruções. Isto cria a ilusão de vários programas sendo executados simultaneamente através do compartilhamento do tempo da CPU entre os programas. Este compartilhamento de tempo é normalmente controlado pelo sistema operacional. Nos casos em que o computador possui dois núcleos de processamento, cada núcleo processa informações de um programa, diminuindo assim o tempo de processamento.",
+          "qas": [
+            {
+              "id": "77c2e4b820704cd9ad5d07ef366a5994",
+              "answers": [
+                {
+                  "text": "por um curto período de tempo e, em seguida, troca para um outro programa e executa algumas de suas instruções",
+                  "answer_start": 190
+                }
+              ],
+              "question": "Como a CPU executa as instruções de um programa?"
+            },
+            {
+              "id": "34d2f2b4719b4aa793e5118e9fe80832",
+              "answers": [
+                {
+                  "text": "a ilusão de vários programas sendo executados simultaneamente",
+                  "answer_start": 312
+                }
+              ],
+              "question": "O que o compartilhamento de tempo da CPU gera?"
+            }
+          ]
+        }
+      ],
+      "title": "COMPUTADOR"
+    }
+  ],
+  "version": "1.0"
+}

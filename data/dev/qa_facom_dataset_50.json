@@ -1,0 +1,726 @@
+{
+  "version": "1.0",
+  "data": [
+    {
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "question": "o que o acadêmico deve preencher?",
+              "id": "11d3a360b76f46ba9003142b527010ce",
+              "answers": [
+                {
+                  "text": "requisitos",
+                  "answer_start": 68
+                },
+                {
+                  "text": "requisitos",
+                  "answer_start": 68
+                },
+                {
+                  "text": "os requisitos",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "onde deve constar o conteúdo a ser avaliado?",
+              "id": "c433197a1fad4e65962072dcb3ef33ca",
+              "answers": [
+                {
+                  "text": "plano de ensino",
+                  "answer_start": 703
+                },
+                {
+                  "text": "plano de ensino da disciplina",
+                  "answer_start": 703
+                },
+                {
+                  "text": "no plano de ensino da disciplina",
+                  "answer_start": 700
+                }
+              ]
+            },
+            {
+              "question": "por quantos docentes deve ser composta a banca examinadora?",
+              "id": "612b2f9c46cd4ec8b2950d3e942b7ffe",
+              "answers": [
+                {
+                  "text": "três",
+                  "answer_start": 394
+                },
+                {
+                  "text": "de três",
+                  "answer_start": 391
+                },
+                {
+                  "text": "três docentes",
+                  "answer_start": 394
+                },
+                {
+                  "text": "de três docentes",
+                  "answer_start": 391
+                }
+              ]
+            }
+          ],
+          "context": "caberá ao coordenador de curso verificar se o acadêmico preenche os requisitos; e verificar se o acadêmico está matriculado nas disciplinas objeto da dispensa. atendidas as condições previstas, o coordenador de curso deverá solicitar à direção da unidade de administração acadêmica responsável pela disciplina a nomeação de uma banca examinadora de reconhecida competência na área, composta de três docentes. a banca examinadora deverá definir e divulgar os critérios e a sistemática de avaliação e fazer constar, em ata, o encaminhamento e os resultados do processo avaliativo. o professor responsável pela disciplina deverá fazer parte da banca examinadora e o conteúdo a ser avaliado deve constar no plano de ensino da disciplina."
+        },
+        {
+          "qas": [
+            {
+              "question": "qual a nota mínima para o acadêmico que requisitou abreviação de curso ser aprovado?",
+              "id": "95c7ecf942fb4af28a05eb425e6dbc51",
+              "answers": [
+                {
+                  "text": "nove",
+                  "answer_start": 263
+                },
+                {
+                  "text": "nove",
+                  "answer_start": 263
+                },
+                {
+                  "text": "nove (9,0)",
+                  "answer_start": 263
+                },
+                {
+                  "text": "9,0",
+                  "answer_start": 269
+                }
+              ]
+            },
+            {
+              "question": "qual o limite de dias para o acadêmico que requisitou abreviação de curso ser informado do conteúdo?",
+              "id": "9336679ab6024bd9805846fcd977b4a0",
+              "answers": [
+                {
+                  "text": "dez",
+                  "answer_start": 336
+                },
+                {
+                  "text": "até dez",
+                  "answer_start": 332
+                },
+                {
+                  "text": "10",
+                  "answer_start": 341
+                }
+              ]
+            },
+            {
+              "question": "quem deve fazer o registro no siscad?",
+              "id": "666893fc4e644186b42a6b5d34227c2c",
+              "answers": [
+                {
+                  "text": "coordenação do curso",
+                  "answer_start": 769
+                },
+                {
+                  "text": "coordenação do curso do acadêmico",
+                  "answer_start": 769
+                },
+                {
+                  "text": "deverá ser feito pela coordenação do curso do acadêmico",
+                  "answer_start": 747
+                }
+              ]
+            },
+            {
+              "question": "quem dá a nota final ao acadêmico?",
+              "id": "84b0eef8870841c5bf638cd3e54b0284",
+              "answers": [
+                {
+                  "text": "banca",
+                  "answer_start": 0
+                },
+                {
+                  "text": "banca examinadora",
+                  "answer_start": 9
+                },
+                {
+                  "text": "caberá à banca examinadora atribuir ao acadêmico uma nota final de zero vírgula zero (0,0) a dez vírgula zero (10,0)",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "caberá à banca examinadora atribuir ao acadêmico uma nota final de zero vírgula zero (0,0) a dez vírgula zero (10,0), resultante da média aritmética das notas emitidas pelos membros da banca; e considerar aprovado aquele acadêmico que obtiver a nota mínima final nove (9,0). caberá ao coordenador de curso informar ao acadêmico, em até dez (10) dias úteis antes da data prevista para avaliação, o conteúdo e as formas de avaliação com os respectivos pesos, além de data(s), horário(s) e local(is) de realização do(s) exame(s). se aprovado na avaliação, o acadêmico obterá dispensa de cursar a disciplina, sendo registrada no seu histórico escolar a nota conferida pela banca examinadora e a carga horária total da disciplina. o registro no siscad deverá ser feito pela coordenação do curso do acadêmico."
+        },
+        {
+          "qas": [
+            {
+              "question": "até quando o acadêmico deverá frequentar regularmente as disciplinas após solicitar dispensa por abreviação de curso?",
+              "id": "ca51b6877ab44121afa9e7bbb77dc9fa",
+              "answers": [
+                {
+                  "text": "conclusão do processo de abreviação",
+                  "answer_start": 596
+                },
+                {
+                  "text": "conclusão do processo de abreviação",
+                  "answer_start": 596
+                },
+                {
+                  "text": "até a conclusão do processo de abreviação",
+                  "answer_start": 590
+                }
+              ]
+            },
+            {
+              "question": "por quem o pedido de avaliação é analisado?",
+              "id": "91c0e15bb1004019ba980525ee59c67f",
+              "answers": [
+                {
+                  "text": "coordenador de curso",
+                  "answer_start": 675
+                },
+                {
+                  "text": "coordenador de curso do acadêmico",
+                  "answer_start": 675
+                },
+                {
+                  "text": "pelo coordenador de curso",
+                  "answer_start": 670
+                },
+                {
+                  "text": "pelo coordenador de curso do acadêmico",
+                  "answer_start": 670
+                },
+                {
+                  "text": "será analisado pelo coordenador de curso do acadêmico",
+                  "answer_start": 655
+                },
+                {
+                  "text": "o pedido de avaliação será analisado pelo coordenador de curso do acadêmico",
+                  "answer_start": 633
+                }
+              ]
+            },
+            {
+              "question": "quais as condições para solicitar dispensa para fins de abreviação de curso?",
+              "id": "cbf14ad3cfbb434ea22de33bd4166ceb",
+              "answers": [
+                {
+                  "text": "estiver regularmente matriculado no último período letivo do curso na ufms; não tiver sido reprovado nas disciplinas em que quer ser avaliado; não tiver registro de trancamento de curso, exceto por motivo de saúde; não tiver ausência de matrícula em qualquer período do curso; tiver índice de rendimento acadêmico (ira) igual ou superior a 9,0 (nove inteiros); e não tiver sofrido sanção disciplinar",
+                  "answer_start": 85
+                },
+                {
+                  "text": "o acadêmico que estiver regularmente matriculado no último período letivo do curso na ufms; não tiver sido reprovado nas disciplinas em que quer ser avaliado; não tiver registro de trancamento de curso, exceto por motivo de saúde; não tiver ausência de matrícula em qualquer período do curso; tiver índice de rendimento acadêmico (ira) igual ou superior a 9,0 (nove inteiros); e não tiver sofrido sanção disciplinar",
+                  "answer_start": 69
+                },
+                {
+                  "text": "somente poderá solicitar a dispensa para fins de abreviação de curso o acadêmico que estiver regularmente matriculado no último período letivo do curso na ufms; não tiver sido reprovado nas disciplinas em que quer ser avaliado; não tiver registro de trancamento de curso, exceto por motivo de saúde; não tiver ausência de matrícula em qualquer período do curso; tiver índice de rendimento acadêmico (ira) igual ou superior a 9,0 (nove inteiros); e não tiver sofrido sanção disciplinar",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "somente poderá solicitar a dispensa para fins de abreviação de curso o acadêmico que estiver regularmente matriculado no último período letivo do curso na ufms; não tiver sido reprovado nas disciplinas em que quer ser avaliado; não tiver registro de trancamento de curso, exceto por motivo de saúde; não tiver ausência de matrícula em qualquer período do curso; tiver índice de rendimento acadêmico (ira) igual ou superior a 9,0 (nove inteiros); e não tiver sofrido sanção disciplinar. o acadêmico deverá frequentar regularmente as disciplinas, inclusive realizando as avaliações regulares até a conclusão do processo de abreviação. o pedido de avaliação será analisado pelo coordenador de curso do acadêmico."
+        },
+        {
+          "qas": [
+            {
+              "question": "na solicitação de abreviação de curso, quais disciplinas o acadêmico não pode solicitar dispensa?",
+              "id": "cb065afcfc0a41b2a4bca0e771538c25",
+              "answers": [
+                {
+                  "text": "estágio obrigatório, trabalho de conclusão de curso e atividades complementares",
+                  "answer_start": 458
+                },
+                {
+                  "text": "estágio obrigatório, trabalho de conclusão de curso e atividades complementares; bem como às disciplinas com conteúdos práticos",
+                  "answer_start": 458
+                },
+                {
+                  "text": "disciplinas de estágio obrigatório, trabalho de conclusão de curso e atividades complementares; bem como às disciplinas com conteúdos práticos",
+                  "answer_start": 443
+                },
+                {
+                  "text": "disciplinas de estágio obrigatório, trabalho de conclusão de curso e atividades complementares; bem como às disciplinas com conteúdos práticos",
+                  "answer_start": 443
+                }
+              ]
+            },
+            {
+              "question": "o que o acadêmico pode solicitar caso este apresente extraordinário rendimento acadêmico?",
+              "id": "c8ca5537da2349dcbbaa9fd361adb3d7",
+              "answers": [
+                {
+                  "text": "dispensa de cursar disciplinas",
+                  "answer_start": 35
+                },
+                {
+                  "text": "dispensa de cursar disciplinas que integram a matriz curricular",
+                  "answer_start": 35
+                },
+                {
+                  "text": "dispensa de cursar disciplinas que integram a matriz curricular de seu curso",
+                  "answer_start": 35
+                },
+                {
+                  "text": "dispensa de cursar disciplinas que integram a matriz curricular de seu curso, com justificativa de extraordinário rendimento acadêmico",
+                  "answer_start": 35
+                },
+                {
+                  "text": "dispensa de cursar disciplinas que integram a matriz curricular de seu curso, com justificativa de extraordinário rendimento acadêmico, mediante avaliação específica aplicada por banca examinadora",
+                  "answer_start": 35
+                },
+                {
+                  "text": "dispensa de cursar disciplinas que integram a matriz curricular de seu curso, com justificativa de extraordinário rendimento acadêmico, mediante avaliação específica aplicada por banca examinadora, para abreviação da duração do curso de graduação para um tempo inferior ao mínimo previsto no projeto pedagógico do curso, de acordo com a legislação em vigor",
+                  "answer_start": 35
+                },
+                {
+                  "text": "é facultado ao acadêmico solicitar dispensa de cursar disciplinas",
+                  "answer_start": 0
+                },
+                {
+                  "text": "é facultado ao acadêmico solicitar dispensa de cursar disciplinas que integram a matriz curricular",
+                  "answer_start": 0
+                },
+                {
+                  "text": "é facultado ao acadêmico solicitar dispensa de cursar disciplinas que integram a matriz curricular de seu curso",
+                  "answer_start": 0
+                },
+                {
+                  "text": "é facultado ao acadêmico solicitar dispensa de cursar disciplinas que integram a matriz curricular de seu curso, com justificativa de extraordinário rendimento acadêmico",
+                  "answer_start": 0
+                },
+                {
+                  "text": "é facultado ao acadêmico solicitar dispensa de cursar disciplinas que integram a matriz curricular de seu curso, com justificativa de extraordinário rendimento acadêmico, mediante avaliação específica aplicada por banca examinadora",
+                  "answer_start": 0
+                },
+                {
+                  "text": "é facultado ao acadêmico solicitar dispensa de cursar disciplinas que integram a matriz curricular de seu curso, com justificativa de extraordinário rendimento acadêmico, mediante avaliação específica aplicada por banca examinadora, para abreviação da duração do curso de graduação para um tempo inferior ao mínimo previsto no projeto pedagógico do curso, de acordo com a legislação em vigor",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "onde o acadêmico deve requisitar dispensa por extraordinário rendimento acadêmico?",
+              "id": "7f1b8749808f4d0e976ee31126bf50ce",
+              "answers": [
+                {
+                  "text": "secretaria acadêmica",
+                  "answer_start": 752
+                },
+                {
+                  "text": "secretaria acadêmica da unidade da administração setorial de oferecimento do curso",
+                  "answer_start": 752
+                },
+                {
+                  "text": "na secretaria acadêmica",
+                  "answer_start": 749
+                },
+                {
+                  "text": "na secretaria acadêmica da unidade da administração setorial de oferecimento do curso",
+                  "answer_start": 749
+                }
+              ]
+            }
+          ],
+          "context": "é facultado ao acadêmico solicitar dispensa de cursar disciplinas que integram a matriz curricular de seu curso, com justificativa de extraordinário rendimento acadêmico, mediante avaliação específica aplicada por banca examinadora, para abreviação da duração do curso de graduação para um tempo inferior ao mínimo previsto no projeto pedagógico do curso, de acordo com a legislação em vigor. o disposto no caput deste artigo não se aplica às disciplinas de estágio obrigatório, trabalho de conclusão de curso e atividades complementares; bem como às disciplinas com conteúdos práticos. o pedido será formalizado pelo acadêmico, acompanhado de justificativa, uma única vez em cada disciplina, nos prazos previstos pelo calendário acadêmico da ufms, na secretaria acadêmica da unidade da administração setorial de oferecimento do curso."
+        }
+      ],
+      "title": "abreviação de curso"
+    },
+    {
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "question": "como deve ser distribuidas as disciplinas que o acadêmico está apto a cursar?",
+              "id": "bb7dc667337b4cf2af309d60a1f1ecb2",
+              "answers": [
+                {
+                  "text": "disciplinas alocadas no semestre em que o acadêmico está posicionado; disciplinas de semestres anteriores devedoras ao semestre de posicionamento; disciplinas de semestres posteriores ao semestre de posicionamento; e disciplinas optativas do curso",
+                  "answer_start": 471
+                },
+                {
+                  "text": "disciplinas alocadas no semestre em que o acadêmico está posicionado; disciplinas de semestres anteriores devedoras ao semestre de posicionamento; disciplinas de semestres posteriores ao semestre de posicionamento; e disciplinas optativas do curso",
+                  "answer_start": 471
+                },
+                {
+                  "text": "distribuídas da seguinte maneira: disciplinas alocadas no semestre em que o acadêmico está posicionado; disciplinas de semestres anteriores devedoras ao semestre de posicionamento; disciplinas de semestres posteriores ao semestre de posicionamento; e disciplinas optativas do curso",
+                  "answer_start": 437
+                }
+              ]
+            },
+            {
+              "question": "o que deve constar no formulário de inscrição?",
+              "id": "3101e1367c244d57b081351fa8466297",
+              "answers": [
+                {
+                  "text": "as disciplinas que o acadêmico está apto a cursar",
+                  "answer_start": 386
+                },
+                {
+                  "text": "somente as disciplinas que o acadêmico está apto a cursar",
+                  "answer_start": 378
+                },
+                {
+                  "text": "no formulário de inscrição constarão somente as disciplinas que o acadêmico está apto a cursar",
+                  "answer_start": 341
+                }
+              ]
+            },
+            {
+              "question": "o que o acadêmico deve preencher na fase de inscrição?",
+              "id": "f5675954f12c4b6e9df34570d70bc215",
+              "answers": [
+                {
+                  "text": "formulário eletrônico",
+                  "answer_start": 262
+                },
+                {
+                  "text": "o acadêmico deverá preencher formulário eletrônico",
+                  "answer_start": 233
+                },
+                {
+                  "text": "o acadêmico deverá preencher formulário eletrônico, assinalando as disciplinas que tem interesse em cursar. no formulário de inscrição constarão somente as disciplinas que o acadêmico está apto a cursar",
+                  "answer_start": 233
+                }
+              ]
+            },
+            {
+              "question": "quais incisos os acadêmicos deve cumprir?",
+              "id": "ad7b1014f19b48d2a3a25b745b437b94",
+              "answers": [
+                {
+                  "text": "i e ii",
+                  "answer_start": 157
+                },
+                {
+                  "text": "incisos i e ii",
+                  "answer_start": 149
+                },
+                {
+                  "text": "é compulsório aos acadêmicos o cumprimento dos incisos i e ii",
+                  "answer_start": 102
+                }
+              ]
+            },
+            {
+              "question": "quais são as fases da renovação de matrícula?",
+              "id": "c31fd29b500e4fedbbd80604f4b91d05",
+              "answers": [
+                {
+                  "text": "inscrição; confirmação; e validação",
+                  "answer_start": 65
+                },
+                {
+                  "text": "inscrição; confirmação; e validação",
+                  "answer_start": 65
+                },
+                {
+                  "text": "a renovação de matrícula é composta por três fases consecutivas: inscrição; confirmação; e validação",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "a renovação de matrícula é composta por três fases consecutivas: inscrição; confirmação; e validação. é compulsório aos acadêmicos o cumprimento dos incisos i e ii, para fins de manutenção do vínculo acadêmico. na fase de inscrição, o acadêmico deverá preencher formulário eletrônico, assinalando as disciplinas que tem interesse em cursar. no formulário de inscrição constarão somente as disciplinas que o acadêmico está apto a cursar, distribuídas da seguinte maneira: disciplinas alocadas no semestre em que o acadêmico está posicionado; disciplinas de semestres anteriores devedoras ao semestre de posicionamento; disciplinas de semestres posteriores ao semestre de posicionamento; e disciplinas optativas do curso. a critério da pró-reitoria de ensino de graduação, a inscrição eletrônica poderá ser substituída por inscrição manual, atendidos os termos desta resolução."
+        },
+        {
+          "qas": [
+            {
+              "question": "a partir de quando o semestre de posicionamento é contado?",
+              "id": "ec08ceed036f46c5928ec6b2b2b09057",
+              "answers": [
+                {
+                  "text": "ingresso na ufms",
+                  "answer_start": 68
+                },
+                {
+                  "text": "do seu ingresso na ufms",
+                  "answer_start": 61
+                },
+                {
+                  "text": "o semestre de posicionamento do acadêmico é contado a partir do seu ingresso na ufms",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "qual ordem a distribuição das vagas disponíveis deve seguir?",
+              "id": "c9aee60eebfc450eac6b7d5863ce46a9",
+              "answers": [
+                {
+                  "text": "disciplinas do semestre de posicionamento do acadêmico; disciplinas de semestres anteriores ao de posicionamento do acadêmico; disciplinas de semestres posteriores ao semestre de posicionamento do acadêmico; e disciplinas optativas",
+                  "answer_start": 377
+                },
+                {
+                  "text": "disciplinas do semestre de posicionamento do acadêmico; disciplinas de semestres anteriores ao de posicionamento do acadêmico; disciplinas de semestres posteriores ao semestre de posicionamento do acadêmico; e disciplinas optativas",
+                  "answer_start": 377
+                },
+                {
+                  "text": "disciplinas do semestre de posicionamento do acadêmico; disciplinas de semestres anteriores ao de posicionamento do acadêmico; disciplinas de semestres posteriores ao semestre de posicionamento do acadêmico; e disciplinas optativas",
+                  "answer_start": 377
+                }
+              ]
+            },
+            {
+              "question": "quem define o semestre de posicionamento?",
+              "id": "f01752fd502c4371b20bcfcee79d9e50",
+              "answers": [
+                {
+                  "text": "coordenador do curso",
+                  "answer_start": 214
+                },
+                {
+                  "text": "pelo coordenador do curso",
+                  "answer_start": 209
+                },
+                {
+                  "text": "o semestre de posicionamento deve ser definido pelo coordenador do curso",
+                  "answer_start": 162
+                }
+              ]
+            }
+          ],
+          "context": "o semestre de posicionamento do acadêmico é contado a partir do seu ingresso na ufms, subtraindo-se a quantidade de semestres em que a matrícula esteve trancada. o semestre de posicionamento deve ser definido pelo coordenador do curso, nas situações que exigirem a elaboração de plano de estudo. a distribuição das vagas disponíveis nas disciplinas obedecerá à seguinte ordem: disciplinas do semestre de posicionamento do acadêmico; disciplinas de semestres anteriores ao de posicionamento do acadêmico; disciplinas de semestres posteriores ao semestre de posicionamento do acadêmico; e disciplinas optativas. ficam garantidas aos acadêmicos vagas nas disciplinas alocadas no seu semestre de posicionamento, exceto as que tiverem pré-requisitos."
+        }
+      ],
+      "title": "normas para renovação de matrícula"
+    },
+    {
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "question": "a aprovação nas disciplinas depende do que?",
+              "id": "cf7cddba63154cdebada01476a2f1df4",
+              "answers": [
+                {
+                  "text": "frequência e da média de aproveitamento expressa em nota",
+                  "answer_start": 41
+                },
+                {
+                  "text": "da frequência e da média de aproveitamento expressa em nota",
+                  "answer_start": 38
+                },
+                {
+                  "text": "a aprovação nas disciplinas dependerá da frequência e da média de aproveitamento expressa em nota",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "a aprovação nas disciplinas dependerá da frequência e da média de aproveitamento expressa em nota. o aproveitamento da aprendizagem será verificado, em cada disciplina, contemplando o rendimento do acadêmico durante o período letivo, face aos objetivos constantes no plano de ensino. a verificação do rendimento acadêmico será realizada por meio de instrumentos de avaliação. o número e a natureza dos instrumentos e das avaliações acadêmicas deverão ser os mesmos para todos os acadêmicos matriculados na turma. em cada disciplina a programação do plano de ensino deverá prever, no mínimo, duas avaliações acadêmicas obrigatórias e uma avaliação optativa. as notas das avaliações acadêmicas que puderem ser substituídas por nota de avaliação optativa devem ser especificadas no plano de ensino. a carga horária destinada à realização das avaliações optativas não deverá ser computada na carga horária da disciplina. as notas de todas as avaliações acadêmicas que comporão a média de aproveitamento deverão ser divulgadas, no mínimo, três dias antes da avaliação optativa."
+        },
+        {
+          "qas": [
+            {
+              "question": "qual o número mínimo de alunos para se ter uma disciplina regular?",
+              "id": "2badf544caa347d38244e7ee71cff453",
+              "answers": [
+                {
+                  "text": "no mínimo, dez acadêmicos",
+                  "answer_start": 1166
+                },
+                {
+                  "text": "cada turma deverá ter, no mínimo, dez acadêmicos, podendo o colegiado de curso, excepcionalmente, autorizar turmas com número menor",
+                  "answer_start": 1143
+                },
+                {
+                  "text": "nos períodos letivos regulares, cada turma deverá ter, no mínimo, dez acadêmicos, podendo o colegiado de curso, excepcionalmente, autorizar turmas com número menor",
+                  "answer_start": 1111
+                }
+              ]
+            }
+          ],
+          "context": "a disciplina é identificada por seu nome, código, ementa, carga horária, pré- requisito, lotação e bibliografia. cada turma ofertada da disciplina deverá ter um plano de ensino contendo, obrigatoriamente: identificação; objetivos; ementa; programa; procedimentos de ensino; recursos; avaliação, com especificação dos instrumentos e das avaliações acadêmicas, avaliação optativa, as respectivas datas de aplicação e a fórmula da média de aproveitamento; atividade pedagógica de recuperação de desempenho em avaliações; bibliografia; e assinatura do professor. os planos de ensino das disciplinas deverão ser aprovados até o primeiro dia do período letivo, pelo colegiado de curso, ou, no caso de disciplinas ofertadas a múltiplos cursos, deverão ser aprovados pelo conselho da unidade da administração setorial que oferece as respectivas disciplinas, ouvidos os colegiados dos cursos envolvidos. a abertura do siscad para lançamentos, pelo professor, somente dar-se-á após liberação do plano de ensino no sistema . o professor da disciplina deverá apresentar o plano de ensino, aos acadêmicos, na primeira aula. nos períodos letivos regulares, cada turma deverá ter, no mínimo, dez acadêmicos, podendo o colegiado de curso, excepcionalmente, autorizar turmas com número menor."
+        },
+        {
+          "qas": [
+            {
+              "question": "quem é responsável pela verificação do cumprimento das atividades complementares?",
+              "id": "1afb90f9b7424d268d7685d5fdc776c4",
+              "answers": [
+                {
+                  "text": "de um ou mais professores",
+                  "answer_start": 699
+                },
+                {
+                  "text": "de um ou mais professores, por determinação do diretor da unidade da administração setorial",
+                  "answer_start": 699
+                },
+                {
+                  "text": "a responsabilidade pela verificação do cumprimento das atividades complementares será de um ou mais professores, por determinação do diretor da unidade da administração setorial",
+                  "answer_start": 613
+                }
+              ]
+            }
+          ],
+          "context": "a tipologia das atividades complementares deverá ser definida em regulamento específico do curso e poderá incluir: disciplinas cursadas como enriquecimento curricular; estágio não obrigatório; iniciação científica; monitoria de ensino; monitoria de extensão; monografia, quando não estiver previsto na matriz curricular do projeto pedagógico; participação em palestras, congressos, encontros, seminários, fóruns, viagens de estudos, visitas técnicas, oficinas, projetos de ensino de graduação (pegs), cursos, programa de educação tutorial (pet) e programa institucional de bolsas de iniciação à docência (pibid). a responsabilidade pela verificação do cumprimento das atividades complementares será de um ou mais professores, por determinação do diretor da unidade da administração setorial."
+        },
+        {
+          "qas": [
+            {
+              "question": "qual a frequência mínima exigida para aprovação em uma disciplina?",
+              "id": "cdf7c64e4a3a46a09bc152a1646d66a9",
+              "answers": [
+                {
+                  "text": "setenta e cinco por cento",
+                  "answer_start": 412
+                },
+                {
+                  "text": "o acadêmico deverá obter frequência igual ou superior a setenta e cinco por cento e média de aproveitamento (ma) igual ou superior a 6,0 (seis vírgula zero)",
+                  "answer_start": 356
+                },
+                {
+                  "text": "para ser aprovado na disciplina, o acadêmico deverá obter frequência igual ou superior a setenta e cinco por cento e média de aproveitamento (ma) igual ou superior a 6,0 (seis vírgula zero)",
+                  "answer_start": 323
+                }
+              ]
+            }
+          ],
+          "context": "as notas e as frequências deverão ser lançadas no sistema acadêmico nos prazos definidos no calendário acadêmico. para cada disciplina cursada, o professor deverá consignar ao acadêmico uma média de aproveitamento (ma), na forma de graus numéricos com uma casa decimal de 0,0 (zero vírgula zero) a 10,0 (dez vírgula zero). para ser aprovado na disciplina, o acadêmico deverá obter frequência igual ou superior a setenta e cinco por cento e média de aproveitamento (ma) igual ou superior a 6,0 (seis vírgula zero). caberá ao colegiado de curso estabelecer medidas pedagógicas para correção e prevenção de altos índices de reprovação e baixos rendimentos em avaliações. será atribuída nota 0,0 (zero vírgula zero), para cada evento, ao acadêmico que não realizar os trabalhos acadêmicos ou não comparecer às avaliações. se no prazo de dez dias úteis após o término do período letivo o acadêmico não retirar as avaliações acadêmicas, o docente poderá descartá-las."
+        },
+        {
+          "qas": [
+            {
+              "question": "como o acadêmico solicita revisão de avaliação de disciplina?",
+              "id": "8150ec1777054fc8838a52c1f2223290",
+              "answers": [
+                {
+                  "text": "dirigindo- se ao professor, em primeira instância, por meio de requerimento protocolizado na secretaria acadêmica da unidade da administração setorial em que o curso é oferecido, no prazo de três dias úteis após a divulgação do resultado",
+                  "answer_start": 65
+                },
+                {
+                  "text": "o acadêmico terá direito à revisão de suas avaliações acadêmicas dirigindo-se ao professor, em primeira instância, por meio de requerimento protocolizado na secretaria acadêmica da unidade da administração setorial em que o curso é oferecido",
+                  "answer_start": 0
+                },
+                {
+                  "text": "o acadêmico terá direito à revisão de suas avaliações acadêmicas dirigindo-se ao professor, em primeira instância, por meio de requerimento protocolizado na secretaria acadêmica da unidade da administração setorial em que o curso é oferecido, no prazo de três dias úteis após a divulgação do resultado",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "o acadêmico terá direito à revisão de suas avaliações acadêmicas dirigindo-se ao professor, em primeira instância, por meio de requerimento protocolizado na secretaria acadêmica da unidade da administração setorial em que o curso é oferecido, no prazo de três dias úteis após a divulgação do resultado. o professor terá o prazo de dois dias úteis para manifestação escrita sobre o pedido. o acadêmico deverá apor seu ciente no documento de resposta, e receber uma cópia deste. o acadêmico poderá interpor recurso quanto ao resultado da revisão, no colegiado de curso, via secretaria acadêmica, no prazo de cinco dias úteis do seu ciente. o colegiado de curso deverá constituir comissão, composta por três docentes, preferencialmente da área, sendo vedada a inclusão do professor que corrigiu a avaliação acadêmica em questão. a comissão deverá analisar o pedido do acadêmico, consultar o professor, se necessário, e emitir parecer sobre o resultado da revisão, num prazo máximo de quinze dias a partir da publicação da resolução de constituição da comissão, e encaminhar para aprovação do colegiado de curso. o professor da disciplina será responsável pela alteração no siscad, em caso de modificação da nota resultante dos trabalhos da comissão de revisão."
+        },
+        {
+          "qas": [
+            {
+              "question": "como é organizada a estruta curricular para acadêmicos ingressantes com aproveitamento de crédito ou disciplinas?",
+              "id": "6ad8ea15044147118087cddcb8563df2",
+              "answers": [
+                {
+                  "text": "o coordenador de curso, havendo aproveitamento de estudos, deverá elaborar um plano de estudos para cada acadêmico",
+                  "answer_start": 725
+                },
+                {
+                  "text": "o coordenador de curso, havendo aproveitamento de estudos, deverá elaborar um plano de estudos para cada acadêmico, e a matrícula será realizada nas disciplinas previstas no respectivo plano",
+                  "answer_start": 725
+                },
+                {
+                  "text": "o coordenador de curso, havendo aproveitamento de estudos, deverá elaborar um plano de estudos para cada acadêmico, e a matrícula será realizada nas disciplinas previstas no respectivo plano",
+                  "answer_start": 725
+                }
+              ]
+            }
+          ],
+          "context": "o candidato ingressante que for convocado para matrícula deverá providenciar a documentação prevista em edital e/ou legislação específica. o candidato poderá requerer sua matrícula por procuração. o candidato que não comparecer no prazo estabelecido em edital para matrícula, ou não apresentar a documentação exigida não terá sua matrícula efetivada. o acadêmico ingressante conforme os incisos i e vi do art. 18 será matriculado em todas as disciplinas previstas para o primeiro semestre do curso e sua matrícula somente poderá ser alterada se houver aproveitamento de disciplinas cursadas anteriormente, conforme plano de estudos elaborado pelo coordenador de curso. para as demais formas de ingresso previstas no art. 18, o coordenador de curso, havendo aproveitamento de estudos, deverá elaborar um plano de estudos para cada acadêmico, e a matrícula será realizada nas disciplinas previstas no respectivo plano. ao realizar a matrícula, o acadêmico se compromete a respeitar e cumprir as normas específicas, regimentais e estatutárias da ufms. compete ao acadêmico manter seus dados cadastrais atualizados, na secretaria acadêmica da unidade da administração setorial que oferece seu curso ou no siscad."
+        },
+        {
+          "qas": [
+            {
+              "question": "como o aluno deve solicitar a revisão de sua frequência em uma disciplina?",
+              "id": "147a388a4c644a3bb4cb7f164b051a69",
+              "answers": [
+                {
+                  "text": "mediante requerimento dirigido ao professor da disciplina",
+                  "answer_start": 644
+                },
+                {
+                  "text": "mediante requerimento dirigido ao professor da disciplina e protocolizado na secretaria acadêmica",
+                  "answer_start": 644
+                },
+                {
+                  "text": "mediante requerimento dirigido ao professor da disciplina e protocolizado na secretaria acadêmica, no prazo máximo de cinco dias úteis após a divulgação",
+                  "answer_start": 644
+                }
+              ]
+            }
+          ],
+          "context": "o controle e o registro de frequência às atividades acadêmicas serão da competência do professor responsável pela disciplina, e deverão ser realizados em cada aula. o abono de faltas obedecerá à legislação federal vigente. ao final de cada mês o professor responsável pela disciplina deverá divulgar para os acadêmicos o número de presenças às aulas efetivamente ministradas no período. quando houver ausência coletiva de acadêmicos matriculados na disciplina, no local e horário destinados à aula, as horas-aula serão registradas no sistema acadêmico com atribuição de falta aos acadêmicos. o acadêmico tem direito a recontagem da frequência, mediante requerimento dirigido ao professor da disciplina e protocolizado na secretaria acadêmica, no prazo máximo de cinco dias úteis após a divulgação. o resultado do pedido de recontagem de frequência deve ser arquivado na pasta do acadêmico, com o seu ciente. do resultado do pedido de recontagem de frequência não caberá recurso."
+        },
+        {
+          "qas": [
+            {
+              "question": "em quantas discplinas o acadêmico poderá inscrever-se durante o período letivo especial?",
+              "id": "cc0de43583864b86b70a9db14bebc2f1",
+              "answers": [
+                {
+                  "text": "três",
+                  "answer_start": 403
+                },
+                {
+                  "text": "até três",
+                  "answer_start": 399
+                },
+                {
+                  "text": "três disciplinas",
+                  "answer_start": 403
+                },
+                {
+                  "text": "o acadêmico poderá inscrever-se em até três disciplinas",
+                  "answer_start": 364
+                }
+              ]
+            }
+          ],
+          "context": "o período letivo especial ocorre entre dois períodos letivos regulares com duração de no mínimo duas e no máximo seis semanas, destinando-se ao oferecimento de disciplinas obrigatórias e optativas a critério do colegiado de curso. cada turma deverá ter, no mínimo, dez acadêmicos, podendo o colegiado de curso, excepcionalmente, autorizar turmas com número menor. o acadêmico poderá inscrever-se em até três disciplinas. a coordenação de curso deverá solicitar o oferecimento dessas turmas à direção da unidade da administração setorial na qual a disciplina está lotada. as atividades acadêmicas, no período letivo especial, deverão obedecer às disposições vigentes para o período letivo regular, exceto no que tange à duração."
+        },
+        {
+          "qas": [
+            {
+              "question": "qual o período maximo de duração do trancamento?",
+              "id": "f416bb9df47243a5bbd4ff98096fe27c",
+              "answers": [
+                {
+                  "text": "quatro semestres,",
+                  "answer_start": 37
+                },
+                {
+                  "text": "até quatro semestres,",
+                  "answer_start": 33
+                },
+                {
+                  "text": "o trancamento será concedido por até quatro semestres,",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "o trancamento será concedido por até quatro semestres, consecutivos ou alternados, não sendo permitido o trancamento no primeiro período letivo de ingresso do acadêmico na ufms, exceto nos seguintes casos: impossibilidade de o acadêmico ser contemplado com regime de exercícios domiciliares; ou convocação para o serviço militar obrigatório. o regime de exercícios domiciliares obedecerá ao disposto em regulamentação específica. o acadêmico será excluído do curso, com perda de vínculo acadêmico com a ufms: em decorrência de colação de grau; ou em decorrência da impossibilidade de integralizar seu currículo dentro do prazo máximo estabelecido no projeto pedagógico do curso; ou em decorrência de sanção disciplinar; ou por solicitação de desligamento por parte do acadêmico; ou deixar de realizar a renovação de matrícula nos prazos fixados pelo calendário acadêmico, quando não for permitido o trancamento automático."
+        },
+        {
+          "qas": [
+            {
+              "question": "como faço para não perder o vínculo acadêmico?",
+              "id": "568a6fa71815493e865cc15dc4ea5a26",
+              "answers": [
+                {
+                  "text": "mediante renovação de matrícula ou trancamento de matrícula",
+                  "answer_start": 121
+                },
+                {
+                  "text": "o vínculo do acadêmico será mantido mediante renovação de matrícula ou trancamento de matrícula",
+                  "answer_start": 85
+                },
+                {
+                  "text": "o vínculo do acadêmico será mantido mediante renovação de matrícula ou trancamento de matrícula",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ],
+          "context": "o vínculo acadêmico com a ufms dar-se-á mediante a realização de matrícula no curso. o vínculo do acadêmico será mantido mediante renovação de matrícula ou trancamento de matrícula. as formas de ingresso nos cursos de graduação da ufms são: portadores de certificado de conclusão do ensino médio ou equivalente que tenham sido classificados em processo seletivo específico; acadêmicos regulares, por transferência para cursos afins, mediante existência de vagas e por meio de processo seletivo; acadêmicos regulares, por transferência compulsória para cursos afins, mediante comprovação de atendimento à legislação específica; portadores de diploma de curso de graduação, mediante existência de vagas e por meio de processo seletivo; acadêmicos regulares de outras instituições, mediante convênios ou outros instrumentos jurídicos de mesma natureza, com instituições nacionais ou internacionais; portadores de certificado de conclusão do ensino médio ou equivalente, mediante convênios ou outros instrumentos jurídicos de mesma natureza firmados com outros países; acadêmicos da universidade, por movimentação interna entre cursos, mediante existência de vagas e por meio de processo seletivo; acadêmicos da universidade, por permuta interna entre cursos afins, desde que satisfaçam os requisitos definidos em norma específica; e portadores de diploma de curso de graduação, para complementação de estudos para fins de revalidação de diploma, desde que satisfaçam os requisitos definidos em norma específica. os editais para o preenchimento de vagas serão expedidos pela pró-reitoria de ensino de graduação."
+        }
+      ],
+      "title": "regulamento geral dos cursos de graduação presenciais"
+    }
+  ]
+}

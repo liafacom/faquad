@@ -1,0 +1,341 @@
+{
+  "version": "1.0",
+  "data": [
+    {
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "question": "a aprovação nas disciplinas depende do que?",
+              "id": "cf7cddba63154cdebada01476a2f1df4",
+              "answers": [
+                {
+                  "text": "frequência e da média de aproveitamento expressa em nota",
+                  "answer_start": 41
+                },
+                {
+                  "text": "da frequência e da média de aproveitamento expressa em nota",
+                  "answer_start": 38
+                },
+                {
+                  "text": "a aprovação nas disciplinas dependerá da frequência e da média de aproveitamento expressa em nota",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "a aprovação nas disciplinas dependerá da frequência e da média de aproveitamento expressa em nota. o aproveitamento da aprendizagem será verificado, em cada disciplina, contemplando o rendimento do acadêmico durante o período letivo, face aos objetivos constantes no plano de ensino. a verificação do rendimento acadêmico será realizada por meio de instrumentos de avaliação. o número e a natureza dos instrumentos e das avaliações acadêmicas deverão ser os mesmos para todos os acadêmicos matriculados na turma. em cada disciplina a programação do plano de ensino deverá prever, no mínimo, duas avaliações acadêmicas obrigatórias e uma avaliação optativa. as notas das avaliações acadêmicas que puderem ser substituídas por nota de avaliação optativa devem ser especificadas no plano de ensino. a carga horária destinada à realização das avaliações optativas não deverá ser computada na carga horária da disciplina. as notas de todas as avaliações acadêmicas que comporão a média de aproveitamento deverão ser divulgadas, no mínimo, três dias antes da avaliação optativa."
+        },
+        {
+          "qas": [
+            {
+              "question": "qual o número mínimo de alunos para se ter uma disciplina regular?",
+              "id": "2badf544caa347d38244e7ee71cff453",
+              "answers": [
+                {
+                  "text": "no mínimo, dez acadêmicos",
+                  "answer_start": 1166
+                },
+                {
+                  "text": "cada turma deverá ter, no mínimo, dez acadêmicos, podendo o colegiado de curso, excepcionalmente, autorizar turmas com número menor",
+                  "answer_start": 1143
+                },
+                {
+                  "text": "nos períodos letivos regulares, cada turma deverá ter, no mínimo, dez acadêmicos, podendo o colegiado de curso, excepcionalmente, autorizar turmas com número menor",
+                  "answer_start": 1111
+                }
+              ]
+            }
+          ],
+          "context": "a disciplina é identificada por seu nome, código, ementa, carga horária, pré- requisito, lotação e bibliografia. cada turma ofertada da disciplina deverá ter um plano de ensino contendo, obrigatoriamente: identificação; objetivos; ementa; programa; procedimentos de ensino; recursos; avaliação, com especificação dos instrumentos e das avaliações acadêmicas, avaliação optativa, as respectivas datas de aplicação e a fórmula da média de aproveitamento; atividade pedagógica de recuperação de desempenho em avaliações; bibliografia; e assinatura do professor. os planos de ensino das disciplinas deverão ser aprovados até o primeiro dia do período letivo, pelo colegiado de curso, ou, no caso de disciplinas ofertadas a múltiplos cursos, deverão ser aprovados pelo conselho da unidade da administração setorial que oferece as respectivas disciplinas, ouvidos os colegiados dos cursos envolvidos. a abertura do siscad para lançamentos, pelo professor, somente dar-se-á após liberação do plano de ensino no sistema . o professor da disciplina deverá apresentar o plano de ensino, aos acadêmicos, na primeira aula. nos períodos letivos regulares, cada turma deverá ter, no mínimo, dez acadêmicos, podendo o colegiado de curso, excepcionalmente, autorizar turmas com número menor."
+        },
+        {
+          "qas": [
+            {
+              "question": "quem é responsável pela verificação do cumprimento das atividades complementares?",
+              "id": "1afb90f9b7424d268d7685d5fdc776c4",
+              "answers": [
+                {
+                  "text": "de um ou mais professores",
+                  "answer_start": 699
+                },
+                {
+                  "text": "de um ou mais professores, por determinação do diretor da unidade da administração setorial",
+                  "answer_start": 699
+                },
+                {
+                  "text": "a responsabilidade pela verificação do cumprimento das atividades complementares será de um ou mais professores, por determinação do diretor da unidade da administração setorial",
+                  "answer_start": 613
+                }
+              ]
+            }
+          ],
+          "context": "a tipologia das atividades complementares deverá ser definida em regulamento específico do curso e poderá incluir: disciplinas cursadas como enriquecimento curricular; estágio não obrigatório; iniciação científica; monitoria de ensino; monitoria de extensão; monografia, quando não estiver previsto na matriz curricular do projeto pedagógico; participação em palestras, congressos, encontros, seminários, fóruns, viagens de estudos, visitas técnicas, oficinas, projetos de ensino de graduação (pegs), cursos, programa de educação tutorial (pet) e programa institucional de bolsas de iniciação à docência (pibid). a responsabilidade pela verificação do cumprimento das atividades complementares será de um ou mais professores, por determinação do diretor da unidade da administração setorial."
+        },
+        {
+          "qas": [
+            {
+              "question": "qual a frequência mínima exigida para aprovação em uma disciplina?",
+              "id": "cdf7c64e4a3a46a09bc152a1646d66a9",
+              "answers": [
+                {
+                  "text": "setenta e cinco por cento",
+                  "answer_start": 412
+                },
+                {
+                  "text": "o acadêmico deverá obter frequência igual ou superior a setenta e cinco por cento e média de aproveitamento (ma) igual ou superior a 6,0 (seis vírgula zero)",
+                  "answer_start": 356
+                },
+                {
+                  "text": "para ser aprovado na disciplina, o acadêmico deverá obter frequência igual ou superior a setenta e cinco por cento e média de aproveitamento (ma) igual ou superior a 6,0 (seis vírgula zero)",
+                  "answer_start": 323
+                }
+              ]
+            }
+          ],
+          "context": "as notas e as frequências deverão ser lançadas no sistema acadêmico nos prazos definidos no calendário acadêmico. para cada disciplina cursada, o professor deverá consignar ao acadêmico uma média de aproveitamento (ma), na forma de graus numéricos com uma casa decimal de 0,0 (zero vírgula zero) a 10,0 (dez vírgula zero). para ser aprovado na disciplina, o acadêmico deverá obter frequência igual ou superior a setenta e cinco por cento e média de aproveitamento (ma) igual ou superior a 6,0 (seis vírgula zero). caberá ao colegiado de curso estabelecer medidas pedagógicas para correção e prevenção de altos índices de reprovação e baixos rendimentos em avaliações. será atribuída nota 0,0 (zero vírgula zero), para cada evento, ao acadêmico que não realizar os trabalhos acadêmicos ou não comparecer às avaliações. se no prazo de dez dias úteis após o término do período letivo o acadêmico não retirar as avaliações acadêmicas, o docente poderá descartá-las."
+        },
+        {
+          "qas": [
+            {
+              "question": "como o acadêmico solicita revisão de avaliação de disciplina?",
+              "id": "8150ec1777054fc8838a52c1f2223290",
+              "answers": [
+                {
+                  "text": "dirigindo- se ao professor, em primeira instância, por meio de requerimento protocolizado na secretaria acadêmica da unidade da administração setorial em que o curso é oferecido, no prazo de três dias úteis após a divulgação do resultado",
+                  "answer_start": 65
+                },
+                {
+                  "text": "o acadêmico terá direito à revisão de suas avaliações acadêmicas dirigindo-se ao professor, em primeira instância, por meio de requerimento protocolizado na secretaria acadêmica da unidade da administração setorial em que o curso é oferecido",
+                  "answer_start": 0
+                },
+                {
+                  "text": "o acadêmico terá direito à revisão de suas avaliações acadêmicas dirigindo-se ao professor, em primeira instância, por meio de requerimento protocolizado na secretaria acadêmica da unidade da administração setorial em que o curso é oferecido, no prazo de três dias úteis após a divulgação do resultado",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "o acadêmico terá direito à revisão de suas avaliações acadêmicas dirigindo-se ao professor, em primeira instância, por meio de requerimento protocolizado na secretaria acadêmica da unidade da administração setorial em que o curso é oferecido, no prazo de três dias úteis após a divulgação do resultado. o professor terá o prazo de dois dias úteis para manifestação escrita sobre o pedido. o acadêmico deverá apor seu ciente no documento de resposta, e receber uma cópia deste. o acadêmico poderá interpor recurso quanto ao resultado da revisão, no colegiado de curso, via secretaria acadêmica, no prazo de cinco dias úteis do seu ciente. o colegiado de curso deverá constituir comissão, composta por três docentes, preferencialmente da área, sendo vedada a inclusão do professor que corrigiu a avaliação acadêmica em questão. a comissão deverá analisar o pedido do acadêmico, consultar o professor, se necessário, e emitir parecer sobre o resultado da revisão, num prazo máximo de quinze dias a partir da publicação da resolução de constituição da comissão, e encaminhar para aprovação do colegiado de curso. o professor da disciplina será responsável pela alteração no siscad, em caso de modificação da nota resultante dos trabalhos da comissão de revisão."
+        },
+        {
+          "qas": [
+            {
+              "question": "como é organizada a estruta curricular para acadêmicos ingressantes com aproveitamento de crédito ou disciplinas?",
+              "id": "6ad8ea15044147118087cddcb8563df2",
+              "answers": [
+                {
+                  "text": "o coordenador de curso, havendo aproveitamento de estudos, deverá elaborar um plano de estudos para cada acadêmico",
+                  "answer_start": 725
+                },
+                {
+                  "text": "o coordenador de curso, havendo aproveitamento de estudos, deverá elaborar um plano de estudos para cada acadêmico, e a matrícula será realizada nas disciplinas previstas no respectivo plano",
+                  "answer_start": 725
+                },
+                {
+                  "text": "o coordenador de curso, havendo aproveitamento de estudos, deverá elaborar um plano de estudos para cada acadêmico, e a matrícula será realizada nas disciplinas previstas no respectivo plano",
+                  "answer_start": 725
+                }
+              ]
+            }
+          ],
+          "context": "o candidato ingressante que for convocado para matrícula deverá providenciar a documentação prevista em edital e/ou legislação específica. o candidato poderá requerer sua matrícula por procuração. o candidato que não comparecer no prazo estabelecido em edital para matrícula, ou não apresentar a documentação exigida não terá sua matrícula efetivada. o acadêmico ingressante conforme os incisos i e vi do art. 18 será matriculado em todas as disciplinas previstas para o primeiro semestre do curso e sua matrícula somente poderá ser alterada se houver aproveitamento de disciplinas cursadas anteriormente, conforme plano de estudos elaborado pelo coordenador de curso. para as demais formas de ingresso previstas no art. 18, o coordenador de curso, havendo aproveitamento de estudos, deverá elaborar um plano de estudos para cada acadêmico, e a matrícula será realizada nas disciplinas previstas no respectivo plano. ao realizar a matrícula, o acadêmico se compromete a respeitar e cumprir as normas específicas, regimentais e estatutárias da ufms. compete ao acadêmico manter seus dados cadastrais atualizados, na secretaria acadêmica da unidade da administração setorial que oferece seu curso ou no siscad."
+        },
+        {
+          "qas": [
+            {
+              "question": "como o aluno deve solicitar a revisão de sua frequência em uma disciplina?",
+              "id": "147a388a4c644a3bb4cb7f164b051a69",
+              "answers": [
+                {
+                  "text": "mediante requerimento dirigido ao professor da disciplina",
+                  "answer_start": 644
+                },
+                {
+                  "text": "mediante requerimento dirigido ao professor da disciplina e protocolizado na secretaria acadêmica",
+                  "answer_start": 644
+                },
+                {
+                  "text": "mediante requerimento dirigido ao professor da disciplina e protocolizado na secretaria acadêmica, no prazo máximo de cinco dias úteis após a divulgação",
+                  "answer_start": 644
+                }
+              ]
+            }
+          ],
+          "context": "o controle e o registro de frequência às atividades acadêmicas serão da competência do professor responsável pela disciplina, e deverão ser realizados em cada aula. o abono de faltas obedecerá à legislação federal vigente. ao final de cada mês o professor responsável pela disciplina deverá divulgar para os acadêmicos o número de presenças às aulas efetivamente ministradas no período. quando houver ausência coletiva de acadêmicos matriculados na disciplina, no local e horário destinados à aula, as horas-aula serão registradas no sistema acadêmico com atribuição de falta aos acadêmicos. o acadêmico tem direito a recontagem da frequência, mediante requerimento dirigido ao professor da disciplina e protocolizado na secretaria acadêmica, no prazo máximo de cinco dias úteis após a divulgação. o resultado do pedido de recontagem de frequência deve ser arquivado na pasta do acadêmico, com o seu ciente. do resultado do pedido de recontagem de frequência não caberá recurso."
+        },
+        {
+          "qas": [
+            {
+              "question": "em quantas discplinas o acadêmico poderá inscrever-se durante o período letivo especial?",
+              "id": "cc0de43583864b86b70a9db14bebc2f1",
+              "answers": [
+                {
+                  "text": "três",
+                  "answer_start": 403
+                },
+                {
+                  "text": "até três",
+                  "answer_start": 399
+                },
+                {
+                  "text": "três disciplinas",
+                  "answer_start": 403
+                },
+                {
+                  "text": "o acadêmico poderá inscrever-se em até três disciplinas",
+                  "answer_start": 364
+                }
+              ]
+            }
+          ],
+          "context": "o período letivo especial ocorre entre dois períodos letivos regulares com duração de no mínimo duas e no máximo seis semanas, destinando-se ao oferecimento de disciplinas obrigatórias e optativas a critério do colegiado de curso. cada turma deverá ter, no mínimo, dez acadêmicos, podendo o colegiado de curso, excepcionalmente, autorizar turmas com número menor. o acadêmico poderá inscrever-se em até três disciplinas. a coordenação de curso deverá solicitar o oferecimento dessas turmas à direção da unidade da administração setorial na qual a disciplina está lotada. as atividades acadêmicas, no período letivo especial, deverão obedecer às disposições vigentes para o período letivo regular, exceto no que tange à duração."
+        },
+        {
+          "qas": [
+            {
+              "question": "qual o período maximo de duração do trancamento?",
+              "id": "f416bb9df47243a5bbd4ff98096fe27c",
+              "answers": [
+                {
+                  "text": "quatro semestres,",
+                  "answer_start": 37
+                },
+                {
+                  "text": "até quatro semestres,",
+                  "answer_start": 33
+                },
+                {
+                  "text": "o trancamento será concedido por até quatro semestres,",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "o trancamento será concedido por até quatro semestres, consecutivos ou alternados, não sendo permitido o trancamento no primeiro período letivo de ingresso do acadêmico na ufms, exceto nos seguintes casos: impossibilidade de o acadêmico ser contemplado com regime de exercícios domiciliares; ou convocação para o serviço militar obrigatório. o regime de exercícios domiciliares obedecerá ao disposto em regulamentação específica. o acadêmico será excluído do curso, com perda de vínculo acadêmico com a ufms: em decorrência de colação de grau; ou em decorrência da impossibilidade de integralizar seu currículo dentro do prazo máximo estabelecido no projeto pedagógico do curso; ou em decorrência de sanção disciplinar; ou por solicitação de desligamento por parte do acadêmico; ou deixar de realizar a renovação de matrícula nos prazos fixados pelo calendário acadêmico, quando não for permitido o trancamento automático."
+        },
+        {
+          "qas": [
+            {
+              "question": "como faço para não perder o vínculo acadêmico?",
+              "id": "568a6fa71815493e865cc15dc4ea5a26",
+              "answers": [
+                {
+                  "text": "mediante renovação de matrícula ou trancamento de matrícula",
+                  "answer_start": 121
+                },
+                {
+                  "text": "o vínculo do acadêmico será mantido mediante renovação de matrícula ou trancamento de matrícula",
+                  "answer_start": 85
+                },
+                {
+                  "text": "o vínculo do acadêmico será mantido mediante renovação de matrícula ou trancamento de matrícula",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ],
+          "context": "o vínculo acadêmico com a ufms dar-se-á mediante a realização de matrícula no curso. o vínculo do acadêmico será mantido mediante renovação de matrícula ou trancamento de matrícula. as formas de ingresso nos cursos de graduação da ufms são: portadores de certificado de conclusão do ensino médio ou equivalente que tenham sido classificados em processo seletivo específico; acadêmicos regulares, por transferência para cursos afins, mediante existência de vagas e por meio de processo seletivo; acadêmicos regulares, por transferência compulsória para cursos afins, mediante comprovação de atendimento à legislação específica; portadores de diploma de curso de graduação, mediante existência de vagas e por meio de processo seletivo; acadêmicos regulares de outras instituições, mediante convênios ou outros instrumentos jurídicos de mesma natureza, com instituições nacionais ou internacionais; portadores de certificado de conclusão do ensino médio ou equivalente, mediante convênios ou outros instrumentos jurídicos de mesma natureza firmados com outros países; acadêmicos da universidade, por movimentação interna entre cursos, mediante existência de vagas e por meio de processo seletivo; acadêmicos da universidade, por permuta interna entre cursos afins, desde que satisfaçam os requisitos definidos em norma específica; e portadores de diploma de curso de graduação, para complementação de estudos para fins de revalidação de diploma, desde que satisfaçam os requisitos definidos em norma específica. os editais para o preenchimento de vagas serão expedidos pela pró-reitoria de ensino de graduação."
+        }
+      ],
+      "title": "regulamento geral dos cursos de graduação presenciais"
+    },
+    {
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "question": "existe lei sobre a transferência compulsória?",
+              "id": "84019492bb304797ad31199c4bc498fa",
+              "answers": [
+                {
+                  "text": "lei no 9.536/97",
+                  "answer_start": 95
+                },
+                {
+                  "text": "a lei no 9.536/97",
+                  "answer_start": 93
+                },
+                {
+                  "text": "a transferência compulsória para os cursos de graduação da ufms será efetivada de acordo com a lei no 9.536/97",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "a transferência compulsória para os cursos de graduação da ufms será efetivada de acordo com a lei no 9.536/97, e com os requisitos deste regulamento. a transferência compulsória será concedida para prosseguimento de estudos do curso de origem ou, não havendo este, de curso afim. o curso de origem de que trata o caput deste artigo deverá ser reconhecido ou ter seu funcionamento autorizado pelo órgão competente. para fins de aplicação do disposto no caput deste artigo, a afinidade entre cursos será objeto de apreciação do pró-reitor de ensino de graduação, cabendo recurso de sua decisão ao conselho de ensino de graduação."
+        }
+      ],
+      "title": "transferência compulsória"
+    },
+    {
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "question": "quantas vezes posso solicitar aproveitamento de estudos?",
+              "id": "28237b37fede477fac0ca86e5ee76d35",
+              "answers": [
+                {
+                  "text": "uma única vez",
+                  "answer_start": 74
+                },
+                {
+                  "text": "o acadêmico poderá solicitar ao colegiado de curso, uma única vez, dentro dos prazos estabelecidos no calendário acadêmico, o aproveitamento dos estudos realizados anteriormente em cursos de graduação",
+                  "answer_start": 22
+                },
+                {
+                  "text": "ao ingressar na ufms, o acadêmico poderá solicitar ao colegiado de curso, uma única vez, dentro dos prazos estabelecidos no calendário acadêmico, o aproveitamento dos estudos realizados anteriormente em cursos de graduação",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "ao ingressar na ufms, o acadêmico poderá solicitar ao colegiado de curso, uma única vez, dentro dos prazos estabelecidos no calendário acadêmico, o aproveitamento dos estudos realizados anteriormente em cursos de graduação. somente será admitida mais de uma solicitação de aproveitamento de estudos pelo acadêmico, durante o curso, nos seguintes casos: para acadêmicos de cursos em processo de extinção na ufms; para acadêmicos com ingresso anterior ao primeiro semestre do ano letivo de 2015; ou quando a análise de currículo realizada anteriormente não tenha contemplado todas as disciplinas passíveis de dispensa, mediante análise do coordenador e aprovação pelo colegiado do curso, sendo que não poderá ser objeto de aproveitamento de estudos a disciplina que já tenha sido analisada anteriormente e que conste com parecer desfavorável para dispensa, salvo em casos de implantação de nova estrutura curricular, posterior à analise. não são passíveis de dispensa por aproveitamento de estudos as disciplinas de estágio obrigatório, de trabalho de conclusão de curso e de atividades complementares, salvo nos casos em que o acadêmico tenha cursado essas disciplinas na ufms, em cursos homônimos, mediante análise do coordenador e aprovação pelo colegiado do curso."
+        },
+        {
+          "qas": [
+            {
+              "question": "o que deverá conter o plano de estudos?",
+              "id": "1239bbf8a6b2479390bc55f05e1f2835",
+              "answers": [
+                {
+                  "text": "o nome do curso; o nome do acadêmico; e todas as disciplinas necessárias para a integralização da matriz curricular",
+                  "answer_start": 62
+                },
+                {
+                  "text": "deverá conter, referente ao curso na ufms: o nome do curso; o nome do acadêmico; e todas as disciplinas necessárias para a integralização da matriz curricular",
+                  "answer_start": 19
+                },
+                {
+                  "text": "o plano de estudos deverá conter, referente ao curso na ufms: o nome do curso; o nome do acadêmico; e todas as disciplinas necessárias para a integralização da matriz curricular",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "por quem será aprovado o plano de estudos?",
+              "id": "b7f0b4f8c67647b3a4f351a9a8dd4fae",
+              "answers": [
+                {
+                  "text": "colegiado de curso",
+                  "answer_start": 512
+                },
+                {
+                  "text": "pelo colegiado de curso",
+                  "answer_start": 507
+                },
+                {
+                  "text": "pelo colegiado de curso",
+                  "answer_start": 507
+                }
+              ]
+            }
+          ],
+          "context": "o plano de estudos deverá conter, referente ao curso na ufms: o nome do curso; o nome do acadêmico; e todas as disciplinas necessárias para a integralização da matriz curricular. para cada disciplina dispensada (ds) deverá ser indicada a carga horária em hora-aula de sessenta minutos. para cada disciplina a cursar, obrigatória ou optativa, deverá ser indicada a carga horária em hora-aula de sessenta de minutos e o semestre previsto para a disciplina a ser cursada. após a aprovação do plano de estudos, pelo colegiado de curso, será consignada no histórico escolar do acadêmico, para fins de integralização curricular: a carga horária que lhe foi atribuída na instituição de origem convertida em hora-aula de sessenta minutos no conjunto de disciplinas dispensadas; o código ds nas disciplinas dispensadas; e o tipo da disciplina dispensada. para efeito de integralização curricular, a contagem do tempo cursado será feita a partir do ingresso do acadêmico na ufms. a quantidade de semestres, anteriores ao semestre de enquadramento do acadêmico, será subtraída do tempo máximo para a integralização curricular previsto no projeto pedagógico do curso, caso o acadêmico ainda não tenha cursado semestre algum após ingressar no curso."
+        }
+      ],
+      "title": "regras para solicitação de aproveitamento de estudos"
+    }
+  ]
+}

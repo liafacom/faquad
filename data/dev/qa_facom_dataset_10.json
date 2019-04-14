@@ -1,0 +1,102 @@
+{
+  "version": "1.0",
+  "data": [
+    {
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "question": "quantas vezes posso solicitar aproveitamento de estudos?",
+              "id": "28237b37fede477fac0ca86e5ee76d35",
+              "answers": [
+                {
+                  "text": "uma única vez",
+                  "answer_start": 74
+                },
+                {
+                  "text": "o acadêmico poderá solicitar ao colegiado de curso, uma única vez, dentro dos prazos estabelecidos no calendário acadêmico, o aproveitamento dos estudos realizados anteriormente em cursos de graduação",
+                  "answer_start": 22
+                },
+                {
+                  "text": "ao ingressar na ufms, o acadêmico poderá solicitar ao colegiado de curso, uma única vez, dentro dos prazos estabelecidos no calendário acadêmico, o aproveitamento dos estudos realizados anteriormente em cursos de graduação",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "ao ingressar na ufms, o acadêmico poderá solicitar ao colegiado de curso, uma única vez, dentro dos prazos estabelecidos no calendário acadêmico, o aproveitamento dos estudos realizados anteriormente em cursos de graduação. somente será admitida mais de uma solicitação de aproveitamento de estudos pelo acadêmico, durante o curso, nos seguintes casos: para acadêmicos de cursos em processo de extinção na ufms; para acadêmicos com ingresso anterior ao primeiro semestre do ano letivo de 2015; ou quando a análise de currículo realizada anteriormente não tenha contemplado todas as disciplinas passíveis de dispensa, mediante análise do coordenador e aprovação pelo colegiado do curso, sendo que não poderá ser objeto de aproveitamento de estudos a disciplina que já tenha sido analisada anteriormente e que conste com parecer desfavorável para dispensa, salvo em casos de implantação de nova estrutura curricular, posterior à analise. não são passíveis de dispensa por aproveitamento de estudos as disciplinas de estágio obrigatório, de trabalho de conclusão de curso e de atividades complementares, salvo nos casos em que o acadêmico tenha cursado essas disciplinas na ufms, em cursos homônimos, mediante análise do coordenador e aprovação pelo colegiado do curso."
+        },
+        {
+          "qas": [
+            {
+              "question": "o que deverá conter o plano de estudos?",
+              "id": "1239bbf8a6b2479390bc55f05e1f2835",
+              "answers": [
+                {
+                  "text": "o nome do curso; o nome do acadêmico; e todas as disciplinas necessárias para a integralização da matriz curricular",
+                  "answer_start": 62
+                },
+                {
+                  "text": "deverá conter, referente ao curso na ufms: o nome do curso; o nome do acadêmico; e todas as disciplinas necessárias para a integralização da matriz curricular",
+                  "answer_start": 19
+                },
+                {
+                  "text": "o plano de estudos deverá conter, referente ao curso na ufms: o nome do curso; o nome do acadêmico; e todas as disciplinas necessárias para a integralização da matriz curricular",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "por quem será aprovado o plano de estudos?",
+              "id": "b7f0b4f8c67647b3a4f351a9a8dd4fae",
+              "answers": [
+                {
+                  "text": "colegiado de curso",
+                  "answer_start": 512
+                },
+                {
+                  "text": "pelo colegiado de curso",
+                  "answer_start": 507
+                },
+                {
+                  "text": "pelo colegiado de curso",
+                  "answer_start": 507
+                }
+              ]
+            }
+          ],
+          "context": "o plano de estudos deverá conter, referente ao curso na ufms: o nome do curso; o nome do acadêmico; e todas as disciplinas necessárias para a integralização da matriz curricular. para cada disciplina dispensada (ds) deverá ser indicada a carga horária em hora-aula de sessenta minutos. para cada disciplina a cursar, obrigatória ou optativa, deverá ser indicada a carga horária em hora-aula de sessenta de minutos e o semestre previsto para a disciplina a ser cursada. após a aprovação do plano de estudos, pelo colegiado de curso, será consignada no histórico escolar do acadêmico, para fins de integralização curricular: a carga horária que lhe foi atribuída na instituição de origem convertida em hora-aula de sessenta minutos no conjunto de disciplinas dispensadas; o código ds nas disciplinas dispensadas; e o tipo da disciplina dispensada. para efeito de integralização curricular, a contagem do tempo cursado será feita a partir do ingresso do acadêmico na ufms. a quantidade de semestres, anteriores ao semestre de enquadramento do acadêmico, será subtraída do tempo máximo para a integralização curricular previsto no projeto pedagógico do curso, caso o acadêmico ainda não tenha cursado semestre algum após ingressar no curso."
+        }
+      ],
+      "title": "regras para solicitação de aproveitamento de estudos"
+    },
+    {
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "question": "existe lei sobre a transferência compulsória?",
+              "id": "84019492bb304797ad31199c4bc498fa",
+              "answers": [
+                {
+                  "text": "lei no 9.536/97",
+                  "answer_start": 95
+                },
+                {
+                  "text": "a lei no 9.536/97",
+                  "answer_start": 93
+                },
+                {
+                  "text": "a transferência compulsória para os cursos de graduação da ufms será efetivada de acordo com a lei no 9.536/97",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "a transferência compulsória para os cursos de graduação da ufms será efetivada de acordo com a lei no 9.536/97, e com os requisitos deste regulamento. a transferência compulsória será concedida para prosseguimento de estudos do curso de origem ou, não havendo este, de curso afim. o curso de origem de que trata o caput deste artigo deverá ser reconhecido ou ter seu funcionamento autorizado pelo órgão competente. para fins de aplicação do disposto no caput deste artigo, a afinidade entre cursos será objeto de apreciação do pró-reitor de ensino de graduação, cabendo recurso de sua decisão ao conselho de ensino de graduação."
+        }
+      ],
+      "title": "transferência compulsória"
+    }
+  ]
+}
