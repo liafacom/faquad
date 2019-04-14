@@ -104,22 +104,19 @@ def run(train_dataset_path, dev_dataset_path, portion):
         training_em_scores.append(metric["training_em"])
         dev_em_scores.append(metric["validation_em"])
 
-    scores = {
-        "f1": {
-            "train_f1_mean": mean(training_f1_scores),
-            "dev_f1_mean": mean(dev_f1_scores),
-            "train_f1_stdev": stdev(training_f1_scores),
-            "dev_f1_stdev": stdev(dev_f1_scores)
-        },
-        "em": {
-            "train_em_mean": mean(training_em_scores),
-            "dev_em_mean": mean(dev_em_scores),
-            "train_em_stdev": stdev(training_em_scores),
-            "dev_em_stdev": stdev(dev_em_scores)
-        }
+    score = {
+        "train_f1_mean": mean(training_f1_scores),
+        "dev_f1_mean": mean(dev_f1_scores),
+        "train_f1_stdev": stdev(training_f1_scores),
+        "dev_f1_stdev": stdev(dev_f1_scores),
+
+        "train_em_mean": mean(training_em_scores),
+        "dev_em_mean": mean(dev_em_scores),
+        "train_em_stdev": stdev(training_em_scores),
+        "dev_em_stdev": stdev(dev_em_scores)
     }
 
     with open(os.path.realpath("metrics/portion_{}_metrics.json".format(portion)), "w") as file:
-        file.write(json.dumps(scores))
+        file.write(json.dumps(score))
 
-    return scores
+    return score
