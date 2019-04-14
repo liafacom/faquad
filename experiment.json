@@ -4,6 +4,7 @@
     "token_indexers": {
       "token_characters": {
         "type": "characters",
+        "min_padding_length": 5,
         "character_tokenizer": {
           "byte_encoding": "utf-8"
         }
@@ -73,7 +74,6 @@
         "token_characters": {
           "type": "character_encoding",
           "dropout": 0.2,
-          "min_padding_length": 5,
           "embedding": {
             "embedding_dim": 16,
             "num_embeddings": 260
