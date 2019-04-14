@@ -23,13 +23,6 @@ with open(os.path.realpath("data/qa_facom_dataset_837.json"), encoding="utf-8") 
 with open(os.path.realpath("data/qa_facom_dev.json"), encoding="utf-8") as file:
     dev_dataset = json.loads(file.read())
 
-with open(os.path.realpath("experiment.json"), "r") as file:
-    config = json.load(file)
-
-# GloVe location
-config["model"]["text_field_embedder"]["token_embedders"]["tokens"]["pretrained_file"] \
-    = os.path.realpath("glove/glove_s600.zip")
-
 # Flattens nested datasets into dataframes
 train_data = flatten_json(train_dataset)
 dev_data = flatten_json(reduce_answer(dev_dataset))
@@ -46,6 +39,14 @@ i = 1
 # Trains a model for each fold with a temporary generated file
 # Training in AllenNLP requires a file
 for train_indexes, dev_indexes in kfold_indexes:
+
+    with open(os.path.realpath("experiment.json"), "r") as file:
+        config = json.load(file)
+
+    # GloVe location
+    config["model"]["text_field_embedder"]["token_embedders"]["tokens"]["pretrained_file"] \
+        = os.path.realpath("glove/glove_s600.zip")
+
     # Melts the dataframes into nested datasets
     train_dataset = melt_dataframe(data.iloc[train_indexes, :])
     dev_dataset = melt_dataframe(data.iloc[dev_indexes, :])
