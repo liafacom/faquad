@@ -19,10 +19,10 @@ import os
 
 def run(train_dataset_path, dev_dataset_path, portion):
     # Loads files
-    with open(os.path.realpath(train_dataset_path), encoding="utf-8") as file:
+    with open(train_dataset_path, encoding="utf-8") as file:
         train_dataset = json.loads(file.read())
 
-    with open(os.path.realpath(dev_dataset_path), encoding="utf-8") as file:
+    with open(dev_dataset_path, encoding="utf-8") as file:
         dev_dataset = json.loads(file.read())
 
     # Flattens nested datasets into dataframes
