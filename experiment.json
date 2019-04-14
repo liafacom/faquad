@@ -73,6 +73,7 @@
         "token_characters": {
           "type": "character_encoding",
           "dropout": 0.2,
+          "min_padding_length": 5,
           "embedding": {
             "embedding_dim": 16,
             "num_embeddings": 260
