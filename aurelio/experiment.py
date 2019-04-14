@@ -39,8 +39,6 @@ def run(train_dataset_path, dev_dataset_path, portion):
 
     i = 1
 
-    metrics = []
-
     # Trains a model for each fold with a temporary generated file
     # Training in AllenNLP requires a file
     for train_indexes, dev_indexes in kfold_indexes:
@@ -81,42 +79,40 @@ def run(train_dataset_path, dev_dataset_path, portion):
 
         # Creates a Param class and writes the train result
         params = Params(config)
-        model = train_model(params=params,
+        train_model(params=params,
                             serialization_dir="{}/{}_fold_{}".format(os.path.realpath("serialization"), portion, i))
 
         # Closes and deletes temp files
         temp_train_file.close()
         temp_dev_file.close()
 
-        metrics.append(model.get_metrics())
-
         i += 1
 
-    training_f1_scores = []
-    dev_f1_scores = []
-
-    training_em_scores = []
-    dev_em_scores = []
-
-    for metric in metrics:
-        training_f1_scores.append(metric["training_f1"])
-        dev_f1_scores.append(metric["validation_f1"])
-        training_em_scores.append(metric["training_em"])
-        dev_em_scores.append(metric["validation_em"])
-
-    score = {
-        "train_f1_mean": mean(training_f1_scores),
-        "dev_f1_mean": mean(dev_f1_scores),
-        "train_f1_stdev": stdev(training_f1_scores),
-        "dev_f1_stdev": stdev(dev_f1_scores),
-
-        "train_em_mean": mean(training_em_scores),
-        "dev_em_mean": mean(dev_em_scores),
-        "train_em_stdev": stdev(training_em_scores),
-        "dev_em_stdev": stdev(dev_em_scores)
-    }
-
-    with open(os.path.realpath("metrics/portion_{}_metrics.json".format(portion)), "w") as file:
-        file.write(json.dumps(score))
-
-    return score
+    # training_f1_scores = []
+    # dev_f1_scores = []
+    #
+    # training_em_scores = []
+    # dev_em_scores = []
+    #
+    # for metric in metrics:
+    #     training_f1_scores.append(metric["training_f1"])
+    #     dev_f1_scores.append(metric["validation_f1"])
+    #     training_em_scores.append(metric["training_em"])
+    #     dev_em_scores.append(metric["validation_em"])
+    #
+    # score = {
+    #     "train_f1_mean": mean(training_f1_scores),
+    #     "dev_f1_mean": mean(dev_f1_scores),
+    #     "train_f1_stdev": stdev(training_f1_scores),
+    #     "dev_f1_stdev": stdev(dev_f1_scores),
+    #
+    #     "train_em_mean": mean(training_em_scores),
+    #     "dev_em_mean": mean(dev_em_scores),
+    #     "train_em_stdev": stdev(training_em_scores),
+    #     "dev_em_stdev": stdev(dev_em_scores)
+    # }
+    #
+    # with open(os.path.realpath("metrics/portion_{}_metrics.json".format(portion)), "w") as file:
+    #     file.write(json.dumps(score))
+    #
+    # return score
