@@ -56,7 +56,6 @@ def run(train_dataset_path, dev_dataset_path, portion):
 
         split = list(GroupShuffleSplit(n_splits=1, test_size=portion).split(train, None, train[["context"]]))
 
-        dev = pd.concat([dev, train.iloc[split[0][1], :]])
         train = train.iloc[split[0][0], :]
 
         # Melts the dataframes into nested datasets
