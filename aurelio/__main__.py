@@ -25,8 +25,7 @@ def main():
 
         # scores.append(score)
 
-    regular_training.run("data/qa_facom_dataset_train.json")
-    regular_training.run("data/qa_facom_dataset_dev.json")
+    regular_training.run("data/qa_facom_dataset_train.json", "data/qa_facom_dataset_dev.json")
 
     # x = ["100%", "75%", "50%", "25%", "10%"]
     #
