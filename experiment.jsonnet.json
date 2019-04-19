@@ -29,7 +29,7 @@
             "tokens": {
                 "type": "embedding",
                 "pretrained_file": "glove/glove_s600.zip",
-                "embedding_dim": 100,
+                "embedding_dim": 600,
                 "trainable": false
             },
             "elmo":{
@@ -59,7 +59,7 @@
     "phrase_layer": {
       "type": "lstm",
       "bidirectional": true,
-      "input_size": 1224,
+      "input_size": 700,
       "hidden_size": 100,
       "num_layers": 1,
       "dropout": 0.2
