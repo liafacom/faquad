@@ -1,5 +1,7 @@
-from allennlp.service.predictors import Predictor
+from allennlp.predictors import Predictor
 from allennlp.models.archival import load_archive
+from sys import argv
+import os
 
 PREDICTOR_NAME = 'bidaf'
 
@@ -19,6 +21,6 @@ def predict(model_path, passage, question):
     return result
 
 
-result = predict("/home/helio/Documentos/chatbot_dataset/experiments/scripts/bse_50_2.tar.gz", questions[0]['context'],
-                 questions[0]['question'])
+result = predict(os.path.realpath("serialization/elmo/model.tar.gz"), argv[1],
+                 argv[2])
 print(result)
