@@ -6,9 +6,6 @@
         "type": "single_id",
         "lowercase_tokens": true
       },
-      "elmo": {
-        "type": "elmo_characters"
-      },
       "token_characters": {
         "type": "characters",
         "character_tokenizer": {
@@ -30,13 +27,6 @@
                 "embedding_dim": 600,
                 "trainable": false
             },
-            "elmo":{
-                "type": "elmo_token_embedder",
-                "options_file": "elmo/elmo_pt_options.json",
-                "weight_file": "elmo/elmo_pt_weights.hdf5",
-                "do_layer_norm": false,
-                "dropout": 0.0
-            },
             "token_characters": {
                 "type": "character_encoding",
                 "embedding": {
@@ -57,7 +47,7 @@
     "phrase_layer": {
       "type": "lstm",
       "bidirectional": true,
-      "input_size": 1724,
+      "input_size": 700,
       "hidden_size": 100,
       "num_layers": 1,
       "dropout": 0.2
