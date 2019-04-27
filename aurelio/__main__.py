@@ -14,18 +14,20 @@ RED_T = "rgba(255,122,101,0.2)"
 
 def main():
     # Portions relative to TEST size
-    # portions = [0.0, 0.25, 0.5, 0.75, 0.9]
+    portions = [0.0, 0.25, 0.5, 0.75, 0.9]
 
     # scores = []
 
-    # for portion in portions:
-    #     run(os.path.realpath("data/qa_facom_dataset_train.json".format(portion)),
-    #         os.path.realpath("data/qa_facom_dataset_dev.json".format(portion)),
-    #         portion)
+    for portion in portions:
+         run(os.path.realpath("data/qa_facom_dataset_train_increased.json".format(portion)),
+             os.path.realpath("data/qa_facom_dataset_dev.json".format(portion)),
+             "experiment_elmo.json",
+             "experiment_elmo",
+             portion)
 
         # scores.append(score)
 
-    regular_training.run("data/qa_facom_dataset_train.json", "data/qa_facom_dataset_dev.json")
+    # regular_training.run("data/qa_facom_dataset_train.json", "data/qa_facom_dataset_dev.json")
 
     # x = ["100%", "75%", "50%", "25%", "10%"]
     #

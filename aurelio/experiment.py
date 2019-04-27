@@ -28,7 +28,7 @@ def run(train_dataset_path, dev_dataset_path, config, dir, portion):
 
     # Flattens nested datasets into dataframes
     train_data = flatten_json(train_dataset)
-    dev_data = flatten_json(reduce_answer(dev_dataset))
+    dev_data = flatten_json(dev_dataset)
 
     # Concatenates train and dev dataframes
     data = pd.concat([train_data, dev_data])
