@@ -23,11 +23,11 @@ def run(train_dataset_path, dev_dataset_path):
 
     # dev_dataset = reduce_answer(dev_dataset)
 
-    with open(os.path.realpath("experiment.json"), "r") as file:
+    with open(os.path.realpath("experiment_elmo.json"), "r") as file:
         config = json.load(file)
 
     # GloVe location
-    config["model"]["text_field_e:mbedder"]["token_embedders"]["tokens"]["pretrained_file"] \
+    config["model"]["text_field_embedder"]["token_embedders"]["tokens"]["pretrained_file"] \
         = os.path.realpath("glove/glove_s600.zip")
 
     # Writes a temporary training file
@@ -52,3 +52,5 @@ def run(train_dataset_path, dev_dataset_path):
     # Closes and deletes temp files
     temp_train_file.close()
     temp_dev_file.close()
+
+    print(params)

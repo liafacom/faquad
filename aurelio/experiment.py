@@ -18,7 +18,7 @@ import json
 import os
 
 
-def run(train_dataset_path, dev_dataset_path, portion):
+def run(train_dataset_path, dev_dataset_path, config, dir, portion):
     # Loads files
     with open(train_dataset_path, encoding="utf-8") as file:
         train_dataset = json.loads(file.read())
@@ -44,7 +44,7 @@ def run(train_dataset_path, dev_dataset_path, portion):
     for train_indexes, dev_indexes in kfold_indexes:
 
         # config file must be loaded for each iteration
-        with open(os.path.realpath("experiment.json"), "r") as file:
+        with open(os.path.realpath(config), "r") as file:
             config = json.load(file)
 
         # GloVe location
@@ -79,7 +79,7 @@ def run(train_dataset_path, dev_dataset_path, portion):
         # Creates a Param class and writes the train result
         params = Params(config)
         train_model(params=params,
-                            serialization_dir="{}/{}_fold_{}".format(os.path.realpath("serialization"), portion, i))
+                            serialization_dir="{}/{}_fold_{}".format(os.path.realpath(dir), portion, i))
 
         # Closes and deletes temp files
         temp_train_file.close()

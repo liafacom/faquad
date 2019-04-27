@@ -6,15 +6,10 @@
         "type": "single_id",
         "lowercase_tokens": true
       },
-      "elmo": {
-        "type": "elmo_characters"
-      },
       "token_characters": {
         "type": "characters",
         "character_tokenizer": {
-          "byte_encoding": "utf-8",
-          "start_tokens": [259],
-          "end_tokens": [260]
+          "byte_encoding": "utf-8"
         },
         "min_padding_length": 5
       }
@@ -31,13 +26,6 @@
                 "pretrained_file": "glove/glove_s600.zip",
                 "embedding_dim": 600,
                 "trainable": false
-            },
-            "elmo":{
-                "type": "elmo_token_embedder",
-                "options_file": "elmo/elmo_pt_options.json",
-                "weight_file": "elmo/elmo_pt_weights.hdf5",
-                "do_layer_norm": false,
-                "dropout": 0.0
             },
             "token_characters": {
                 "type": "character_encoding",
@@ -91,7 +79,7 @@
   "iterator": {
     "type": "bucket",
     "sorting_keys": [["passage", "num_tokens"], ["question", "num_tokens"]],
-    "batch_size": 40
+    "batch_size": 16
   },
   "trainer": {
     "num_epochs": 20,
