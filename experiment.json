@@ -20,28 +20,30 @@
   "model": {
     "type": "bidaf",
     "text_field_embedder": {
-        "token_embedders": {
-            "tokens": {
-                "type": "embedding",
-                "pretrained_file": "glove/glove_s600.zip",
-                "embedding_dim": 600,
-                "trainable": false
-            },
-            "token_characters": {
-                "type": "character_encoding",
-                "embedding": {
-                "num_embeddings": 260,
-                "embedding_dim": 16
-                },
-                "encoder": {
-                "type": "cnn",
-                "embedding_dim": 16,
-                "num_filters": 100,
-                "ngram_filter_sizes": [5]
-                },
-                "dropout": 0.2
-            }
+      "token_embedders": {
+        "tokens": {
+          "type": "embedding",
+          "pretrained_file": "glove/glove_s600.zip",
+          "embedding_dim": 600,
+          "trainable": false
+        },
+        "token_characters": {
+          "type": "character_encoding",
+          "embedding": {
+            "num_embeddings": 260,
+            "embedding_dim": 16
+          },
+          "encoder": {
+            "type": "cnn",
+            "embedding_dim": 16,
+            "num_filters": 100,
+            "ngram_filter_sizes": [
+              5
+            ]
+          },
+          "dropout": 0.2
         }
+      }
     },
     "num_highway_layers": 2,
     "phrase_layer": {
@@ -78,7 +80,16 @@
   },
   "iterator": {
     "type": "bucket",
-    "sorting_keys": [["passage", "num_tokens"], ["question", "num_tokens"]],
+    "sorting_keys": [
+      [
+        "passage",
+        "num_tokens"
+      ],
+      [
+        "question",
+        "num_tokens"
+      ]
+    ],
     "batch_size": 16
   },
   "trainer": {
@@ -95,7 +106,10 @@
     },
     "optimizer": {
       "type": "adam",
-      "betas": [0.9, 0.9]
+      "betas": [
+        0.9,
+        0.9
+      ]
     }
   }
 }

@@ -13,6 +13,7 @@ from dataset_utils import flatten_json, melt_dataframe, reduce_answer
 import pandas as pd
 import tempfile
 import json
+import shutil
 import os
 import sys
 
@@ -51,6 +52,8 @@ def run_train(config_file_path, train_dataset_path, dev_dataset_path, serializat
             "train_data_path": train_dataset_path,
             "validation_data_path": dev_dataset_path
         }
+
+    shutil.rmtree(serialization_dir)
 
     sys.argv = [
         "allennlp",
