@@ -18,7 +18,6 @@ import sys
 
 
 def run_train(config_file_path, train_dataset_path, dev_dataset_path, serialization_dir, elmo=True):
-
     if elmo:
         overrides = {
             "train_data_path": train_dataset_path,
@@ -32,12 +31,14 @@ def run_train(config_file_path, train_dataset_path, dev_dataset_path, serializat
             },
             "model": {
                 "text_field_embedder": {
-                    "elmo": {
-                        "type": "elmo_token_embedder",
-                        "options_file": "elmo/elmo_pt_options.json",
-                        "weight_file": "elmo/elmo_pt_weights.hdf5",
-                        "do_layer_norm": False,
-                        "dropout": 0.0
+                    "token_embedders": {
+                        "elmo": {
+                            "type": "elmo_token_embedder",
+                            "options_file": "elmo/elmo_pt_options.json",
+                            "weight_file": "elmo/elmo_pt_weights.hdf5",
+                            "do_layer_norm": False,
+                            "dropout": 0.0
+                        }
                     }
                 },
                 "phrase_layer": {
