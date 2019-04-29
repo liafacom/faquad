@@ -14,34 +14,50 @@ import pandas as pd
 import tempfile
 import json
 import os
-import shutil
 import sys
 
 
 def run_train(config_file_path, train_dataset_path, dev_dataset_path, serialization_dir, elmo=True):
-    overrides = {
-        "train_data_path": train_dataset_path,
-        "validation_data_path": dev_dataset_path
-    }
 
     if elmo:
-        overrides["dataset_reader"]["token_indexers"]["elmo"]["type"] = "elmo_characters"
-        overrides["model"]["text_field_embedder"]["elmo"] = {
-            "type": "elmo_token_embedder",
-            "options_file": "elmo/elmo_pt_options.json",
-            "weight_file": "elmo/elmo_pt_weights.hdf5",
-            "do_layer_norm": False,
-            "dropout": 0.0
+        overrides = {
+            "train_data_path": train_dataset_path,
+            "validation_data_path": dev_dataset_path,
+            "dataset_reader": {
+                "token_indexers": {
+                    "elmo": {
+                        "type": "elmo_characters"
+                    }
+                }
+            },
+            "model": {
+                "text_field_embedder": {
+                    "elmo": {
+                        "type": "elmo_token_embedder",
+                        "options_file": "elmo/elmo_pt_options.json",
+                        "weight_file": "elmo/elmo_pt_weights.hdf5",
+                        "do_layer_norm": False,
+                        "dropout": 0.0
+                    }
+                },
+                "phrase_layer": {
+                    "input_size": 1724
+                }
+            }
         }
-        overrides["model"]["phrase_layer"]["input_size"] = 1724
+    else:
+        overrides = {
+            "train_data_path": train_dataset_path,
+            "validation_data_path": dev_dataset_path
+        }
 
-    sys.argv(
+    sys.argv = [
         "allennlp",
         "train",
         config_file_path,
         "-s", serialization_dir,
         "-o", json.dumps(overrides)
-    )
+    ]
 
     main()
 

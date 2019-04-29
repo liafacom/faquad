@@ -1,4 +1,4 @@
-from experiment import run
+from experiment import run_kfold
 
 import os
 
@@ -14,7 +14,7 @@ def main():
     portions = [0.0, 0.25, 0.5, 0.75, 0.9]
 
     for portion in portions:
-        run(os.path.realpath("experiment.json"),
+        run_kfold(os.path.realpath("experiment.json"),
             os.path.realpath("data/qa_facom_dataset_train_increased.json"),
             os.path.realpath("data/qa_facom_dataset_dev.json"),
             os.path.realpath("experiments"),
