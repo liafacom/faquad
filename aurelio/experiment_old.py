@@ -3,7 +3,8 @@
 # word splitter's default language in allennlp's source code at
 # allennlp/data/tokenizers/word_splitter.py from "en_core_web_sm" to "pt_core_news_sm"
 
-from allennlp.commands import main
+from allennlp.commands.train import train_model
+from allennlp.common.params import Params
 
 from sklearn.model_selection import GroupKFold
 from sklearn.model_selection import GroupShuffleSplit
@@ -11,48 +12,13 @@ from sklearn.model_selection import GroupShuffleSplit
 from dataset_utils import flatten_json, melt_dataframe, reduce_answer
 
 import pandas as pd
+from statistics import mean, stdev
 import tempfile
 import json
 import os
-import shutil
-import sys
 
 
-def run_train(config_file_path, train_dataset_path, dev_dataset_path, serialization_dir, elmo=True):
-    overrides = {
-        "train_data_path": train_dataset_path,
-        "validation_data_path": dev_dataset_path
-    }
-
-    if elmo:
-        overrides["dataset_reader"]["token_indexers"]["elmo"]["type"] = "elmo_characters"
-        overrides["model"]["text_field_embedder"]["elmo"] = {
-            "type": "elmo_token_embedder",
-            "options_file": "elmo/elmo_pt_options.json",
-            "weight_file": "elmo/elmo_pt_weights.hdf5",
-            "do_layer_norm": False,
-            "dropout": 0.0
-        }
-        overrides["model"]["phrase_layer"]["input_size"] = 1724
-
-    sys.argv(
-        "allennlp",
-        "train",
-        config_file_path,
-        "-s", serialization_dir,
-        "-o", json.dumps(overrides)
-    )
-
-    main()
-
-
-def run_kfold(config_file_path,
-              train_dataset_path,
-              dev_dataset_path,
-              serialization_dir,
-              reduce_train_dataset=True,
-              elmo=True,
-              dev_dataset_portion=0.0):
+def run(train_dataset_path, dev_dataset_path, config_path, folder, portion):
     # Loads files
     with open(train_dataset_path, encoding="utf-8") as file:
         train_dataset = json.loads(file.read())
@@ -76,16 +42,24 @@ def run_kfold(config_file_path,
     # Trains a model for each fold with a temporary generated file
     # Training in AllenNLP requires a file
     for train_indexes, dev_indexes in kfold_indexes:
+
+        # config file must be loaded for each iteration
+        with open(os.path.realpath(config_path), "r") as file:
+            config = json.load(file)
+
+        # GloVe location
+        config["model"]["text_field_embedder"]["token_embedders"]["tokens"]["pretrained_file"] \
+            = os.path.realpath("glove/glove_s600.zip")
+
         train = data.iloc[train_indexes, :]
         dev = data.iloc[dev_indexes, :]
 
-        split = list(
-            GroupShuffleSplit(n_splits=1, test_size=dev_dataset_portion).split(train, None, train[["context"]]))
+        split = list(GroupShuffleSplit(n_splits=1, test_size=portion).split(train, None, train[["context"]]))
 
         train = train.iloc[split[0][0], :]
 
         # Melts the dataframes into nested datasets
-        train_dataset = reduce_answer(melt_dataframe(train)) if reduce_train_dataset else melt_dataframe(train)
+        train_dataset = reduce_answer(melt_dataframe(train))
         dev_dataset = melt_dataframe(dev)
 
         # Writes a temporary training file
@@ -98,17 +72,46 @@ def run_kfold(config_file_path,
         temp_dev_file.write(json.dumps(dev_dataset))
         print("Temp file wrote at {}".format(temp_dev_file.name))
 
-        run_train(config_file_path,
-                  temp_train_file.name,
-                  temp_dev_file.name,
-                  "{}/{}_{}_fold_{}".format(os.path.realpath(serialization_dir),
-                                            "elmo" if elmo else "no_elmo",
-                                            dev_dataset_portion,
-                                            i),
-                  elmo)
+        # Temporary dataset files location
+        config["train_data_path"] = temp_train_file.name
+        config["validation_data_path"] = temp_dev_file.name
+
+        # Creates a Param class and writes the train result
+        params = Params(config)
+        train_model(params=params,
+                            serialization_dir="{}/{}_fold_{}".format(os.path.realpath(folder), portion, i))
 
         # Closes and deletes temp files
         temp_train_file.close()
         temp_dev_file.close()
 
         i += 1
+
+    # training_f1_scores = []
+    # dev_f1_scores = []
+    #
+    # training_em_scores = []
+    # dev_em_scores = []
+    #
+    # for metric in metrics:
+    #     training_f1_scores.append(metric["training_f1"])
+    #     dev_f1_scores.append(metric["validation_f1"])
+    #     training_em_scores.append(metric["training_em"])
+    #     dev_em_scores.append(metric["validation_em"])
+    #
+    # score = {
+    #     "train_f1_mean": mean(training_f1_scores),
+    #     "dev_f1_mean": mean(dev_f1_scores),
+    #     "train_f1_stdev": stdev(training_f1_scores),
+    #     "dev_f1_stdev": stdev(dev_f1_scores),
+    #
+    #     "train_em_mean": mean(training_em_scores),
+    #     "dev_em_mean": mean(dev_em_scores),
+    #     "train_em_stdev": stdev(training_em_scores),
+    #     "dev_em_stdev": stdev(dev_em_scores)
+    # }
+    #
+    # with open(os.path.realpath("metrics/portion_{}_metrics.json".format(portion)), "w") as file:
+    #     file.write(json.dumps(score))
+    #
+    # return score
