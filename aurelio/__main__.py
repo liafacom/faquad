@@ -15,12 +15,12 @@ def main():
 
     for portion in portions:
         run_kfold(os.path.realpath("experiment.json"),
-            os.path.realpath("data/qa_facom_dataset_train_increased.json"),
-            os.path.realpath("data/qa_facom_dataset_dev.json"),
-            os.path.realpath("experiments"),
-            False,
-            True,
-            portion)
+                  os.path.realpath("data/qa_facom_dataset_train_increased.json"),
+                  os.path.realpath("data/qa_facom_dataset_dev.json"),
+                  os.path.realpath("experiments"),
+                  False,
+                  True,
+                  portion)
 
 
 main()
