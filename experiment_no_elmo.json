@@ -15,7 +15,7 @@
       }
     }
   },
-  "train_data_path": "data/qa_facom_dataset_train.json",
+  "train_data_path": "data/qa_facom_dataset_train_increased.json",
   "validation_data_path": "data/qa_facom_dataset_dev.json",
   "model": {
     "type": "bidaf",
@@ -30,7 +30,7 @@
             "token_characters": {
                 "type": "character_encoding",
                 "embedding": {
-                "num_embeddings": 262,
+                "num_embeddings": 260,
                 "embedding_dim": 16
                 },
                 "encoder": {
@@ -47,7 +47,7 @@
     "phrase_layer": {
       "type": "lstm",
       "bidirectional": true,
-      "input_size": 1724,
+      "input_size": 700,
       "hidden_size": 100,
       "num_layers": 1,
       "dropout": 0.2

@@ -21,8 +21,8 @@ def main():
     for portion in portions:
          run(os.path.realpath("data/qa_facom_dataset_train_increased.json".format(portion)),
              os.path.realpath("data/qa_facom_dataset_dev.json".format(portion)),
-             "experiment_elmo.json",
-             "experiment_elmo",
+             "experiment_no_elmo.json",
+             "experiment_no_elmo",
              portion)
 
         # scores.append(score)

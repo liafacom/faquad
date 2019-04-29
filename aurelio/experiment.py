@@ -18,7 +18,7 @@ import json
 import os
 
 
-def run(train_dataset_path, dev_dataset_path, config, dir, portion):
+def run(train_dataset_path, dev_dataset_path, config_path, folder, portion):
     # Loads files
     with open(train_dataset_path, encoding="utf-8") as file:
         train_dataset = json.loads(file.read())
@@ -44,7 +44,7 @@ def run(train_dataset_path, dev_dataset_path, config, dir, portion):
     for train_indexes, dev_indexes in kfold_indexes:
 
         # config file must be loaded for each iteration
-        with open(os.path.realpath(config), "r") as file:
+        with open(os.path.realpath(config_path), "r") as file:
             config = json.load(file)
 
         # GloVe location
@@ -59,7 +59,7 @@ def run(train_dataset_path, dev_dataset_path, config, dir, portion):
         train = train.iloc[split[0][0], :]
 
         # Melts the dataframes into nested datasets
-        train_dataset = melt_dataframe(train)
+        train_dataset = reduce_answer(melt_dataframe(train))
         dev_dataset = melt_dataframe(dev)
 
         # Writes a temporary training file
@@ -79,7 +79,7 @@ def run(train_dataset_path, dev_dataset_path, config, dir, portion):
         # Creates a Param class and writes the train result
         params = Params(config)
         train_model(params=params,
-                            serialization_dir="{}/{}_fold_{}".format(os.path.realpath(dir), portion, i))
+                            serialization_dir="{}/{}_fold_{}".format(os.path.realpath(folder), portion, i))
 
         # Closes and deletes temp files
         temp_train_file.close()
