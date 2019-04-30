@@ -1,4 +1,4 @@
-from experiment import run_kfold
+from experiment import run_kfold, run_single_fold
 
 import os
 
@@ -13,14 +13,23 @@ def main():
     # Portions relative to TEST size
     portions = [0.0, 0.25, 0.5, 0.75, 0.9]
 
+    # for portion in portions:
+    #     run_kfold(os.path.realpath("experiment.json"),
+    #               os.path.realpath("data/qa_facom_dataset_train_increased.json"),
+    #               os.path.realpath("data/qa_facom_dataset_dev.json"),
+    #               os.path.realpath("experiments"),
+    #               False,
+    #               True,
+    #               portion)
+
     for portion in portions:
-        run_kfold(os.path.realpath("experiment.json"),
-                  os.path.realpath("data/qa_facom_dataset_train_increased.json"),
-                  os.path.realpath("data/qa_facom_dataset_dev.json"),
-                  os.path.realpath("experiments"),
-                  False,
-                  True,
-                  portion)
+        run_single_fold(os.path.realpath("experiment.json"),
+                        os.path.realpath("data/qa_facom_dataset_train_increased.json"),
+                        os.path.realpath("data/qa_facom_dataset_dev.json"),
+                        os.path.realpath("experiments_single_fold"),
+                        False,
+                        True,
+                        portion)
 
 
 main()

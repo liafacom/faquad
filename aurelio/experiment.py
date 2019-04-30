@@ -66,6 +66,57 @@ def run_train(config_file_path, train_dataset_path, dev_dataset_path, serializat
     main()
 
 
+def run_single_fold(config_file_path,
+                    train_dataset_path,
+                    dev_dataset_path,
+                    serialization_dir,
+                    reduce_train_dataset=True,
+                    elmo=True,
+                    dev_dataset_portion=0.0):
+    # Loads files
+    with open(train_dataset_path, encoding="utf-8") as file:
+        train_dataset = json.loads(file.read())
+
+    with open(dev_dataset_path, encoding="utf-8") as file:
+        dev_dataset = json.loads(file.read())
+
+    # Flattens nested datasets into dataframes
+    train = flatten_json(train_dataset)
+    dev = flatten_json(dev_dataset)
+
+    split = list(
+        GroupShuffleSplit(n_splits=1, test_size=dev_dataset_portion).split(train, None, train[["context"]]))
+
+    train = train.iloc[split[0][0], :]
+
+    # Melts the dataframes into nested datasets
+    train_dataset = reduce_answer(melt_dataframe(train)) if reduce_train_dataset else melt_dataframe(train)
+    dev_dataset = melt_dataframe(dev)
+
+    # Writes a temporary training file
+    temp_train_file = tempfile.NamedTemporaryFile(mode="w", suffix=".json", encoding="UTF-8")
+    temp_train_file.write(json.dumps(train_dataset))
+    print("Temp file wrote at {}".format(temp_train_file.name))
+
+    # Writes a temporary dev file
+    temp_dev_file = tempfile.NamedTemporaryFile(mode="w", suffix=".json", encoding="UTF-8")
+    temp_dev_file.write(json.dumps(dev_dataset))
+    print("Temp file wrote at {}".format(temp_dev_file.name))
+
+    run_train(config_file_path,
+              temp_train_file.name,
+              temp_dev_file.name,
+              "{}/{}_{}_fold_{}".format(os.path.realpath(serialization_dir),
+                                        "elmo" if elmo else "no_elmo",
+                                        dev_dataset_portion,
+                                        0),
+              elmo)
+
+    # Closes and deletes temp files
+    temp_train_file.close()
+    temp_dev_file.close()
+
+
 def run_kfold(config_file_path,
               train_dataset_path,
               dev_dataset_path,
