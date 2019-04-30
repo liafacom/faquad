@@ -27,7 +27,7 @@ def main():
                         os.path.realpath("data/qa_facom_dataset_train_increased.json"),
                         os.path.realpath("data/qa_facom_dataset_dev.json"),
                         os.path.realpath("experiments_single_fold"),
-                        False,
+                        True,
                         True,
                         portion)
 
