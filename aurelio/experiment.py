@@ -53,7 +53,7 @@ def run_train(config_file_path, train_dataset_path, dev_dataset_path, serializat
             "validation_data_path": dev_dataset_path
         }
 
-    shutil.rmtree(serialization_dir)
+    shutil.rmtree(serialization_dir, ignore_errors=True)
 
     sys.argv = [
         "allennlp",
