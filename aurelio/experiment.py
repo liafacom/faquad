@@ -6,7 +6,7 @@
 from allennlp.commands import main
 
 from sklearn.model_selection import GroupKFold
-from sklearn.model_selection import GroupShuffleSplit
+from sklearn.model_selection import GroupShuffleSplit, ShuffleSplit
 
 from dataset_utils import flatten_json, melt_dataframe, reduce_answer
 
@@ -85,7 +85,7 @@ def run_single_fold(config_file_path,
     dev = flatten_json(dev_dataset)
 
     split = list(
-        GroupShuffleSplit(n_splits=1, test_size=dev_dataset_portion).split(train, None, train[["context"]]))
+        ShuffleSplit(n_splits=1, test_size=dev_dataset_portion).split(train))
 
     train = train.iloc[split[0][0], :]
 
