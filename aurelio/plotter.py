@@ -243,7 +243,7 @@ def plot_single_fold(metrics_dir):
                 scores["0.0"]["em"]["train"] = metrics["training_em"]
                 scores["0.0"]["em"]["dev"] = metrics["best_validation_em"]
 
-            if "0.25" in filename:
+            elif "0.25" in filename:
                 scores["0.25"]["f1"]["train"] = metrics["training_f1"]
                 scores["0.25"]["f1"]["dev"] = metrics["best_validation_f1"]
                 scores["0.25"]["em"]["train"] = metrics["training_em"]
@@ -428,3 +428,65 @@ def plot(metrics_dir):
 
     return plot_results(train_f1_means, dev_f1_means, train_f1_stdev, dev_f1_stdev,
                         train_em_means, dev_em_means, train_em_stdev, dev_em_stdev)
+
+
+def collect(metrics_dir, name):
+    # Get the dict for the given metric_name.
+    scores = []
+
+    for filename in os.listdir(metrics_dir):
+        with open("{}/{}/metrics.json".format(metrics_dir, filename)) as file:
+            metrics = json.loads(file.read())
+            # Get percentage of training data.
+            props = filename.split("_")
+            metrics["name"] = name
+            metrics["model"] = "_".join(props[:-3])
+            metrics["perc"] = 1.0 - float(props[-3])
+            metrics["fold"] = int(props[-1])
+            scores.append(metrics)
+
+    return scores
+
+
+def plot_collected_results(scores):
+    for exp, d_exp in scores.items():
+        for metric, d_metric in d_exp.items():
+            xs, ys = list(*d_metric.items())
+            mean_plot = go.Scatter(
+                x=xs,
+                y=ys,
+                name="{} ({})".format(exp, metric),
+                mode='lines',
+                #line=dict(color=RED)
+            )
+
+            train_f1_up_plot = go.Scatter(
+                x=x_train,
+                y=np.array(y_train) + np.array(std_train),
+                showlegend=False,
+                fillcolor=RED_T,
+                line=dict(color='rgba(255,255,255,0)')
+            )
+
+            train_f1_down_plot = go.Scatter(
+                x=x_train,
+                y=np.array(y_train) - np.array(std_train),
+                fill='tonexty',
+                name="Training SD",
+                fillcolor=RED_T,
+                line=dict(color='rgba(255,255,255,0)')
+            )
+
+            layout = go.Layout(
+                title=""
+            )
+
+    layout['xaxis'] = dict(title="Training Samples Amount (in %)")
+    layout['yaxis'] = dict(title="Score")
+
+    figure = go.Figure(data=[train_f1_plot, dev_f1_plot, train_f1_up_plot,
+                             train_f1_down_plot, dev_f1_down_plot,
+                             dev_f1_up_plot, train_em_plot, dev_em_plot, train_em_up_plot,
+                             train_em_down_plot, dev_em_down_plot,
+                             dev_em_up_plot], layout=layout)
+    return iplot(figure, filename="c" + ".html")
