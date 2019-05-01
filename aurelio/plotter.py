@@ -57,7 +57,7 @@ def plot_single_fold_results(y_train, y_test, y_em_train, y_em_test):
     layout['yaxis'] = dict(title="Score")
 
     figure = go.Figure(data=[train_f1_plot, dev_f1_plot, train_em_plot, dev_em_plot], layout=layout)
-    return py.iplot(figure, filename="c" + ".html")
+    return iplot(figure, filename="c" + ".html")
 
 
 def plot_results(y_train, y_test, std_train, std_test, y_em_train, y_em_test, std_em_train, std_em_test):
@@ -176,7 +176,7 @@ def plot_results(y_train, y_test, std_train, std_test, y_em_train, y_em_test, st
                              dev_f1_up_plot, train_em_plot, dev_em_plot, train_em_up_plot,
                              train_em_down_plot, dev_em_down_plot,
                              dev_em_up_plot], layout=layout)
-    return py.iplot(figure, filename="c" + ".html")
+    return iplot(figure, filename="c" + ".html")
 
 
 def plot_single_fold(metrics_dir):
