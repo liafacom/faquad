@@ -31,5 +31,32 @@ def main():
                         True,
                         portion)
 
+    for portion in portions:
+        run_single_fold(os.path.realpath("experiment.json"),
+                        os.path.realpath("data/qa_facom_dataset_train_increased.json"),
+                        os.path.realpath("data/qa_facom_dataset_dev.json"),
+                        os.path.realpath("experiments_single_fold"),
+                        True,
+                        False,
+                        portion)
+
+    for portion in portions:
+        run_single_fold(os.path.realpath("experiment.json"),
+                        os.path.realpath("data/qa_facom_dataset_train_increased.json"),
+                        os.path.realpath("data/qa_facom_dataset_dev.json"),
+                        os.path.realpath("experiments_single_fold_reduced"),
+                        False,
+                        True,
+                        portion)
+
+    for portion in portions:
+        run_single_fold(os.path.realpath("experiment.json"),
+                        os.path.realpath("data/qa_facom_dataset_train_increased.json"),
+                        os.path.realpath("data/qa_facom_dataset_dev.json"),
+                        os.path.realpath("experiments_single_fold_reduced"),
+                        False,
+                        False,
+                        portion)
+
 
 main()
