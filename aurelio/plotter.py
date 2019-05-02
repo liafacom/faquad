@@ -508,7 +508,6 @@ def collect(metrics_dir, name):
             # Get percentage of training data.
             props = filename.split("_")
             metrics["name"] = name
-            metrics["model"] = "_".join(props[:-3])
             metrics["perc"] = 1.0 - float(props[-3])
             metrics["fold"] = int(props[-1])
             scores.append(metrics)
