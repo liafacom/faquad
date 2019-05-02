@@ -492,6 +492,13 @@ def plot(metrics_dir):
 
 
 def collect(metrics_dir, name):
+    """
+    Collect results from runs of AllenNLP.
+
+    :param metrics_dir:
+    :param name:
+    :return:
+    """
     # Get the dict for the given metric_name.
     scores = []
 
@@ -507,47 +514,3 @@ def collect(metrics_dir, name):
             scores.append(metrics)
 
     return scores
-
-
-def plot_collected_results(scores):
-    for exp, d_exp in scores.items():
-        for metric, d_metric in d_exp.items():
-            xs, ys = list(*d_metric.items())
-            mean_plot = go.Scatter(
-                x=xs,
-                y=ys,
-                name="{} ({})".format(exp, metric),
-                mode='lines',
-                #line=dict(color=RED)
-            )
-
-            train_f1_up_plot = go.Scatter(
-                x=x_train,
-                y=np.array(y_train) + np.array(std_train),
-                showlegend=False,
-                fillcolor=RED_T,
-                line=dict(color='rgba(255,255,255,0)')
-            )
-
-            train_f1_down_plot = go.Scatter(
-                x=x_train,
-                y=np.array(y_train) - np.array(std_train),
-                fill='tonexty',
-                name="Training SD",
-                fillcolor=RED_T,
-                line=dict(color='rgba(255,255,255,0)')
-            )
-
-            layout = go.Layout(
-                title=""
-            )
-
-    layout['xaxis'] = dict(title="Training Samples Amount (in %)")
-    layout['yaxis'] = dict(title="Score")
-
-    figure = go.Figure(data=[train_f1_plot, dev_f1_plot, train_f1_up_plot,
-                             train_f1_down_plot, dev_f1_down_plot,
-                             dev_f1_up_plot, train_em_plot, dev_em_plot, train_em_up_plot,
-                             train_em_down_plot, dev_em_down_plot,
-                             dev_em_up_plot], layout=layout)
-    return iplot(figure, filename="c" + ".html")
