@@ -243,7 +243,7 @@ def plot_single_fold(metrics_dir):
                 scores["0.0"]["em"]["train"] = metrics["training_em"]
                 scores["0.0"]["em"]["dev"] = metrics["best_validation_em"]
 
-            if "0.25" in filename:
+            elif "0.25" in filename:
                 scores["0.25"]["f1"]["train"] = metrics["training_f1"]
                 scores["0.25"]["f1"]["dev"] = metrics["best_validation_f1"]
                 scores["0.25"]["em"]["train"] = metrics["training_em"]
@@ -279,6 +279,67 @@ def plot_single_fold(metrics_dir):
         scores_dev_em.append(scores[key]["em"]["dev"])
 
     return plot_single_fold_results(scores_train_f1, scores_dev_f1, scores_train_em, scores_dev_em)
+
+
+def get_means_and_stdev(metrics_dir):
+    scores = {
+        "f1": {
+            "train": [],
+            "dev": []
+        },
+        "em": {
+            "train": [],
+            "dev": []
+        }
+    }
+
+    for filename in os.listdir(metrics_dir):
+        with open("{}/{}/metrics.json".format(metrics_dir, filename)) as file:
+            metrics = json.loads(file.read())
+
+            scores["f1"]["train"].append(metrics["training_f1"])
+            scores["f1"]["dev"].append(metrics["best_validation_f1"])
+            scores["em"]["train"].append(metrics["training_em"])
+            scores["em"]["dev"].append(metrics["best_validation_em"])
+
+    train_f1_mean = mean(scores["f1"]["train"])
+
+    train_f1_stdev = stdev(scores["f1"]["train"])
+
+    dev_f1_mean = mean(scores["f1"]["dev"])
+
+    dev_f1_stdev = stdev(scores["f1"]["dev"])
+
+    train_em_mean = mean(scores["em"]["train"])
+
+    train_em_stdev = stdev(scores["em"]["train"])
+
+    dev_em_mean = mean(scores["em"]["dev"])
+
+    dev_em_stdev = stdev(scores["em"]["dev"])
+
+    return {
+        "train": {
+            "f1": {
+                "mean": train_f1_mean,
+                "stdev": train_f1_stdev
+            },
+            "em": {
+                "mean": train_em_mean,
+                "stdev": train_em_stdev
+            }
+        },
+        "dev": {
+            "f1": {
+                "mean": dev_f1_mean,
+                "stdev": dev_f1_stdev
+            },
+            "em": {
+                "mean": dev_em_mean,
+                "stdev": dev_em_stdev
+            }
+        }
+    }
 
 
 def plot(metrics_dir):
@@ -341,33 +402,33 @@ def plot(metrics_dir):
 
             if "0.0" in filename:
                 scores["0.0"]["f1"]["train"].append(metrics["training_f1"])
-                scores["0.0"]["f1"]["dev"].append(metrics["validation_f1"])
+                scores["0.0"]["f1"]["dev"].append(metrics["best_validation_f1"])
                 scores["0.0"]["em"]["train"].append(metrics["training_em"])
-                scores["0.0"]["em"]["dev"].append(metrics["validation_em"])
+                scores["0.0"]["em"]["dev"].append(metrics["best_validation_em"])
 
             if "0.25" in filename:
                 scores["0.25"]["f1"]["train"].append(metrics["training_f1"])
-                scores["0.25"]["f1"]["dev"].append(metrics["validation_f1"])
+                scores["0.25"]["f1"]["dev"].append(metrics["best_validation_f1"])
                 scores["0.25"]["em"]["train"].append(metrics["training_em"])
-                scores["0.25"]["em"]["dev"].append(metrics["validation_em"])
+                scores["0.25"]["em"]["dev"].append(metrics["best_validation_em"])
 
             if "0.5" in filename:
                 scores["0.5"]["f1"]["train"].append(metrics["training_f1"])
-                scores["0.5"]["f1"]["dev"].append(metrics["validation_f1"])
+                scores["0.5"]["f1"]["dev"].append(metrics["best_validation_f1"])
                 scores["0.5"]["em"]["train"].append(metrics["training_em"])
-                scores["0.5"]["em"]["dev"].append(metrics["validation_em"])
+                scores["0.5"]["em"]["dev"].append(metrics["best_validation_em"])
 
             if "0.75" in filename:
                 scores["0.75"]["f1"]["train"].append(metrics["training_f1"])
-                scores["0.75"]["f1"]["dev"].append(metrics["validation_f1"])
+                scores["0.75"]["f1"]["dev"].append(metrics["best_validation_f1"])
                 scores["0.75"]["em"]["train"].append(metrics["training_em"])
-                scores["0.75"]["em"]["dev"].append(metrics["validation_em"])
+                scores["0.75"]["em"]["dev"].append(metrics["best_validation_em"])
 
             if "0.9" in filename:
                 scores["0.9"]["f1"]["train"].append(metrics["training_f1"])
-                scores["0.9"]["f1"]["dev"].append(metrics["validation_f1"])
+                scores["0.9"]["f1"]["dev"].append(metrics["best_validation_f1"])
                 scores["0.9"]["em"]["train"].append(metrics["training_em"])
-                scores["0.9"]["em"]["dev"].append(metrics["validation_em"])
+                scores["0.9"]["em"]["dev"].append(metrics["best_validation_em"])
 
     train_f1_means = [
         mean(scores["0.9"]["f1"]["train"]),
@@ -428,3 +489,27 @@ def plot(metrics_dir):
 
     return plot_results(train_f1_means, dev_f1_means, train_f1_stdev, dev_f1_stdev,
                         train_em_means, dev_em_means, train_em_stdev, dev_em_stdev)
+
+
+def collect(metrics_dir, name):
+    """
+    Collect results from runs of AllenNLP.
+
+    :param metrics_dir:
+    :param name:
+    :return:
+    """
+    # Get the dict for the given metric_name.
+    scores = []
+
+    for filename in os.listdir(metrics_dir):
+        with open("{}/{}/metrics.json".format(metrics_dir, filename)) as file:
+            metrics = json.loads(file.read())
+            # Get percentage of training data.
+            props = filename.split("_")
+            metrics["name"] = name
+            metrics["perc"] = 1.0 - float(props[-3])
+            metrics["fold"] = int(props[-1])
+            scores.append(metrics)
+
+    return scores
