@@ -513,3 +513,31 @@ def collect(metrics_dir, name):
             scores.append(metrics)
 
     return scores
+
+
+def collect_zip(metrics_zip, name):
+    """
+    Collect results from runs of AllenNLP.
+
+    :param metrics_dir:
+    :param name:
+    :return:
+    """
+    import zipfile
+
+    # Get the dict for the given metric_name.
+    scores = []
+
+    zfile = zipfile.ZipFile(metrics_zip)
+    for finfo in zfile.infolist():
+            with zfile.open(finfo) as file:
+                metrics = json.loads(file.read())
+                # Get percentage of training data.
+                props = finfo.filename.split("/")[0].split("_")
+                metrics["name"] = name
+                metrics["perc"] = 1.0 - float(props[-3])
+                metrics["fold"] = int(props[-1])
+                scores.append(metrics)
+
+    return scores
+
