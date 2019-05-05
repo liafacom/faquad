@@ -9,4 +9,8 @@ __pycache__
 /experiments
 /experiments_single_fold
 /experiments_single_fold_reduced
+/aurelio/nohup.out
+/experiment_no_glove/
+/experiments_kfold_dev_reduced/
+/experiments_kfold_reduced/
 .idea
