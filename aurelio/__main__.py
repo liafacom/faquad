@@ -20,7 +20,7 @@ def main():
                   os.path.realpath("data/qa_facom_dataset_dev.json"),
                   os.path.realpath("experiment_glove_dimensions"),
                   True,
-                  True,
+                  False,
                   0.0,
                   dim)
 
