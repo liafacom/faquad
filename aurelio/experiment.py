@@ -18,7 +18,8 @@ import os
 import sys
 
 
-def run_train(config_file_path, train_dataset_path, dev_dataset_path, serialization_dir, elmo=True):
+def run_train(config_file_path, train_dataset_path, dev_dataset_path, serialization_dir, elmo=True,
+              embedding_dim=600):
     if elmo:
         overrides = {
             "train_data_path": train_dataset_path,
@@ -50,7 +51,20 @@ def run_train(config_file_path, train_dataset_path, dev_dataset_path, serializat
     else:
         overrides = {
             "train_data_path": train_dataset_path,
-            "validation_data_path": dev_dataset_path
+            "validation_data_path": dev_dataset_path,
+            "model": {
+                "text_field_embedder": {
+                    "token_embedders": {
+                        "tokens": {
+                            "pretrained_file": "glove/glove_s{}.zip".format(embedding_dim),
+                            "embedding_dim": embedding_dim,
+                        },
+                    }
+                },
+                "phrase_layer": {
+                    "input_size": embedding_dim + 100
+                }
+            }
         }
 
     shutil.rmtree(serialization_dir, ignore_errors=True)
@@ -123,7 +137,8 @@ def run_kfold(config_file_path,
               serialization_dir,
               reduce_train_dataset=True,
               elmo=True,
-              dev_dataset_portion=0.0):
+              dev_dataset_portion=0.0,
+              embedding_dim=600):
     # Loads files
     with open(train_dataset_path, encoding="utf-8") as file:
         train_dataset = json.loads(file.read())
@@ -172,11 +187,13 @@ def run_kfold(config_file_path,
         run_train(config_file_path,
                   temp_train_file.name,
                   temp_dev_file.name,
-                  "{}/{}_{}_fold_{}".format(os.path.realpath(serialization_dir),
-                                            "elmo" if elmo else "no_elmo",
-                                            dev_dataset_portion,
-                                            i),
-                  elmo)
+                  "{}/{}_{}_fold_{}_glove_{}".format(os.path.realpath(serialization_dir),
+                                                     "elmo" if elmo else "no_elmo",
+                                                     dev_dataset_portion,
+                                                     i,
+                                                     embedding_dim),
+                  elmo,
+                  embedding_dim)
 
         # Closes and deletes temp files
         temp_train_file.close()
