@@ -1,6 +1,30 @@
 from pandas.io.json import json_normalize
 
 
+def expand_questions(node: list):
+    for data in node:
+        while len(data["answers"]) > 1:
+            node.append({
+                "question": data["question"],
+                "id": data["id"],
+                "answers": [data["answers"].pop()]
+            })
+
+
+def expand_qas(node):
+    if not isinstance(node, list):
+        return
+
+    for data in node:
+        keys = data.keys()
+
+        if "qas" in keys:
+            expand_questions(data["qas"])
+        else:
+            for key in keys:
+                expand_qas(data[key])
+
+
 def flatten_json(dict):
     dataframe = json_normalize(dict["data"], ["paragraphs", 'qas', "answers"],
                                ["title", ["paragraphs", "context"], ["paragraphs", "qas", "question"],
