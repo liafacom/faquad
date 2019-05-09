@@ -508,8 +508,9 @@ def collect(metrics_dir, name):
             # Get percentage of training data.
             props = filename.split("_")
             metrics["name"] = name
-            metrics["perc"] = 1.0 - float(props[-3])
-            metrics["fold"] = int(props[-1])
+            metrics["perc"] = 1.0 - float(props[1])
+            metrics["fold"] = int(props[3])
+            metrics["dim"] = int(props[-1])
             scores.append(metrics)
 
     return scores
@@ -535,8 +536,9 @@ def collect_zip(metrics_zip, name):
                 # Get percentage of training data.
                 props = finfo.filename.split("/")[0].split("_")
                 metrics["name"] = name
-                metrics["perc"] = 1.0 - float(props[-3])
-                metrics["fold"] = int(props[-1])
+                metrics["perc"] = 1.0 - float(props[1])
+                metrics["fold"] = int(props[3])
+                metrics["dim"] = int(props[-1])
                 scores.append(metrics)
 
     return scores
