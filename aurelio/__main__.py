@@ -1,28 +1,21 @@
-from experiment import run_kfold, run_single_fold
-
-import os
-
-GREEN = "rgb(163,218,151)"
-GREEN_T = "rgba(163,218,151,0.2)"
-
-RED = "rgb(255,122,101)"
-RED_T = "rgba(255,122,101,0.2)"
-
+from experiment import run_kfold
+from os.path import realpath
+from sys import argv
 
 def main():
-    # Portions relative to TEST size
+    # Portions relative to Group Shuffle Split TEST size
+    portions = [0.0, 0.25, 0.5, 0.75, 0.9]
 
-    embedding_dims = [50, 100, 300, 600]
-
-    for dim in embedding_dims:
-        run_kfold(os.path.realpath("experiment.json"),
-                  os.path.realpath("data/qa_facom_dataset_train_increased.json"),
-                  os.path.realpath("data/qa_facom_dataset_dev.json"),
-                  os.path.realpath("experiment_glove_dimensions"),
-                  True,
-                  False,
-                  0.0,
-                  dim)
+    for portion in portions:
+        run_kfold(config_file_path=realpath("experiment.json"),
+                  train_dataset_path=realpath("data/train.json"),
+                  dev_dataset_path=realpath("data/dev.json"),
+                  serialization_dir=realpath("models/{}".format(argv[1])),
+                  reduce_train_dataset=False,
+                  expand_train_qas=True,
+                  elmo=True,
+                  dev_dataset_portion=portion,
+                  embedding_dim=100)
 
 
 main()

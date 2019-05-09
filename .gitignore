@@ -4,13 +4,5 @@ __pycache__
 /glove
 /elmo
 /nohup.out
-/experiment_elmo
-/experiment_no_elmo
-/experiments
-/experiments_single_fold
-/experiments_single_fold_reduced
-/aurelio/nohup.out
-/experiment_no_glove/
-/experiments_kfold_dev_reduced/
-/experiments_kfold_reduced/
+/models
 .idea
