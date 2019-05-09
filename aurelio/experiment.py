@@ -24,19 +24,23 @@ def run_train(config_file_path, train_dataset_path, dev_dataset_path, serializat
 
         config["train_data_path"] = train_dataset_path
         config["validation_data_path"] = dev_dataset_path
-        config["model"]["text_field_embedder"]["token_embedders"].add("tokens", {
+        config["model"]["text_field_embedder"]["token_embedders"]["tokens"] = {
             "pretrained_file": "glove/glove_s{}.zip".format(embedding_dim),
             "embedding_dim": embedding_dim,
-        })
+        }
         config["model"]["phrase_layer"]["input_size"] = 100 + embedding_dim + (1024 if elmo else 0)
-        elmo and config["dataset_reader"]["token_indexers"].add("elmo", {"type": "elmo_characters"})
-        elmo and config["model"]["text_field_embedder"]["token_embedders"].add("elmo", {
-            "type": "elmo_token_embedder",
-            "options_file": "elmo/elmo_pt_options.json",
-            "weight_file": "elmo/elmo_pt_weights.hdf5",
-            "do_layer_norm": False,
-            "dropout": 0.0
-        })
+
+        if elmo:
+            config["dataset_reader"]["token_indexers"]["elmo"] = {"type": "elmo_characters"}
+
+        if elmo:
+            config["model"]["text_field_embedder"]["token_embedders"]["elmo"] = {
+                "type": "elmo_token_embedder",
+                "options_file": "elmo/elmo_pt_options.json",
+                "weight_file": "elmo/elmo_pt_weights.hdf5",
+                "do_layer_norm": False,
+                "dropout": 0.0
+            }
 
         print(json.dumps(config, indent=4))
 
@@ -99,7 +103,7 @@ def run_kfold(config_file_path,
 
         if reduce_train_dataset:
             train_dataset = reduce_answer(train_dataset)
-            
+
         if expand_train_qas:
             expand_qas(train_dataset["data"])
 
