@@ -1,4 +1,4 @@
-from experiment import run_kfold, run_single_fold
+from experiment import run_kfold
 from os.path import realpath
 
 
