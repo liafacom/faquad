@@ -3,132 +3,52 @@
 # word splitter's default language in allennlp's source code at
 # allennlp/data/tokenizers/word_splitter.py from "en_core_web_sm" to "pt_core_news_sm"
 
-from allennlp.commands import main
+from allennlp.commands import main as bidaf
 
 from sklearn.model_selection import GroupKFold
 from sklearn.model_selection import GroupShuffleSplit, ShuffleSplit
-
-from dataset_utils import flatten_json, melt_dataframe, reduce_answer
+from os.path import realpath
+from dataset_utils import flatten_json, melt_dataframe, reduce_answer, expand_qas
 
 import pandas as pd
 import tempfile
 import json
 import shutil
-import os
 import sys
 
 
 def run_train(config_file_path, train_dataset_path, dev_dataset_path, serialization_dir, elmo=True,
               embedding_dim=600):
-    if elmo:
-        overrides = {
-            "train_data_path": train_dataset_path,
-            "validation_data_path": dev_dataset_path,
-            "dataset_reader": {
-                "token_indexers": {
-                    "elmo": {
-                        "type": "elmo_characters"
-                    }
-                }
-            },
-            "model": {
-                "text_field_embedder": {
-                    "token_embedders": {
-                        "elmo": {
-                            "type": "elmo_token_embedder",
-                            "options_file": "elmo/elmo_pt_options.json",
-                            "weight_file": "elmo/elmo_pt_weights.hdf5",
-                            "do_layer_norm": False,
-                            "dropout": 0.0
-                        }
-                    }
-                },
-                "phrase_layer": {
-                    "input_size": 1724
-                }
-            }
-        }
-    else:
-        overrides = {
-            "train_data_path": train_dataset_path,
-            "validation_data_path": dev_dataset_path,
-            "model": {
-                "text_field_embedder": {
-                    "token_embedders": {
-                        "tokens": {
-                            "pretrained_file": "glove/glove_s{}.zip".format(embedding_dim),
-                            "embedding_dim": embedding_dim,
-                        },
-                    }
-                },
-                "phrase_layer": {
-                    "input_size": embedding_dim + 100
-                }
-            }
-        }
+    with open(realpath(config_file_path)) as file:
+        config = json.dumps(file.read())
 
-    shutil.rmtree(serialization_dir, ignore_errors=True)
+        config["train_data_path"] = train_dataset_path
+        config["validation_data_path"] = dev_dataset_path
+        config["model"]["text_field_embedder"]["token_embedders"].add("tokens", {
+            "pretrained_file": "glove/glove_s{}.zip".format(embedding_dim),
+            "embedding_dim": embedding_dim,
+        })
+        config["model"]["phrase_layer"]["input_size"] = 100 + embedding_dim + (1024 if elmo else 0)
+        elmo and config["dataset_reader"]["token_indexers"].add("elmo", {"type": "elmo_characters"})
+        elmo and config["model"]["text_field_embedder"]["token_embedders"].add("elmo", {
+            "type": "elmo_token_embedder",
+            "options_file": "elmo/elmo_pt_options.json",
+            "weight_file": "elmo/elmo_pt_weights.hdf5",
+            "do_layer_norm": False,
+            "dropout": 0.0
+        })
 
-    sys.argv = [
-        "allennlp",
-        "train",
-        config_file_path,
-        "-s", serialization_dir,
-        "-o", json.dumps(overrides)
-    ]
+        shutil.rmtree(serialization_dir, ignore_errors=True)
 
-    main()
+        sys.argv = [
+            "allennlp",
+            "train",
+            config_file_path,
+            "-s", serialization_dir,
+            "-o", json.dumps(config)
+        ]
 
-
-def run_single_fold(config_file_path,
-                    train_dataset_path,
-                    dev_dataset_path,
-                    serialization_dir,
-                    reduce_train_dataset=True,
-                    elmo=True,
-                    dev_dataset_portion=0.0):
-    # Loads files
-    with open(train_dataset_path, encoding="utf-8") as file:
-        train_dataset = json.loads(file.read())
-
-    with open(dev_dataset_path, encoding="utf-8") as file:
-        dev_dataset = json.loads(file.read())
-
-    # Flattens nested datasets into dataframes
-    train = flatten_json(train_dataset)
-    dev = flatten_json(dev_dataset)
-
-    split = list(
-        ShuffleSplit(n_splits=1, test_size=dev_dataset_portion).split(train))
-
-    train = train.iloc[split[0][0], :]
-
-    # Melts the dataframes into nested datasets
-    train_dataset = reduce_answer(melt_dataframe(train)) if reduce_train_dataset else melt_dataframe(train)
-    dev_dataset = melt_dataframe(dev)
-
-    # Writes a temporary training file
-    temp_train_file = tempfile.NamedTemporaryFile(mode="w", suffix=".json", encoding="UTF-8")
-    temp_train_file.write(json.dumps(train_dataset))
-    print("Temp file wrote at {}".format(temp_train_file.name))
-
-    # Writes a temporary dev file
-    temp_dev_file = tempfile.NamedTemporaryFile(mode="w", suffix=".json", encoding="UTF-8")
-    temp_dev_file.write(json.dumps(dev_dataset))
-    print("Temp file wrote at {}".format(temp_dev_file.name))
-
-    run_train(config_file_path,
-              temp_train_file.name,
-              temp_dev_file.name,
-              "{}/{}_{}_fold_{}".format(os.path.realpath(serialization_dir),
-                                        "elmo" if elmo else "no_elmo",
-                                        dev_dataset_portion,
-                                        0),
-              elmo)
-
-    # Closes and deletes temp files
-    temp_train_file.close()
-    temp_dev_file.close()
+        bidaf()
 
 
 def run_kfold(config_file_path,
@@ -136,9 +56,10 @@ def run_kfold(config_file_path,
               dev_dataset_path,
               serialization_dir,
               reduce_train_dataset=True,
+              expand_train_qas=False,
               elmo=True,
               dev_dataset_portion=0.0,
-              embedding_dim=600):
+              embedding_dim=100):
     # Loads files
     with open(train_dataset_path, encoding="utf-8") as file:
         train_dataset = json.loads(file.read())
@@ -171,8 +92,16 @@ def run_kfold(config_file_path,
         train = train.iloc[split[0][0], :]
 
         # Melts the dataframes into nested datasets
-        train_dataset = reduce_answer(melt_dataframe(train)) if reduce_train_dataset else melt_dataframe(train)
+        train_dataset = melt_dataframe(train)
         dev_dataset = melt_dataframe(dev)
+
+        if reduce_train_dataset:
+            train_dataset = reduce_answer(train_dataset)
+            
+        if expand_train_qas:
+            expand_qas(train_dataset["data"])
+
+        print(json.dumps(train_dataset, indent=4))
 
         # Writes a temporary training file
         temp_train_file = tempfile.NamedTemporaryFile(mode="w", suffix=".json", encoding="UTF-8")
@@ -187,7 +116,7 @@ def run_kfold(config_file_path,
         run_train(config_file_path,
                   temp_train_file.name,
                   temp_dev_file.name,
-                  "{}/{}_{}_fold_{}_glove_{}".format(os.path.realpath(serialization_dir),
+                  "{}/{}_{}_fold_{}_glove_{}".format(realpath(serialization_dir),
                                                      "elmo" if elmo else "no_elmo",
                                                      dev_dataset_portion,
                                                      i,
