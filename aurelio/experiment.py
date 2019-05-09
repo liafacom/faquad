@@ -107,7 +107,7 @@ def run_kfold(config_file_path,
         if expand_train_qas:
             expand_qas(train_dataset["data"])
 
-        print(json.dumps(train_dataset, indent=4))
+        print(json.dumps(train_dataset, indent=4, ensure_ascii=False).encode("utf8"))
 
         # Writes a temporary training file
         temp_train_file = tempfile.NamedTemporaryFile(mode="w", suffix=".json", encoding="UTF-8")
