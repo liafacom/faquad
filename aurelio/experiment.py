@@ -111,12 +111,12 @@ def run_kfold(config_file_path,
 
         # Writes a temporary training file
         temp_train_file = tempfile.NamedTemporaryFile(mode="w", suffix=".json", encoding="UTF-8")
-        temp_train_file.write(json.dumps(train_dataset))
+        temp_train_file.write(json.dumps(train_dataset, ensure_ascii=False).encode("utf8"))
         print("Temp file wrote at {}".format(temp_train_file.name))
 
         # Writes a temporary dev file
         temp_dev_file = tempfile.NamedTemporaryFile(mode="w", suffix=".json", encoding="UTF-8")
-        temp_dev_file.write(json.dumps(dev_dataset))
+        temp_dev_file.write(json.dumps(dev_dataset, ensure_ascii=False).encode("utf8"))
         print("Temp file wrote at {}".format(temp_dev_file.name))
 
         run_train(config_file_path,
