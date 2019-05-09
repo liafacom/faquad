@@ -38,6 +38,8 @@ def run_train(config_file_path, train_dataset_path, dev_dataset_path, serializat
             "dropout": 0.0
         })
 
+        print(json.dumps(config, indent=4))
+
         shutil.rmtree(serialization_dir, ignore_errors=True)
 
         sys.argv = [
