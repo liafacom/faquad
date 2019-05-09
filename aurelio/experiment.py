@@ -20,7 +20,7 @@ import sys
 def run_train(config_file_path, train_dataset_path, dev_dataset_path, serialization_dir, elmo=True,
               embedding_dim=600):
     with open(realpath(config_file_path)) as file:
-        config = json.dumps(file.read())
+        config = json.loads(file.read())
 
         config["train_data_path"] = train_dataset_path
         config["validation_data_path"] = dev_dataset_path
