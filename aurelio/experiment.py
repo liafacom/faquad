@@ -64,8 +64,9 @@ def run_kfold(config_file_path,
               train_dataset_path,
               dev_dataset_path,
               serialization_dir,
-              reduce_train_dataset=True,
-              expand_train_qas=False,
+              reduce_train_dataset=False,
+              reduce_dev_dataset=False,
+              expand_train_qas=True,
               elmo=True,
               dev_dataset_portion=0.0,
               embedding_dim=100):
@@ -107,6 +108,9 @@ def run_kfold(config_file_path,
         if reduce_train_dataset:
             train_dataset = reduce_answer(train_dataset)
 
+        if reduce_dev_dataset:
+            dev_dataset = reduce_answer(dev_dataset)
+
         if expand_train_qas:
             expand_qas(train_dataset["data"])
 
@@ -124,10 +128,10 @@ def run_kfold(config_file_path,
                   temp_train_file.name,
                   temp_dev_file.name,
                   "{}/{}-perc_{}-fold_{}-glove_{}".format(realpath(serialization_dir),
-                                                     "elmo" if elmo else "no_elmo",
-                                                     dev_dataset_portion,
-                                                     i,
-                                                     embedding_dim),
+                                                          "elmo" if elmo else "no_elmo",
+                                                          dev_dataset_portion,
+                                                          i,
+                                                          embedding_dim),
                   elmo,
                   embedding_dim)
 

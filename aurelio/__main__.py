@@ -11,8 +11,9 @@ def main():
                   train_dataset_path=realpath("data/train.json"),
                   dev_dataset_path=realpath("data/dev.json"),
                   serialization_dir=realpath("models/{}".format(argv[1])),
-                  reduce_train_dataset=True,
-                  expand_train_qas=False,
+                  reduce_train_dataset=False,
+                  reduce_dev_dataset=True,
+                  expand_train_qas=True,
                   elmo=True,
                   dev_dataset_portion=portion,
                   embedding_dim=100)
