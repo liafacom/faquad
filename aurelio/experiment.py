@@ -24,10 +24,13 @@ def run_train(config_file_path, train_dataset_path, dev_dataset_path, serializat
 
         config["train_data_path"] = train_dataset_path
         config["validation_data_path"] = dev_dataset_path
-        config["model"]["text_field_embedder"]["token_embedders"]["tokens"] = {
-            "pretrained_file": "glove/glove_s{}.zip".format(embedding_dim),
-            "embedding_dim": embedding_dim,
-        }
+
+        if embedding_dim > 0:
+            config["model"]["text_field_embedder"]["token_embedders"]["tokens"] = {
+                "pretrained_file": "glove/glove_s{}.zip".format(embedding_dim),
+                "embedding_dim": embedding_dim,
+            }
+
         config["model"]["phrase_layer"]["input_size"] = 100 + embedding_dim + (1024 if elmo else 0)
 
         if elmo:
@@ -120,7 +123,7 @@ def run_kfold(config_file_path,
         run_train(config_file_path,
                   temp_train_file.name,
                   temp_dev_file.name,
-                  "{}/{}_{}_fold_{}_glove_{}".format(realpath(serialization_dir),
+                  "{}/{}-perc_{}-fold_{}-glove_{}".format(realpath(serialization_dir),
                                                      "elmo" if elmo else "no_elmo",
                                                      dev_dataset_portion,
                                                      i,
