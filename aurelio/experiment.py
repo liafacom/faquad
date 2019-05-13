@@ -26,6 +26,10 @@ def run_train(config_file_path, train_dataset_path, dev_dataset_path, serializat
         config["validation_data_path"] = dev_dataset_path
 
         if embedding_dim > 0:
+            config["dataset_reader"]["token_indexers"]["tokens"] = {
+                "type": "single_id",
+                "lowercase_tokens": True
+            }
             config["model"]["text_field_embedder"]["token_embedders"]["tokens"] = {
                 "type": "embedding",
                 "pretrained_file": "glove/glove_s{}.zip".format(embedding_dim),

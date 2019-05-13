@@ -2,10 +2,6 @@
   "dataset_reader": {
     "type": "squad",
     "token_indexers": {
-      "tokens": {
-        "type": "single_id",
-        "lowercase_tokens": true
-      },
       "token_characters": {
         "type": "characters",
         "character_tokenizer": {
