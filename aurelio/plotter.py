@@ -506,11 +506,12 @@ def collect(metrics_dir, name):
         with open("{}/{}/metrics.json".format(metrics_dir, filename)) as file:
             metrics = json.loads(file.read())
             # Get percentage of training data.
-            props = filename.split("_")
+            props = filename.split("-")
+
             metrics["name"] = name
-            metrics["perc"] = 1.0 - float(props[1])
-            metrics["fold"] = int(props[3])
-            metrics["dim"] = int(props[-1])
+            metrics["perc"] = 1.0 - float(props[1].split("_")[1]);
+            metrics["fold"] = int(props[2].split("_")[1]);
+            metrics["dim"] = int(props[3].split("_")[1]);
             scores.append(metrics)
 
     return scores
