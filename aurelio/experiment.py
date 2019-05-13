@@ -18,7 +18,7 @@ import sys
 
 
 def run_train(config_file_path, train_dataset_path, dev_dataset_path, serialization_dir, elmo=True,
-              embedding_dim=600):
+              embedding_dim=100):
     with open(realpath(config_file_path)) as file:
         config = json.loads(file.read())
 
@@ -27,8 +27,10 @@ def run_train(config_file_path, train_dataset_path, dev_dataset_path, serializat
 
         if embedding_dim > 0:
             config["model"]["text_field_embedder"]["token_embedders"]["tokens"] = {
+                "type": "embedding",
                 "pretrained_file": "glove/glove_s{}.zip".format(embedding_dim),
                 "embedding_dim": embedding_dim,
+                "trainable": False
             }
 
         config["model"]["phrase_layer"]["input_size"] = 100 + embedding_dim + (1024 if elmo else 0)

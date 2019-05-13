@@ -21,12 +21,6 @@
     "type": "bidaf",
     "text_field_embedder": {
       "token_embedders": {
-        "tokens": {
-          "type": "embedding",
-          "pretrained_file": "glove/glove_s600.zip",
-          "embedding_dim": 600,
-          "trainable": false
-        },
         "token_characters": {
           "type": "character_encoding",
           "embedding": {
