@@ -15,9 +15,9 @@ def main():
                   reduce_train_dataset=False,
                   reduce_dev_dataset=False,
                   expand_train_qas=True,
-                  elmo=False,
+                  elmo=True,
                   dev_dataset_portion=portion,
-                  embedding_dim=100)
+                  embedding_dim=0)
 
 
 main()
