@@ -508,8 +508,33 @@ def collect(metrics_dir, name):
             # Get percentage of training data.
             props = filename.split("_")
             metrics["name"] = name
-            metrics["perc"] = 1.0 - float(props[1])
-            metrics["fold"] = int(props[3])
+            metrics["perc"] = 1.0 - float(props[-3])
+            metrics["fold"] = int(props[-1])
+            # metrics["dim"] = int(props[-1])
+            scores.append(metrics)
+
+    return scores
+
+
+def collect_dim(metrics_dir, name):
+    """
+    Collect results from runs of AllenNLP.
+
+    :param metrics_dir:
+    :param name:
+    :return:
+    """
+    # Get the dict for the given metric_name.
+    scores = []
+
+    for filename in os.listdir(metrics_dir):
+        with open("{}/{}/metrics.json".format(metrics_dir, filename)) as file:
+            metrics = json.loads(file.read())
+            # Get percentage of training data.
+            props = filename.split("_")
+            metrics["name"] = name
+            metrics["perc"] = 1.0 - float(props[-5])
+            metrics["fold"] = int(props[-3])
             metrics["dim"] = int(props[-1])
             scores.append(metrics)
 
