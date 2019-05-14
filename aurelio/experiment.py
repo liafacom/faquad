@@ -18,16 +18,25 @@ import sys
 
 
 def run_train(config_file_path, train_dataset_path, dev_dataset_path, serialization_dir, elmo=True,
-              embedding_dim=600):
+              embedding_dim=100):
     with open(realpath(config_file_path)) as file:
         config = json.loads(file.read())
 
         config["train_data_path"] = train_dataset_path
         config["validation_data_path"] = dev_dataset_path
-        config["model"]["text_field_embedder"]["token_embedders"]["tokens"] = {
-            "pretrained_file": "glove/glove_s{}.zip".format(embedding_dim),
-            "embedding_dim": embedding_dim,
-        }
+
+        if embedding_dim > 0:
+            config["dataset_reader"]["token_indexers"]["tokens"] = {
+                "type": "single_id",
+                "lowercase_tokens": True
+            }
+            config["model"]["text_field_embedder"]["token_embedders"]["tokens"] = {
+                "type": "embedding",
+                "pretrained_file": "glove/glove_s{}.zip".format(embedding_dim),
+                "embedding_dim": embedding_dim,
+                "trainable": False
+            }
+
         config["model"]["phrase_layer"]["input_size"] = 100 + embedding_dim + (1024 if elmo else 0)
 
         if elmo:
@@ -61,8 +70,9 @@ def run_kfold(config_file_path,
               train_dataset_path,
               dev_dataset_path,
               serialization_dir,
-              reduce_train_dataset=True,
-              expand_train_qas=False,
+              reduce_train_dataset=False,
+              reduce_dev_dataset=False,
+              expand_train_qas=True,
               elmo=True,
               dev_dataset_portion=0.0,
               embedding_dim=100):
@@ -104,6 +114,9 @@ def run_kfold(config_file_path,
         if reduce_train_dataset:
             train_dataset = reduce_answer(train_dataset)
 
+        if reduce_dev_dataset:
+            dev_dataset = reduce_answer(dev_dataset)
+
         if expand_train_qas:
             expand_qas(train_dataset["data"])
 
@@ -120,11 +133,11 @@ def run_kfold(config_file_path,
         run_train(config_file_path,
                   temp_train_file.name,
                   temp_dev_file.name,
-                  "{}/{}_{}_fold_{}_glove_{}".format(realpath(serialization_dir),
-                                                     "elmo" if elmo else "no_elmo",
-                                                     dev_dataset_portion,
-                                                     i,
-                                                     embedding_dim),
+                  "{}/{}-perc_{}-fold_{}-glove_{}".format(realpath(serialization_dir),
+                                                          "elmo" if elmo else "no_elmo",
+                                                          dev_dataset_portion,
+                                                          i,
+                                                          embedding_dim),
                   elmo,
                   embedding_dim)
 
