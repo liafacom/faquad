@@ -509,9 +509,9 @@ def collect(metrics_dir, name):
             props = filename.split("-")
 
             metrics["name"] = name
-            metrics["perc"] = 1.0 - float(props[1].split("_")[1]);
-            metrics["fold"] = int(props[2].split("_")[1]);
-            metrics["dim"] = int(props[3].split("_")[1]);
+            metrics["perc"] = 1.0 - float(props[1].split("_")[1])
+            metrics["fold"] = int(props[2].split("_")[1])
+            metrics["dim"] = int(props[3].split("_")[1])
             scores.append(metrics)
 
     return scores
@@ -540,6 +540,34 @@ def collect_zip(metrics_zip, name):
                 metrics["perc"] = 1.0 - float(props[1])
                 metrics["fold"] = int(props[3])
                 metrics["dim"] = int(props[-1])
+                scores.append(metrics)
+
+    return scores
+
+
+def collect_glove_zip(metrics_zip, name):
+    """
+    Collect results from runs of AllenNLP.
+
+    :param metrics_dir:
+    :param name:
+    :return:
+    """
+    import zipfile
+
+    # Get the dict for the given metric_name.
+    scores = []
+
+    zfile = zipfile.ZipFile(metrics_zip)
+    for finfo in zfile.infolist():
+            with zfile.open(finfo) as file:
+                metrics = json.loads(file.read())
+                # Get percentage of training data.
+                props = finfo.filename.split("/")[0].split("_")
+                metrics["name"] = name
+                metrics["perc"] = 1.0 - float(props[-5])
+                metrics["fold"] = int(props[-3])
+                metrics["glove_dim"] = int(props[-1])
                 scores.append(metrics)
 
     return scores
