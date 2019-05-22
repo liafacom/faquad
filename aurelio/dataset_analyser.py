@@ -1,7 +1,4 @@
 import re
-import json
-import pandas as pd
-from os.path import realpath
 
 
 def get_word_count(text: str):
@@ -28,4 +25,3 @@ def get_dataset_word_count(dataset: dict):
                 answer_counts += [ansbuff]
 
     return context_counts, question_counts, answer_counts
-
