@@ -175,16 +175,8 @@
                   "text": "coordenador de curso"
                 },
                 {
-                  "answer_start": 675,
-                  "text": "coordenador de curso do acadêmico"
-                },
-                {
                   "answer_start": 670,
                   "text": "pelo coordenador de curso"
-                },
-                {
-                  "answer_start": 670,
-                  "text": "pelo coordenador de curso do acadêmico"
                 },
                 {
                   "answer_start": 655,
@@ -260,38 +252,6 @@
                 {
                   "answer_start": 35,
                   "text": "dispensa de cursar disciplinas que integram a matriz curricular de seu curso, com justificativa de extraordinário rendimento acadêmico"
-                },
-                {
-                  "answer_start": 35,
-                  "text": "dispensa de cursar disciplinas que integram a matriz curricular de seu curso, com justificativa de extraordinário rendimento acadêmico, mediante avaliação específica aplicada por banca examinadora"
-                },
-                {
-                  "answer_start": 35,
-                  "text": "dispensa de cursar disciplinas que integram a matriz curricular de seu curso, com justificativa de extraordinário rendimento acadêmico, mediante avaliação específica aplicada por banca examinadora, para abreviação da duração do curso de graduação para um tempo inferior ao mínimo previsto no projeto pedagógico do curso, de acordo com a legislação em vigor"
-                },
-                {
-                  "answer_start": 0,
-                  "text": "é facultado ao acadêmico solicitar dispensa de cursar disciplinas"
-                },
-                {
-                  "answer_start": 0,
-                  "text": "é facultado ao acadêmico solicitar dispensa de cursar disciplinas que integram a matriz curricular"
-                },
-                {
-                  "answer_start": 0,
-                  "text": "é facultado ao acadêmico solicitar dispensa de cursar disciplinas que integram a matriz curricular de seu curso"
-                },
-                {
-                  "answer_start": 0,
-                  "text": "é facultado ao acadêmico solicitar dispensa de cursar disciplinas que integram a matriz curricular de seu curso, com justificativa de extraordinário rendimento acadêmico"
-                },
-                {
-                  "answer_start": 0,
-                  "text": "é facultado ao acadêmico solicitar dispensa de cursar disciplinas que integram a matriz curricular de seu curso, com justificativa de extraordinário rendimento acadêmico, mediante avaliação específica aplicada por banca examinadora"
-                },
-                {
-                  "answer_start": 0,
-                  "text": "é facultado ao acadêmico solicitar dispensa de cursar disciplinas que integram a matriz curricular de seu curso, com justificativa de extraordinário rendimento acadêmico, mediante avaliação específica aplicada por banca examinadora, para abreviação da duração do curso de graduação para um tempo inferior ao mínimo previsto no projeto pedagógico do curso, de acordo com a legislação em vigor"
                 }
               ],
               "id": "c8ca5537da2349dcbbaa9fd361adb3d7",
