@@ -14,8 +14,8 @@
       }
     }
   },
-  "train_data_path": "",
-  "validation_data_path": "",
+  "train_data_path": "data/expanded_dataset_no_ufms.json",
+  "validation_data_path": "data/dev_with_ufms.json",
   "model": {
     "type": "bidaf",
     "text_field_embedder": {
@@ -35,18 +35,16 @@
             ]
           },
           "elmo": {
-                "type": "elmo_token_embedder",
-                "options_file": "elmo/elmo_pt_options.json",
-                "weight_file": "elmo/elmo_pt_weights.hdf5",
-                "do_layer_norm": false,
-                "dropout": 0.0
-            },
+            "type": "elmo_token_embedder",
+            "options_file": "elmo/elmo_pt_options.json",
+            "weight_file": "elmo/elmo_pt_weights.hdf5",
+            "do_layer_norm": false,
+            "dropout": 0.0
+          },
           "dropout": 0.2
         }
       }
     },
-    "train_data_path": "data/expanded_dataset_no_ufms.json",
-    "validation_data_path": "data/dev_with_ufms.json",
     "num_highway_layers": 2,
     "phrase_layer": {
       "type": "lstm",
