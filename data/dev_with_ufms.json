@@ -1,0 +1,437 @@
+{
+  "data": [
+    {
+      "title": "UFMS",
+      "paragraphs": [
+        {
+          "context": "A UFMS possui cursos de graduação e pós-graduação, ambos presenciais e a distância. Os cursos de pós-graduação englobam os cursos de especialização e os programas de mestrado e doutorado. Segundo a avaliação do Índice Geral de Cursos criado pelo MEC, a UFMS é a segunda melhor universidade de Mato Grosso do Sul com conceito 4, que vai de 1 até 5, perdendo apenas para a Universidade Federal da Grande Dourados (UFGD). Na edição de 2014 do Guia do Estudante, a UFMS ficou em primeiro lugar no ano de 2013 como a melhor universidade de Mato Grosso do Sul ultrapassando, até então, a UFGD, como melhor instituição de ensino superior. Há ainda a proposta de criação da Universidade Federal do Pantanal (UFPAN) com sede em Corumbá absorvendo o atual Campus do Pantanal (CPAN) parte da UFMS e também a Universidade Federal do Bolsão (UFB) com sede em Três Lagoas absorvendo os atuais Campus de Paranaíba e Campus de Três Lagoas ambos também parte da UFMS hoje.",
+          "qas": [
+            {
+              "question": "Em que lugar ficou a UFMS na edição de 2014 do Guia do Estudante?",
+              "id": "a04aefa8ee294f05b83f0306c343caf2",
+              "answers": [
+                {
+                  "text": "primeiro",
+                  "answer_start": 475
+                }
+              ]
+            },
+            {
+              "question": "Os cursos de pós-graduação englobam quais cursos?",
+              "id": "f59233a559324c5aa82ce8dfa8f3c745",
+              "answers": [
+                {
+                  "text": "de especialização e os programas de mestrado e doutorado",
+                  "answer_start": 130
+                },
+                {
+                  "text": "especialização e os programas de mestrado e doutorado",
+                  "answer_start": 133
+                }
+              ]
+            },
+            {
+              "question": "Qual a segunda melhor universidade de Mato Grosso do Sul segundo a avaliação do Índice Geral de Cursos?",
+              "id": "ba3433a97a9345b0bd1b93acd868eace",
+              "answers": [
+                {
+                  "text": "UFMS",
+                  "answer_start": 253
+                },
+                {
+                  "text": "a UFMS",
+                  "answer_start": 251
+                },
+                {
+                  "text": "a UFMS é a segunda melhor universidade de Mato Grosso do Sul",
+                  "answer_start": 251
+                }
+              ]
+            },
+            {
+              "question": "Qual o conceito da UFMS segundo a avaliação do Índice Geral de Cursos?",
+              "id": "592e2fd9a4c44440a3af872c8fa1e1ac",
+              "answers": [
+                {
+                  "text": "4",
+                  "answer_start": 325
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "A Universidade Federal de Mato Grosso do Sul (UFMS) teve sua origem em 1962, com a criação da Faculdade de Farmácia e Odontologia, em Campo Grande, que seria o embrião do ensino superior público no sul do então estado de Mato Grosso. Em 26 de julho de 1966, através da Lei nº 2.620, esses cursos foram absorvidos com a criação do Instituto de Ciências Biológicas de Campo Grande, que reformulou a estrutura anterior, instituiu departamentos e criou o curso de Medicina. Em 2014, foi criado um curso de Medicina também em Três Lagoas. Em Corumbá, o Governo de Estado criou, em 1967, o Instituto Superior de Pedagogia e, em Três Lagoas, o Instituto de Ciências Humanas e Letras, ampliando assim a rede de ensino superior. Com a divisão do estado de Mato Grosso, foi concretizada a federalização da instituição que passou a denominar-se Fundação Universidade Federal de Mato Grosso do Sul, pela Lei Federal nº 6.674, de 05.07.1979. O então Centro Pedagógico de Rondonópolis, sediado em Rondonópolis - MT, passou a integrar a Universidade Federal de Mato Grosso (UFMT). Em 2005 o campus de Dourados(CPDO) é desmembrado para dar origem á Universidade Federal da Grande Dourados com a sua instalação ocorrida em 01.01.2006, de acordo com a Lei nº 11.153, de 29.07.2005.",
+          "qas": [
+            {
+              "question": "Em que ano foi criado o curso de Medicina em Três Lagoas?",
+              "id": "449fdb4da01747518693065f01adaaa6",
+              "answers": [
+                {
+                  "text": "2014",
+                  "answer_start": 473
+                },
+                {
+                  "text": "Em 2014",
+                  "answer_start": 470
+                }
+              ]
+            },
+            {
+              "question": "O que foi concretizada com a divisão do estado de Mato Grosso?",
+              "id": "5a5ec083473f45e5ad2fb502fe70dae0",
+              "answers": [
+                {
+                  "text": "a federalização da instituição",
+                  "answer_start": 777
+                },
+                {
+                  "text": "foi concretizada a federalização da instituição",
+                  "answer_start": 760
+                },
+                {
+                  "text": "foi concretizada a federalização da instituição que passou a denominar-se Fundação Universidade Federal de Mato Grosso do Sul",
+                  "answer_start": 760
+                }
+              ]
+            },
+            {
+              "question": "Qual era o embrião do ensino superior público no sul do Mato Grosso?",
+              "id": "ea1f35d2c6564b3994dba89794bce13a",
+              "answers": [
+                {
+                  "text": "Faculdade de Farmácia e Odontologia",
+                  "answer_start": 94
+                }
+              ]
+            },
+            {
+              "question": "Quando foi criado o Instituto Superior de Pedagogia em Corumbá?",
+              "id": "4ef1d63262d847ff83627070d824c2af",
+              "answers": [
+                {
+                  "text": "1967",
+                  "answer_start": 576
+                }
+              ]
+            },
+            {
+              "question": "Quando os cursos de Farmácia e Odontologia foram absorvidos?",
+              "id": "1d1c8ef8048b4551aa43298849bb3906",
+              "answers": [
+                {
+                  "text": "26 de julho de 1966",
+                  "answer_start": 237
+                },
+                {
+                  "text": "Em 26 de julho de 1966",
+                  "answer_start": 234
+                },
+                {
+                  "text": "Em 26 de julho de 1966, através da Lei nº 2.620, esses cursos foram absorvidos com a criação do Instituto de Ciências Biológicas de Campo Grande",
+                  "answer_start": 234
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Além de notícias internas publicadas pelo Jornal da UFMS, a instituição presta serviço à comunidade através da Editora da UFMS com uma loja na Cidade Universitária de Campo Grande e a TVU, transmitido no canal 14 pela TV a Cabo NET ou pelo site na internet . Em fevereiro de 2012, a reitora assinou o termo de cessão para explorar a rádio FM Educativa que, em breve, por caráter experimental, poderá transmitir programação de rádio para a comunidade em geral.",
+          "qas": [
+            {
+              "question": "Como a instituição presta serviço à comunidade?",
+              "id": "83bb139f5aa3458b998309aa2ef7ab41",
+              "answers": [
+                {
+                  "text": "através da Editora da UFMS",
+                  "answer_start": 100
+                },
+                {
+                  "text": "através da Editora da UFMS com uma loja na Cidade Universitária de Campo Grande e a TVU",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "question": "Em qual canal é transmitido a TVU?",
+              "id": "c283b68f253b47b0b9348941be9d23d2",
+              "answers": [
+                {
+                  "text": "14",
+                  "answer_start": 210
+                }
+              ]
+            },
+            {
+              "question": "O que poderá ser transmitido pela rádio FM Educativa por caráter experimental com a assinatura do termo de cessão?",
+              "id": "71ed1dfb37144bbfb36ce54a3c5d8122",
+              "answers": [
+                {
+                  "text": "poderá transmitir programação de rádio para a comunidade em geral",
+                  "answer_start": 393
+                },
+                {
+                  "text": "programação de rádio para a comunidade em geral",
+                  "answer_start": 411
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "As Universidades Públicas no Brasil, em especial aquelas vinculadas ao Sistema Federal, adotam um modelo organizacional que se caracteriza por muitas similaridades em que predominam as decisões de Órgãos Colegiados. No caso da UFMS, a administração central se dá pela Reitoria que é o órgão executivo que administra, dirigindo, coordenando e superintendendo todas as atividades universitárias. O cargo de Reitor é exercido por um professor nomeado na forma da lei, para executar as decisões dos órgãos colegiados superiores da Universidade - Conselho Universitário (COUN); Conselho Diretor (CD), e Câmaras de Ensino, de Pesquisa e Pós-graduação e de Extensão. A Reitora responde administrativamente e juridicamente por todos os atos no âmbito da Instituição. Isso inclui o ordenamento de despesas sendo responsável perante o MEC e o Tribunal de Contas da União por gerir o terceiro maior orçamento do Estado. A Reitora é responsável também por aproximar a Universidade da comunidade, por meio de convênios e parcerias com outros órgãos e instituições.",
+          "qas": [
+            {
+              "question": "De que forma a Reitora responde por todos os atos no âmbito da Instituição?",
+              "id": "c544d7e06882495d9cae47858818d730",
+              "answers": [
+                {
+                  "text": "administrativamente e juridicamente",
+                  "answer_start": 679
+                }
+              ]
+            },
+            {
+              "question": "Por quem se dá a administração central da UFMS?",
+              "id": "95a4f3a33f0748bc977f461a399d118c",
+              "answers": [
+                {
+                  "text": "Reitoria",
+                  "answer_start": 268
+                }
+              ]
+            },
+            {
+              "question": "Por quem é exercido o cargo de Reitor?",
+              "id": "28d960c45c5f47c995680c4095603159",
+              "answers": [
+                {
+                  "text": "professor nomeado na forma da lei",
+                  "answer_start": 430
+                }
+              ]
+            },
+            {
+              "question": "Quais são os órgãos colegiados superiores da UFMS?",
+              "id": "fb1f61b069ec4e968d07495c15cbc191",
+              "answers": [
+                {
+                  "text": "Conselho Universitário (COUN); Conselho Diretor (CD), e Câmaras de Ensino, de Pesquisa e Pós-graduação e de Extensão",
+                  "answer_start": 542
+                }
+              ]
+            },
+            {
+              "question": "Quem é responsável por aproximar a Universidade da comunidade?",
+              "id": "9d135fee26174dcfbb7f276d2fb0339c",
+              "answers": [
+                {
+                  "text": "Reitora",
+                  "answer_start": 911
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "O sistema de bibliotecas da UFMS é regido pela Coordenadoria Biblioteca Central(CBC) localizado em Campo Grande, subordinado a Pró-reitoria de Ensino e Graduação(PREG) com bibliotecas setoriais em todos os campus do interior do estado. O acervo está disponível para consulta na internet através do sistema Pergamum, desenvolvido pela PUC-PR e PUC-Rio, acessível de qualquer computador dentro e fora da instituição onde é possível, também, fazer auto empréstimo, reservar livros, salas de estudo dentre outros serviços.",
+          "qas": [
+            {
+              "question": "Através de qual sistema o acervo da biblioteca da UFMS está disponível para consulta na internet?",
+              "id": "bcb4b37f428e4f19bb439a233c10b3d0",
+              "answers": [
+                {
+                  "text": "Pergamum",
+                  "answer_start": 306
+                }
+              ]
+            },
+            {
+              "question": "O Pergamum é acessível por quais computadores?",
+              "id": "fd8de2206a504159ab3f3164798fefc2",
+              "answers": [
+                {
+                  "text": "qualquer computador",
+                  "answer_start": 365
+                },
+                {
+                  "text": "qualquer computador dentro e fora da instituição",
+                  "answer_start": 365
+                }
+              ]
+            },
+            {
+              "question": "Onde se localiza a CBC?",
+              "id": "86703f3d233341669ac8d2bde1bd2b1f",
+              "answers": [
+                {
+                  "text": "Campo Grande",
+                  "answer_start": 99
+                },
+                {
+                  "text": "em Campo Grande",
+                  "answer_start": 96
+                },
+                {
+                  "text": "localizado em Campo Grande",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "Por quem foi desenvolvido o Pergamum?",
+              "id": "71dbbf324d054924a3c503480486bb74",
+              "answers": [
+                {
+                  "text": "PUC-PR e PUC-Rio",
+                  "answer_start": 334
+                }
+              ]
+            },
+            {
+              "question": "Por quem é regido o sistema de bibliotecas da UFMS?",
+              "id": "c5143c2ed9e34eeab1cc3e2665d7185c",
+              "answers": [
+                {
+                  "text": "CBC",
+                  "answer_start": 80
+                },
+                {
+                  "text": "Coordenadoria Biblioteca Central",
+                  "answer_start": 47
+                },
+                {
+                  "text": "pela Coordenadoria Biblioteca Central(CBC)",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Universidade Federal de Mato Grosso do Sul (UFMS) é uma instituição de ensino superior pública federal brasileira, sediada em Campo Grande, no estado do Mato Grosso do Sul. Tomando-se o campus de Campo Grande como centro de um círculo hipotético, a UFMS abrange uma extensa área geográfico-educacional que resulta num raio de mais de 500 km, atingindo cerca de cem municípios e incluindo estados e países vizinhos, tais como Paraguai e Bolívia, de onde se origina parte de seus alunos-convênio. Além da sede em Campo Grande, a UFMS mantém campi em nove cidades (Aquidauana, Chapadão do Sul, Corumbá, Coxim, Naviraí, Nova Andradina, Paranaíba, Ponta Porã e Três Lagoas) descentralizando o ensino para atender à demanda de várias regiões do estado.",
+          "qas": [
+            {
+              "question": "A UFMS abrange uma área geográfico-educacional de quantos km?",
+              "id": "a150586b2c4e4ae59b702dc74951f59f",
+              "answers": [
+                {
+                  "text": "mais de 500",
+                  "answer_start": 326
+                },
+                {
+                  "text": "raio de mais de 500 km",
+                  "answer_start": 318
+                }
+              ]
+            },
+            {
+              "question": "Aproximadamente quantos municípios a UFMS atinge?",
+              "id": "f7a0038083254f5fb7cc0848cac3b20b",
+              "answers": [
+                {
+                  "text": "cem",
+                  "answer_start": 361
+                },
+                {
+                  "text": "cerca de cem",
+                  "answer_start": 352
+                },
+                {
+                  "text": "cerca de cem municípios",
+                  "answer_start": 352
+                }
+              ]
+            },
+            {
+              "question": "Em quais cidades a UFMS mantém campi?",
+              "id": "79a41ec252524c50acb09c6ee0008a73",
+              "answers": [
+                {
+                  "text": "Aquidauana, Chapadão do Sul, Corumbá, Coxim, Naviraí, Nova Andradina, Paranaíba, Ponta Porã e Três Lagoas",
+                  "answer_start": 562
+                }
+              ]
+            },
+            {
+              "question": "Em quantas cidades a UFMS mantém campi?",
+              "id": "865172fc41014fceb3797be1740a8b82",
+              "answers": [
+                {
+                  "text": "a UFMS mantém campi em nove cidades",
+                  "answer_start": 525
+                },
+                {
+                  "text": "nove",
+                  "answer_start": 548
+                }
+              ]
+            },
+            {
+              "question": "O que é a UFMS?",
+              "id": "26f2ae969a804ba392e5bd0c62d58896",
+              "answers": [
+                {
+                  "text": "uma instituição de ensino superior pública federal brasileira",
+                  "answer_start": 52
+                },
+                {
+                  "text": "uma instituição de ensino superior pública federal brasileira, sediada em Campo Grande, no estado do Mato Grosso do Sul",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "question": "Onde é sediada a UFMS?",
+              "id": "32ae5b677f30475ba175028d3f5e40a2",
+              "answers": [
+                {
+                  "text": "Campo Grande",
+                  "answer_start": 126
+                },
+                {
+                  "text": "em Campo Grande",
+                  "answer_start": 123
+                },
+                {
+                  "text": "sediada em Campo Grande",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Visando ultrapassar os objetivos essenciais de aprimoramento do ensino e estímulo às atividades de pesquisa e de extensão, a UFMS vem participando do ensino e da preservação dos recursos naturais do meio ambiente, especialmente da fauna e flora do Pantanal, região onde está inserida, e que motiva estudos e pesquisas ecológicas na instituição.",
+          "qas": [
+            {
+              "question": "O que a UFMS visa participando do ensino e da preservação dos recursos naturais do meio ambiente?",
+              "id": "5394440b2ec445a080cea669a8cb2d33",
+              "answers": [
+                {
+                  "text": "ultrapassar os objetivos essenciais de aprimoramento do ensino e estímulo às atividades de pesquisa e de extensão",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "O que motiva estudos e pesquisas ecológicas na UFMS?",
+              "id": "a87b991228e2416097a91a22593ed44e",
+              "answers": [
+                {
+                  "text": "Pantanal",
+                  "answer_start": 248
+                },
+                {
+                  "text": "fauna e flora do Pantanal",
+                  "answer_start": 231
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.0"
+}

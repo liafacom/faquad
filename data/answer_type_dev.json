@@ -1,0 +1,10 @@
+{
+  "person": 3,
+  "date": 1,
+  "numeric": 5,
+  "common_noun_phrase": 41,
+  "verb_phrase": 35,
+  "entity": 5,
+  "location": 3,
+  "adjective_phrase": 0
+}
