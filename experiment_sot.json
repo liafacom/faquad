@@ -20,6 +20,13 @@
     "type": "bidaf",
     "text_field_embedder": {
       "token_embedders": {
+        "elmo": {
+          "type": "elmo_token_embedder",
+          "options_file": "elmo/elmo_pt_options.json",
+          "weight_file": "elmo/elmo_pt_weights.hdf5",
+          "do_layer_norm": false,
+          "dropout": 0.0
+        },
         "token_characters": {
           "type": "character_encoding",
           "embedding": {
@@ -33,13 +40,6 @@
             "ngram_filter_sizes": [
               5
             ]
-          },
-          "elmo": {
-            "type": "elmo_token_embedder",
-            "options_file": "elmo/elmo_pt_options.json",
-            "weight_file": "elmo/elmo_pt_weights.hdf5",
-            "do_layer_norm": false,
-            "dropout": 0.0
           },
           "dropout": 0.2
         }
