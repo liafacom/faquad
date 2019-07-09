@@ -71,7 +71,7 @@ def predict_dev(model_dir, dev_data):
     predictions = {"data": []}
 
     for title in dev_data:
-        for paragraph in title["paragraph"]:
+        for paragraph in title["paragraphs"]:
             context = {
                 "context": paragraph["context"],
                 "qas": []
