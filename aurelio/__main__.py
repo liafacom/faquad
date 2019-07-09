@@ -5,7 +5,7 @@ from sys import argv
 
 def main():
     # Portions relative to Group Shuffle Split TEST size
-    portions = [0.0, 0.25, 0.5, 0.75, 0.9]
+    portions = [0.0]
 
     for portion in portions:
         run_kfold(config_file_path=realpath("experiment.json"),
@@ -17,7 +17,7 @@ def main():
                   expand_train_qas=True,
                   elmo=True,
                   dev_dataset_portion=portion,
-                  embedding_dim=100)
+                  embedding_dim=0)
 
 
 main()

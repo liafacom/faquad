@@ -17,7 +17,7 @@ def predict(model_path, passage, question):
     }
     model = load_archive(model_path)
     predictor = Predictor.from_archive(model, 'machine-comprehension')
-    result = predictor.predict_json(inputs);
+    result = predictor.predict_json(inputs)
     return result
 
 

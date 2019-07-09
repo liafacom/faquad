@@ -9,6 +9,7 @@ from sklearn.model_selection import GroupKFold
 from sklearn.model_selection import GroupShuffleSplit, ShuffleSplit
 from os.path import realpath
 from dataset_utils import flatten_json, melt_dataframe, reduce_answer, expand_qas
+from predictor import predict
 
 import pandas as pd
 import tempfile
@@ -64,6 +65,30 @@ def run_train(config_file_path, train_dataset_path, dev_dataset_path, serializat
         ]
 
         bidaf()
+
+
+def predict_dev(model_dir, dev_data):
+    predictions = {"data": []}
+
+    for title in dev_data:
+        for paragraph in title["paragraph"]:
+            context = {
+                "context": paragraph["context"],
+                "qas": []
+            }
+
+            for qas in paragraph["qas"]:
+                result = predict("{}/model.tar.gz".format(model_dir), paragraph["context"], qas["question"])
+                context["qas"].append({
+                    "question": qas["question"],
+                    "answer": qas["answers"][0],
+                    "prediction": result["best_span_str"]
+                })
+
+            predictions["data"].append(context)
+
+    with open("{}/predictions.json".format(model_dir), "w") as file:
+        file.write(json.dumps(predictions))
 
 
 def run_kfold(config_file_path,
@@ -146,3 +171,10 @@ def run_kfold(config_file_path,
         temp_dev_file.close()
 
         i += 1
+
+        predict_dev(model_dir="{}/{}-perc_{}-fold_{}-glove_{}".format(realpath(serialization_dir),
+                                                                      "elmo" if elmo else "no_elmo",
+                                                                      dev_dataset_portion,
+                                                                      i,
+                                                                      embedding_dim),
+                    dev_data=dev_dataset["data"])
