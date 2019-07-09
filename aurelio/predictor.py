@@ -21,6 +21,6 @@ def predict(model_path, passage, question):
     return result
 
 
-result = predict(os.path.realpath("serialization/elmo/model.tar.gz"), argv[1],
-                 argv[2])
-print(result)
+#result = predict(os.path.realpath("model/sot/model.tar.gz"), argv[1],
+ #                argv[2])
+#print(result)
