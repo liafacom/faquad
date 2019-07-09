@@ -19,8 +19,3 @@ def predict(model_path, passage, question):
     predictor = Predictor.from_archive(model, 'machine-comprehension')
     result = predictor.predict_json(inputs);
     return result
-
-
-#result = predict(os.path.realpath("model/sot/model.tar.gz"), argv[1],
- #                argv[2])
-#print(result)
