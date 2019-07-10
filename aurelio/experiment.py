@@ -170,11 +170,11 @@ def run_kfold(config_file_path,
         temp_train_file.close()
         temp_dev_file.close()
 
-        i += 1
-
         predict_dev(model_dir="{}/{}-perc_{}-fold_{}-glove_{}".format(realpath(serialization_dir),
                                                                       "elmo" if elmo else "no_elmo",
                                                                       dev_dataset_portion,
                                                                       i,
                                                                       embedding_dim),
                     dev_data=dev_dataset["data"])
+
+        i += 1
