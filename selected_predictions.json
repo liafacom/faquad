@@ -1,0 +1,237 @@
+[
+  {
+    "context": "Raramente a monografia é elaborada com base em pesquisa original ou apresenta resultado de estudo experimental; normalmente é estudo recapitulativo, de base bibliográfica. Visa geralmente à obtenção do título de bacharel ou especialista, sendo usada ainda como trabalho de conclusão de alguma disciplina regular.",
+    "qas": [
+      {
+        "question": "Em que a monografia é usada?",
+        "answer": {
+          "text": "como trabalho de conclusão de alguma disciplina regular",
+          "answer_start": 256
+        },
+        "prediction": "obtenção do título de bacharel ou especialista"
+      },
+      {
+        "question": "O que a monografia visa?",
+        "answer": {
+          "text": "Visa geralmente à obtenção do título de bacharel ou especialista",
+          "answer_start": 172
+        },
+        "prediction": "obtenção do título de bacharel ou especialista, sendo usada ainda como trabalho de conclusão de alguma disciplina regular"
+      },
+      {
+        "question": "Qual geralmente é a base de uma monografia?",
+        "answer": {
+          "text": "base bibliográfica",
+          "answer_start": 152
+        },
+        "prediction": "pesquisa original ou apresenta resultado de estudo experimental"
+      },
+      {
+        "question": "Qual tipo de estudo é geralmente feito em uma monografia?",
+        "answer": {
+          "text": "estudo recapitulativo",
+          "answer_start": 126
+        },
+        "prediction": "normalmente é estudo recapitulativo"
+      }
+    ]
+  },
+  {
+    "context": "O trancamento de matrícula será concedido por até quatro semestres, consecutivos ou alternados, não sendo permitido o trancamento nos dois primeiros períodos letivos regulares de ingresso do acadêmico na UFMS, exceto nos casos de impossibilidade de o acadêmico ser contemplado com regime de exercícios domiciliares ou convocação para o Serviço Militar Obrigatório.",
+    "qas": [
+      {
+        "question": "Em quais casos o acadêmico pode trancar a matrícula nos dois primeiros períodos letivos?",
+        "answer": {
+          "text": "impossibilidade de o acadêmico ser contemplado com regime de exercícios domiciliares ou convocação para o Serviço Militar Obrigatório",
+          "answer_start": 230
+        },
+        "prediction": "até quatro semestres, consecutivos ou alternados, não sendo permitido o trancamento nos dois primeiros períodos letivos regulares de ingresso do acadêmico na UFMS"
+      },
+      {
+        "question": "Por quanto tempo a matrícula pode ser trancada?",
+        "answer": {
+          "text": "até quatro semestres",
+          "answer_start": 46
+        },
+        "prediction": "até quatro semestres,"
+      }
+    ]
+  },
+  {
+    "context": "A participação em eventos científicos deve ser comprovada por meio do certificado de participação que deve conter, obrigatoriamente, o nome do evento, o nome do participante, o local, a data em que foi realizado, a carga horária e a assinatura do responsável pelo evento. A monitoria de ensino deve ser comprovada por meio de declaração emitida pela unidade responsável pela disciplina, que deve conter, obrigatoriamente, o nome do monitor, o nome da disciplina em que atuou, o local, a data (de início e fim) em que foi realizada a monitoria, a carga horária, e a assinatura do diretor da unidade de oferta da disciplina.",
+    "qas": [
+      {
+        "question": "Como deve ser comprovada a monitoria de ensino?",
+        "answer": {
+          "text": "declaração",
+          "answer_start": 326
+        },
+        "prediction": "por meio do certificado de participação que deve conter, obrigatoriamente, o nome do evento, o nome do participante, o local, a data em que foi realizado, a carga horária e a assinatura do responsável pelo evento"
+      },
+      {
+        "question": "O que deve conter no certificado de participação em eventos científicos?",
+        "answer": {
+          "text": "o nome do evento, o nome do participante, o local, a data em que foi realizado, a carga horária e a assinatura do responsável pelo evento",
+          "answer_start": 133
+        },
+        "prediction": "certificado de participação que deve conter, obrigatoriamente, o nome do evento, o nome do participante, o local, a data em que foi realizado, a carga horária e a assinatura do responsável pelo evento"
+      },
+      {
+        "question": "Quem emite a declaração de realização de monitoria?",
+        "answer": {
+          "text": "unidade responsável pela disciplina",
+          "answer_start": 350
+        },
+        "prediction": "pela unidade responsável pela disciplina"
+      }
+    ]
+  },
+  {
+    "context": "O Colegiado de Curso, ouvido o Núcleo Docente Estruturante, poderá propor alterações na Matriz Curricular, desde que apresente justificativa, obedecidos aos prazos fixados no Calendário Acadêmico. As alterações curriculares referidas neste artigo serão: inclusão ou exclusão de disciplinas; alteração de nomenclatura, de lotação ou de carga horária de disciplinas. O Coordenador de Curso deverá elaborar Plano de Estudos para cada acadêmico quando ocorrer migração do acadêmico para uma nova Matriz Curricular, observada a Tabela de Equivalências, visando ao cumprimento dos componentes curriculares. O acadêmico ficará dispensado de cumprir as disciplinas novas que estiverem posicionadas em semestre anterior àquele recomendado no Plano de Estudos. O acadêmico ficará dispensado de cumprir as disciplinas novas que estiverem posicionadas em semestre anterior àquele recomendado no Plano de Estudos. Se no Plano de Estudos for constatada a falta de carga horária para integralização curricular, a carga horária faltante deverá ser complementada com disciplinas novas ou optativas, a critério do acadêmico e disponibilidade de oferta da disciplina.",
+    "qas": [
+      {
+        "question": "Com o que será completada a carga horária se for constatada a falta para integralização curricular?",
+        "answer": {
+          "text": "com disciplinas novas ou optativas",
+          "answer_start": 1046
+        },
+        "prediction": "com disciplinas novas ou optativas, a critério do acadêmico e disponibilidade de oferta da disciplina"
+      },
+      {
+        "question": "O Colegiado de Curso poderá propor alterações na matriz curricular?",
+        "answer": {
+          "text": "desde que apresente justificativa",
+          "answer_start": 107
+        },
+        "prediction": "na Matriz Curricular"
+      },
+      {
+        "question": "Qual a finalidade da elaboração do plano de estudos?",
+        "answer": {
+          "text": "cumprimento dos componentes curriculares",
+          "answer_start": 559
+        },
+        "prediction": "cumprimento dos componentes curriculares"
+      },
+      {
+        "question": "Quem elabora o plano de estudos do acadêmico quando ocorre migração para uma nova matriz curricular?",
+        "answer": {
+          "text": "Coordenador de Curso",
+          "answer_start": 367
+        },
+        "prediction": "Núcleo Docente Estruturante"
+      }
+    ]
+  },
+  {
+    "context": "As Atividades Complementares do curso de Ciência da Computação, como parte integrante do currículo, inclui atividades extraclasses relevantes para a formação do aluno do referido curso, e possui carga horária de 102 horas. Este Regulamento se aplica a todos os alunos do curso de Ciência da Computação a partir do segundo semestre letivo de 2016. As atividades deverão ser realizadas ao longo do curso, podendo ser feitas em qualquer um dos semestres cursados pelo aluno. Dentre as atividades que podem ser utilizadas para integralização da carga horária das Atividades Complementares encontram­-se: Participação em eventos científicos (seminários, simpósios, congressos, semanas tecnológicas e conferências), seja como ouvinte ou apresentador; monitoria de ensino; membros de equipe de projetos de ensino aprovados por órgão competente; membros de equipe de projetos de extensão aprovados por órgão competente; membros de equipe de projetos de pesquisa aprovados por órgão competente; estágios não obrigatórios; atividades de iniciação científica; publicação de trabalhos científicos; participação em órgãos colegiados; participação em cursos pertinentes à área, seja como ouvinte ou ministrante; disciplinas cursadas como enriquecimento curricular; participação em treinamento e atividades específicas como membro de mesa receptora de votos nas eleições; resposta ao questionário do estudante da Comissão Própria de Avaliação da UFMS; ou outras atividades a serem avaliadas pelo Colegiado de Curso.",
+    "qas": [
+      {
+        "question": "Em qual semestre as atividades complementares podem ser feitas?",
+        "answer": {
+          "text": "qualquer um dos semestres cursados pelo aluno",
+          "answer_start": 425
+        },
+        "prediction": "qualquer um dos semestres cursados pelo aluno"
+      },
+      {
+        "question": "Quais atividades estão inclusas nas atividades complementares?",
+        "answer": {
+          "text": "atividades extraclasses relevantes para a formação do aluno do referido curso",
+          "answer_start": 107
+        },
+        "prediction": "atividades extraclasses relevantes para a formação do aluno do referido curso"
+      },
+      {
+        "question": "Quais tipos de eventos científicos podem ser utilizados para integralização da carga horária das atividades complementares?",
+        "answer": {
+          "text": "seminários, simpósios, congressos, semanas tecnológicas e conferências",
+          "answer_start": 637
+        },
+        "prediction": "atividades extraclasses relevantes para a formação do aluno do referido curso"
+      },
+      {
+        "question": "Qual a carga horária das atividades complementares?",
+        "answer": {
+          "text": "102",
+          "answer_start": 212
+        },
+        "prediction": "102 horas"
+      }
+    ]
+  },
+  {
+    "context": "caberá à banca examinadora atribuir ao acadêmico uma nota final de zero vírgula zero (0,0) a dez vírgula zero (10,0), resultante da média aritmética das notas emitidas pelos membros da banca; e considerar aprovado aquele acadêmico que obtiver a nota mínima final nove (9,0). caberá ao coordenador de curso informar ao acadêmico, em até dez (10) dias úteis antes da data prevista para avaliação, o conteúdo e as formas de avaliação com os respectivos pesos, além de data(s), horário(s) e local(is) de realização do(s) exame(s). se aprovado na avaliação, o acadêmico obterá dispensa de cursar a disciplina, sendo registrada no seu histórico escolar a nota conferida pela banca examinadora e a carga horária total da disciplina. o registro no siscad deverá ser feito pela coordenação do curso do acadêmico.",
+    "qas": [
+      {
+        "question": "qual a nota mínima para o acadêmico que requisitou abreviação de curso ser aprovado?",
+        "answer": {
+          "text": "9,0",
+          "answer_start": 269
+        },
+        "prediction": "nove (9,0)"
+      },
+      {
+        "question": "qual o limite de dias para o acadêmico que requisitou abreviação de curso ser informado do conteúdo?",
+        "answer": {
+          "text": "10",
+          "answer_start": 341
+        },
+        "prediction": "dez (10) dias úteis antes da data prevista para avaliação, o conteúdo e as formas de avaliação com os respectivos pesos, além de data(s), horário(s) e local(is) de realização do(s) exame(s). se aprovado na avaliação, o acadêmico obterá dispensa de cursar a disciplina"
+      },
+      {
+        "question": "quem deve fazer o registro no siscad?",
+        "answer": {
+          "text": "coordenação do curso",
+          "answer_start": 769
+        },
+        "prediction": "o registro no siscad deverá ser feito pela coordenação do curso do acadêmico"
+      },
+      {
+        "question": "quem dá a nota final ao acadêmico?",
+        "answer": {
+          "text": "banca",
+          "answer_start": 0
+        },
+        "prediction": "caberá à banca examinadora atribuir ao acadêmico uma nota final de zero vírgula zero (0,0) a dez vírgula zero (10,0), resultante da média aritmética das notas emitidas pelos membros da banca; e considerar aprovado aquele acadêmico que obtiver a nota mínima final nove (9,0)"
+      }
+    ]
+  },
+  {
+    "context": "O acadêmico terá direito à revisão de suas avaliações acadêmicas dirigindo-se ao professor, em primeira instância, por meio de requerimento protocolizado na Secretaria Acadêmica da Unidade da Administração Setorial em que o curso é oferecido, no prazo de três dias úteis após a divulgação do resultado. O professor terá o prazo de dois dias úteis para manifestação escrita sobre o pedido. O acadêmico deverá apor seu ciente no documento de resposta, e receber uma cópia deste. O acadêmico poderá interpor recurso quanto ao resultado da revisão, no Colegiado de Curso, via Secretaria Acadêmica, no prazo de cinco dias úteis do seu ciente. O Colegiado de Curso deverá constituir comissão, composta por três docentes, preferencialmente da área, sendo vedada a inclusão do professor que corrigiu a avaliação acadêmica em questão. A Comissão deverá analisar o pedido do acadêmico, consultar o professor, se necessário, e emitir parecer sobre o resultado da revisão, num prazo máximo de quinze dias a partir da publicação da resolução de constituição da comissão, e encaminhar para aprovação do Colegiado de Curso. O professor da disciplina será responsável pela alteração no Siscad, em caso de modificação da nota resultante dos trabalhos da Comissão de Revisão.",
+    "qas": [
+      {
+        "question": "A quem o acadêmico deve ir para revisar suas avaliações acadêmicas?",
+        "answer": {
+          "text": "professor",
+          "answer_start": 81
+        },
+        "prediction": "dirigindo-se ao professor, em primeira instância, por meio de requerimento protocolizado na Secretaria Acadêmica da Unidade da Administração Setorial em que o curso é oferecido, no prazo de três dias úteis após a divulgação do resultado. O professor terá o prazo de dois dias úteis para manifestação escrita sobre o pedido. O acadêmico deverá apor seu ciente no documento de resposta"
+      },
+      {
+        "question": "Por quantos docentes deve ser composta a comissão?",
+        "answer": {
+          "text": "três",
+          "answer_start": 700
+        },
+        "prediction": "três"
+      },
+      {
+        "question": "Qual o prazo para o acadêmico requisitar revisão da avaliação acadêmica?",
+        "answer": {
+          "text": "no prazo de três dias úteis após a divulgação do resultado",
+          "answer_start": 243
+        },
+        "prediction": "três dias úteis após a divulgação do resultado"
+      },
+      {
+        "question": "Quem será responsável por alterar a nota do aluno no Siscad?",
+        "answer": {
+          "text": "professor da disciplina",
+          "answer_start": 1111
+        },
+        "prediction": "O professor da disciplina será responsável pela alteração no Siscad"
+      }
+    ]
+  }
+]
