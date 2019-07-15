@@ -1,4 +1,4 @@
-##FaQuAD: Reading Comprehension Dataset in the Domain of Brazilian Higher Education
+## FaQuAD: Reading Comprehension Dataset in the Domain of Brazilian Higher Education
 
 The FaQuAD is a Portuguese reading comprehension dataset which follows the format of the Stanford Question Answering Dataset (SQuAD). As far as we know, FaQuAD is a pioneer Portuguese reading comprehension dataset with the SQuAD's challenging format.
 
@@ -32,10 +32,10 @@ Portuguese GloVe and ELMo weights are required to execute all experiments. GloVe
  
 ## Code Overview
 
-####experiment.py
+#### experiment.py
 
 Preprocess the dataset, splits into K folds and commands AllenNLP to train the model with a given dataset.
 
-####dataset_utils.py
+#### dataset_utils.py
 A set of useful, mostly not optimized, workaround functions to allow AllenNLP's default dataset reader for SQuAD to be reused with FaQuAD as the experiments were made. These works fine with a small dataset like FaQuAD, still, optimization may be required to work with large datasets like SQuAD.
 
