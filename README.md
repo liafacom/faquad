@@ -39,5 +39,10 @@ The top-level file invokes a function from the experiment file that preprocess t
 * dev_dataset_portion: the amount of data that should be removed from the training fold (specially useful for learning curves)
 * embedding_dim: the word embeddings' dimensions (0 for not using word embeddings).  
 
-Obs: train and dev datasets will be merged so it can be split into folds. They are taken separately because AllenNLP's BiDAF's dataset reader supports only holdout.
+Obs: train and dev datasets will be merged so it can be split into folds. They are taken separately because AllenNLP's BiDAF dataset reader supports only holdout.
 
+## Dataset
+
+The full dataset is located at "data/dataset.json". "train.json" and "dev.json" are the splitted into training and validation version of the full dataset and may be used for holdout. 
+
+For further instructions about AllenNLP access https://allennlp.org.
