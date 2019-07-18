@@ -2,6 +2,8 @@
 
 The FaQuAD is a Portuguese reading comprehension dataset which follows the format of the Stanford Question Answering Dataset (SQuAD). As far as we know, FaQuAD is a pioneer Portuguese reading comprehension dataset with the SQuAD's challenging format.
 
+This repository includes FaQuAD data and the source code to reproduce all experiments presented in the paper Sayama et al. accepted to BRACIS 2019.
+
 Besides the FaQuAD dataset this repository provides the required source code to reproduce the experiments presented by the paper. Mostly of the code is a workaround for reusing the default AllenNLP set for training the BiDAF network with SQuAD. Further code improvements are required, but not a goal for awhile.
 
 ### Attention
