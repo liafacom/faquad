@@ -93,7 +93,7 @@ pyaml==18.11.0
 pyasn1==0.4.5
 pycparser==2.19
 pycryptodome==3.8.1
-Pygments==2.3.1
+Pygments==2.7.4
 pyparsing==2.4.0
 pyrsistent==0.14.11
 pytest==4.4.0
